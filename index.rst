@@ -9,8 +9,7 @@ GUIDE NAME
 Goal
 ----
 
-.. #### Comment: If the platform has an ICON place it here
-.. #### Comment: Sort description of goal
+Introduce SciApps, a cloud-based platform for building and sharing reproducible bioinformatics workflows across distributed computing and storage systems. This guide will cover building automated workflows from scratch, executing, and sharing workflows
 
 ----
 
@@ -18,8 +17,11 @@ Goal
 	:maxdepth: 2
 
 	Tutorial home <self>
-	First Step <step1.rst>
-	Last Step <step2.rst>
+	Logging into SciApps <step1.rst>
+	Viewing the data <step2.rst>
+	Launching an analysis job <step3.rst>
+	Building a workflow <step4.rst>
+	Launching a workflow <step5.rst>
 
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
@@ -55,7 +57,7 @@ Downloads, access, and services
 
 **Fix or improve this documentation**
 
-- On Github: `Repo link <FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/sciapps_guide>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
