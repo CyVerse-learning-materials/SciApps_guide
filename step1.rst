@@ -4,7 +4,7 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Logging In
+SciApps Basics
 -------------
 
 SciApps leverages CyVerse Agave API and Data Store for efficient data transfer, analysis, and management across heterogeneous systems. A CyVerse account is required to access these systems
