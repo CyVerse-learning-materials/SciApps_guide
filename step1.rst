@@ -12,14 +12,17 @@ SciApps leverages CyVerse Agave API and Data Store for efficient data transfer, 
 **Some things to remember about the platform**
 
 *Loading personal data to SciApps from CyVerse Data Store*
+
 - SciApps access must be requested through the CyVerse user portal. You can check if you already have SciApps by logging into the portal and visiting the My Service page. If SciApps is not listed, click on Available services to request access
 - Once requested, a ‘sci_data’ folder will be created in your Data Store root folder (/iplant/home/YOUR_USER_NAME). Any data you put in the folder will be available for using on SciApps (under the 'user' tab). For instructions on uploading data, check the `Data Store Guide <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/index.html>`_
 
 *Sample datasets*
+
 - Sample datasets are available under the ‘public’ tab. These datasets are placed on the computing system for reducing data transfers and should be used whenever possible for building workflows
 - More CyVerse sample datasets are available under the ‘shared’ tab. From there, sample datasets for most apps are available under ‘iplantcollaborative/example_data’
 
-*large datasets*
+*Large datasets*
+
 - SciApps is designed to process massive amount of data locally for minimizing cross-sites data transfer
 - Existing workflows are built for execution on the CSHL computing system so it is not suitable to process large amount of data (>10GB) stored remotely (e.g. in the CyVerse Data Store)
 
