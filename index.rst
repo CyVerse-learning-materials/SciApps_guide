@@ -3,7 +3,7 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-GUIDE NAME
+SciApps Guide
 ==========
 
 Goal
