@@ -17,7 +17,7 @@ Introduce SciApps, a cloud-based platform for building and sharing reproducible 
 	:maxdepth: 2
 
 	Tutorial home <self>
-	Logging into SciApps <step1.rst>
+	SciApps basics and Logging into SciApps <step1.rst>
 	Viewing the data <step2.rst>
 	Launching an analysis job <step3.rst>
 	Building a workflow <step4.rst>
