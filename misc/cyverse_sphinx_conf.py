@@ -17,9 +17,9 @@ release = '1.0'
 
 language = None
 source_parsers = {
-    '.md': CommonMarkParser,
+    '.md': 'recommonmark.parser.CommonMarkParser',
 }
-source_suffix = ['.rst']
+source_suffix = ['.rst', '.md']
 
 common_static_path = os.path.join(os.path.dirname(__file__), 'static')
 
