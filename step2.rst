@@ -22,11 +22,10 @@ SciApps uses CyVerse Data Store for user data management. After logging into Sci
   .. Tip::
     You can check if you already have SciApps by logging into the portal and visiting the My Service page. If SciApps is not listed, click on Available services to request access. A sci_data folder will be created in your Data Store root folder 
 
-
   3. Load any app form by clicking on an app name in the left panel, then click on 'or Browse DataStore' to open the browsing window
   
   .. Tip::
-    Through authentication, the CyVerse username is captured to direct SciApps to the sci_data folder of the user being logged in, as shown below for user lwang
+    Through authentication, your CyVerse username is captured to direct SciApps to the sci_data folder of the user being logged in, as shown below for user lwang
   
    |data_window|
   
