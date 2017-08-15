@@ -10,8 +10,7 @@ Viewing and Managing Data
 SciApps uses CyVerse Data Store for user data management. After logging into SciApps with your CyVerse credentials, you get permission to read from a special directory in your data store named "sci_data". If you put files into that directory, you can see them on SciApps and use them for analysis. 
 
 ----
-.. 
-       #### Comment: short description
+
 
 *Navigating Data on SciApps*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
