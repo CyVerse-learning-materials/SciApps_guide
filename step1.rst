@@ -29,7 +29,7 @@ SciApps leverages CyVerse Agave API and Data Store for efficient data transfer, 
 
   1. Access the SciApps website at https://www.SciApps.org/
 
-  2. From the top navigation bar click on ‘Login’, you will be directed to the CyVerse Authentication Service page
+  2. Click on ‘Login’ (from the top navigation bar), you will be directed to the CyVerse Authentication Service page
   
   3. Enter your CyVerse username and CyVerse password, you will be redirected back to SciApps if successfully authenticated
 
