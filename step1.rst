@@ -38,7 +38,7 @@ SciApps leverages CyVerse Agave API and Data Store for efficient data transfer, 
   
   3. Enter your CyVerse username and CyVerse password, you will be redirected back to SciApps if successfully authenticated
 
-     .. Note::
+     .. Tip::
         To log out of SciApps and CyVerse, you need to click on 'Logout' from the top navigation bar. Additionally, your job histories in the right panel will be discarded after closing or refreshing the browser tab.
 ..
 
