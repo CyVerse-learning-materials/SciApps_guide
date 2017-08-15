@@ -44,26 +44,19 @@ SciApps leverages CyVerse Agave API and Data Store for efficient data transfer, 
 
 *Access Without Logging In*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   1. Load app form by clicking on the app name in left panel
+   1. Access the SciApps website at https://www.SciApps.org/ 
    
-   2. Load public workflows (or workflow templates) from right panel or click on 'Workflow' then 'Public Workflows' from top navigation bar
+   2. Navigate public data
    
-   3. Build new workflows from the workflow templates, visualize workflow diagram, and download workflow in JSON format
+   3. Load app form by clicking on the app name in left panel
    
-   4. Navigate public data
+   4. Load public workflows (or workflow templates) from right panel or click on 'Workflow' then 'Public Workflows' from top navigation bar
+   
+   5. Build new workflows from the workflow templates, visualize workflow diagram, and download workflow in JSON format
    
       .. Note::
         Without logging in, you can not view data in CyVerse Data Store, submit analysis job, or save worlflows.
 ..
-
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
 
 
 ----
