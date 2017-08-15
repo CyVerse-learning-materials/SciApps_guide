@@ -68,7 +68,7 @@ SciApps uses CyVerse Data Store for user data management. After logging into Sci
 .. _Home_Icon: http://learning.cyverse.org/
 .. |data_window| image:: ./img/sci_apps/data_window.gif
     :width: 550
-    :height: 222
+    :height: 218
 .. |data_web| image:: ./img/sci_apps/data_web.gif
     :width: 550
     :height: 276
