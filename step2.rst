@@ -27,14 +27,14 @@ SciApps uses CyVerse Data Store for user data management. After logging into Sci
   .. Tip::
     Through authentication, your CyVerse username is captured to direct SciApps to the sci_data folder of the user being logged in, as shown below for user lwang
   
-   |data_window|
+    |data_window|
   
-   The other tabs include:
+    The other tabs include:
   
-   - ‘public’: Example data used for public workflows
-   - ‘shared’: CyVerse’s public data hosted in CyVerse Data Store
-   - 'Go up': Move up one level
-   - 'Refresh': Reload current folder
+    - ‘public’: Example data used for public workflows
+    - ‘shared’: CyVerse’s public data hosted in CyVerse Data Store
+    - 'Go up': Move up one level
+    - 'Refresh': Reload current folder
 
 ----
 
