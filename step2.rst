@@ -4,26 +4,39 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Section Title
--------------
+Viewing and Managing Data
+--------------------------
 
-.. #### Comment: short description
-
-**Some things to remember about the platoform**
-
-
-- reminder one
-- reminder two
-
+SciApps uses CyVerse Data Store for user data management. After logging into SciApps with your CyVerse credentials, you get permission to read from a special directory in your data store named "sci_data". If you put files into that directory, you can see them on SciApps and use them for analysis. 
 
 ----
+.. 
+       #### Comment: short description
 
-*Descriptive title - refrence platform/tool name for searchability*
+*Navigating Data on SciApps*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  1.
+  1. Logging into SciApps at https://www.SciApps.org
 
-  2.
+  2. Enable 'SciApps' service in `CyVerse User portal <https://user.cyverse.org/>`_ (one time operation)
+  
+  .. Tip::
+    You can check if you already have SciApps by logging into the portal and visiting the My Service page. If SciApps is not listed, click on Available services to request access
+
+
+  3. Load any app form by clicking on any app name in the left panel, then click on 'or Browse DataStore' to open the browsing window
+  
+  .. Tip::
+    Through authentication, the CyVerse username is captured to direct SciApps to the sci_data folder of the user being logged in, as shown below for user lwang
+  
+  |data_window|
+  
+  The other tabs include:
+  
+  - ‘public’: Example data used for public workflows
+  - ‘shared’: CyVerse’s public data hosted in CyVerse Data Store
+
+----
 
 ..
 	#### Comment: Suggested style guide:
@@ -37,35 +50,10 @@ Section Title
 
 ----
 
-*Summary*
-~~~~~~~~~
-
-..
-    Summary
-
-**Next Steps:**
-
-- Next step one
-- Next step two
-
-More help and additional information
-`````````````````````````````````````
-
-..
-    Short description and links to any reading materials
-
-Search for an answer:
-    `CyVerse Learning Center <http://learning.cyverse.org>`_ or
-    `CyVerse Wiki <https://wiki.cyverse.org>`_
-
-Post your question to the user forum:
-    `Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
-
-----
 
 **Fix or improve this documentation:**
 
-- On Github: `Repo link <FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
@@ -78,3 +66,6 @@ Post your question to the user forum:
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
+.. |data_window| image:: ./img/sci_apps/data_window.gif
+    :width: 560
+    :height: 150
