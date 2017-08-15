@@ -46,7 +46,7 @@ SciApps uses CyVerse Data Store for user data management. After logging into Sci
   2. Click on ‘Data’ (from the top navigation bar), you will be directed to the SciApps data page
   
   .. Note::
-    Only public data is viewable through the data page. Analysis results will also be viewable here with random folder names (hidden for security)
+    Only public data (example_data) is available on the data page. Analysis results will also be viewable here with random folder names (hidden for security reasons)
     
     |data_web|
 ----
