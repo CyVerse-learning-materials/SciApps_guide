@@ -34,19 +34,21 @@ SciApps uses CyVerse Data Store for user data management. After logging into Sci
   
   - ‘public’: Example data used for public workflows
   - ‘shared’: CyVerse’s public data hosted in CyVerse Data Store
+  - 'Go up': Move up one level
+  - 'Refresh': Reload current folder
 
 ----
 
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
-
+*Viewing Data on SciApps*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  1. Access SciApps at https://www.SciApps.org
+  
+  2. Click on ‘Data’ (from the top navigation bar), you will be directed to the SciApps data page
+  
+  .. Note::
+    Only public data is viewable through the data page. Analysis results will also be viewable here with random folder names (hidden for security)
+    
+    |data_web|
 ----
 
 
@@ -68,3 +70,6 @@ SciApps uses CyVerse Data Store for user data management. After logging into Sci
 .. |data_window| image:: ./img/sci_apps/data_window.gif
     :width: 550
     :height: 223
+.. |data_web| image:: ./img/sci_apps/data_web.gif
+    :width: 550
+    :height: 276
