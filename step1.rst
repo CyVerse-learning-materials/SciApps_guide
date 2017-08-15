@@ -42,7 +42,7 @@ SciApps leverages CyVerse Agave API and Data Store for efficient data transfer, 
         To log out of SciApps and CyVerse, you need to click on 'Logout' from the top navigation bar. Additionally, your job histories in the right panel will be discarded after closing or refreshing the browser tab.
 ..
 
-*Things You Can Do Without Logging into SciApps*
+*Access Without Logging In*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    1. Load app form by clicking on the app name in left panel
    
