@@ -43,7 +43,7 @@ SciApps leverages CyVerse Agave API and Data Store for efficient data transfer, 
       
    2. Load app form by clicking on the app name in left panel
    
-   3. Load public workflows (or workflow templates) from right panel or click on 'Workflow' then 'Public Workflows' from top navigation bar
+   3. Load public workflows (workflow templates) from right panel or click on 'Workflow' then 'Public Workflows' from top navigation bar
    
    4. Build new workflows from the workflow templates, visualize workflow diagram, and download workflow in JSON format
    
