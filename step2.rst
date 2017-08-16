@@ -19,22 +19,22 @@ SciApps uses CyVerse Data Store for user data management. After logging into Sci
 
   2. Enable 'SciApps' service in `CyVerse User portal <https://user.cyverse.org/>`_ (one time operation)
   
-  .. Tip::
-    You can check if you already have SciApps service by logging into the portal and visiting the 'My Service' page. If SciApps is not listed, click on 'Available services' to request access. Once enabled, A sci_data folder will be created in your Data Store root folder 
+    .. Tip::
+      You can check if you already have SciApps service by logging into the portal and visiting the 'My Service' page. If SciApps is not listed, click on 'Available services' to request access. Once enabled, A sci_data folder will be created in your Data Store root folder 
 
   3. Load any app form by clicking on an app name in the left panel, then click on 'or Browse DataStore' to open the browsing window
   
-  .. Tip::
-    Through authentication, your CyVerse username is captured to direct SciApps to the sci_data folder of the user being logged in, as shown below for user lwang
+    .. Tip::
+      Through authentication, your CyVerse username is captured to direct SciApps to the sci_data folder of the user being logged in, as shown below for user lwang
   
-    |data_window|
+      |data_window|
   
-    The other tabs include:
+      The other tabs include:
   
-    - ‘public’: Example data used for public workflows
-    - ‘shared’: CyVerse’s public data hosted in CyVerse Data Store
-    - 'Go up': Move up one level
-    - 'Refresh': Reload current folder
+      - ‘public’: Example data used for public workflows
+      - ‘shared’: CyVerse’s public data hosted in CyVerse Data Store
+      - 'Go up': Move up one level
+      - 'Refresh': Reload current folder
 
 ----
 
@@ -44,10 +44,10 @@ SciApps uses CyVerse Data Store for user data management. After logging into Sci
   
   2. Click on ‘Data’ (from the top navigation bar), you will be directed to the SciApps data page
   
-  .. Note::
-    Only public data (example_data) is available on the data page. Analysis results will also be viewable here with random folder names (hidden for security reasons)
+    .. Note::
+      Only public data (example_data) is available on the data page. Analysis results will also be viewable here with random folder names (hidden for security reasons)
     
-    |data_web|
+      |data_web|
 ----
 
 
