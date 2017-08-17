@@ -82,6 +82,6 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
-.. |snap_app| image:: ./img/sci_apps/snap.gff
+.. |snap_app| image:: ./img/sci_apps/snap.gif
     :width: 550
     :height: 428
