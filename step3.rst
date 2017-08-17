@@ -57,9 +57,11 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
     In the right panel, from left to right, there are three icons next to each job:
     |status|
     
-    -**Checkbox**: If checked, the analysis will be added to the workflow building page.
+    -**Checkbox**: If checked, the analysis will be added to the workflow building page
+    
     -**Information**: More information about the status of the analysis job
     |agave_status|
+    
     -**Re-submit**: Relaunch the analysis job with same inputs and parameters
 ----
 
@@ -92,8 +94,8 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
     :width: 550
     :height: 328
 .. |status| image:: ./img/sci_apps/status.gif
-    :width: 462
-    :height: 110
+    :width: 250
+    :height: 60
 .. |agave_status| image:: ./img/sci_apps/agave_status.gif
     :width: 550
     :height: 322
