@@ -42,7 +42,7 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
       - `Source: <http://korflab.ucdavis.edu/software.html>`_
 
 
-*Example SciApps Analysis: HMM parameters estimation with SNAP*
+*Example Analysis: HMM parameters estimation with SNAP*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   1. Login to `SciApps <https://www.SciApps.org/>`_
@@ -53,6 +53,14 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
      |snap_app|
   4. Leave others as defaults, and then click **Submit Job**. You will be asked to confirm and prompted to check the job status in the right panel.
   
+  .. Tip::
+    In the right panel, from left to right, there are three icons next to each job:
+    |status|
+    
+    -**Checkbox**: If checked, the analysis will be added to the workflow building page.
+    -**Information**: More information about the status of the analysis job
+    |agave_status|
+    -**Re-submit**: Relaunch the analysis job with same inputs and parameters
 ----
 
 ..
@@ -83,3 +91,9 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
 .. |snap_app| image:: ./img/sci_apps/snap.gif
     :width: 550
     :height: 328
+.. |status| image:: ./img/sci_apps/status.gif
+    :width: 462
+    :height: 110
+.. |agave_status| image:: ./img/sci_apps/agave_status.gif
+    :width: 550
+    :height: 322
