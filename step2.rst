@@ -7,7 +7,7 @@
 Viewing and Accessing Data
 --------------------------
 
-SciApps uses CyVerse Data Store for user data management. After logging into SciApps with your CyVerse credentials, you get permission to read from a special directory in your data store named "sci_data". If you put files into that directory, you can see them on SciApps and use them for analysis. 
+SciApps uses CyVerse Data Store for user data management. After logging into SciApps with your CyVerse credentials, you get permission to read from a special directory in your data store named "sci_data". If you put files into that directory, you can see them on SciApps and use them for analysis. You can use `Discovery Environment<https://learning.cyverse.org/projects/discovery-environment-guide/en/latest/>`_ for uploading files less than 1.9 GB.
 
 ----
 
@@ -45,7 +45,7 @@ SciApps uses CyVerse Data Store for user data management. After logging into Sci
   2. Click on ‘Data’ (from the top navigation bar), you will be directed to the SciApps data page
   
     .. Note::
-      Only public data (example_data) is available on the data page. Analysis results will also be viewable here with random folder names (hidden for security reasons)
+      Only public data (example_data) is available on the data page. Analysis results will also be accessible here with random folder names (hidden for security reasons)
     
       |data_web|
 ----
