@@ -9,7 +9,7 @@ SciApps Guide
 Goal
 ----
 
-Introduce SciApps, a cloud-based platform for building and sharing reproducible bioinformatics workflows across distributed computing and storage systems. This guide will cover building automated workflows from scratch, executing, and sharing workflows
+Introduce SciApps, a cloud-based platform for building and sharing reproducible bioinformatics workflows across distributed computing and storage systems. This guide will cover building automated workflows from templates and scratch, executing, and sharing workflows
 
 ----
 
