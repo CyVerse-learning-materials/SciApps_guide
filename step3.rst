@@ -52,28 +52,27 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
   3. Under “GFF file” click **or Browse DataStore**, then navigate to and select  `maker_out.gff <https://data.sciapps.org/example_data/maker/maker_out.gff>`_; then click 'Select and Close'. (Location: *public > maker > maker_out.gff*)
      |snap_app|
   4. Leave others as defaults, and then click **Submit Job**. You will be asked to confirm and prompted to check the job status in the right panel.
-  
-  .. Tip::
-    In the right panel, each job name is designated with a number and an app id (e.g. 1: SNAP-0.0.1). Defined outputs in Agave app definition (e.g. my.all.hmm) are displayed after clicking on a job name. 
+
+----  
+
+*Check Job Status and Outputs*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In the right panel, each job name is designated with a number and an app id (e.g. 1: SNAP-0.0.1). Outputs (e.g. my.all.hmm) are displayed after clicking on the job name. 
     
-     |status|
-    From left to right, there are three icons next to each job name:
+  |status|
+From left to right, there are three icons next to each job name:
     
-    - **Checkbox**: If checked, the analysis will be added to the workflow building page    
-    - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below)
-    - **Re-submit**: Relaunch the analysis job with same inputs and parameters
-     |agave_status|
+- **Checkbox**: If checked, the analysis will be added to the workflow building page    
+- **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below)
+- **Re-submit**: Relaunch the analysis job with same inputs and parameters
+  |agave_status|
+     
+.. Note::
+  Outputs displayed under job name are defined outpus in Agave app JSON. They are the ones that should be used in workflow construction. The output folder contains complete outputs from the analysis job and it can be accessed through the Information icon
+
 ----
 
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
 
 **Fix or improve this documentation:**
 
