@@ -64,6 +64,7 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
        - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below)
        - **Re-submit**: Relaunch the analysis job with same inputs and parameters
 
+
         |agave_status|
      
      .. Note::
