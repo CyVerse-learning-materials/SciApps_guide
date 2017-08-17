@@ -54,7 +54,7 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
   4. Leave others as defaults, and then click **Submit Job**. You will be asked to confirm and prompted to check the job status in the right panel.
   
   .. Tip::
-    In the right panel, each job name is designated with a number and an app id (e.g. 1: SNAP-0.0.1). Defined outputs (in Agave app definition) are displayed after clicking on a job name. 
+    In the right panel, each job name is designated with a number and an app id (e.g. 1: SNAP-0.0.1). Defined outputs in Agave app definition (e.g. my.all.hmm) are displayed after clicking on a job name. 
     
      |status|
     From left to right, there are three icons next to each job name:
