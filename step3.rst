@@ -51,6 +51,7 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
   
   3. Under “GFF file” click **or Browse DataStore**, then navigate to and select  `maker_out.gff <https://data.sciapps.org/example_data/maker/maker_out.gff>`_; then click 'Select and Close'. (Location: *public > maker > maker_out.gff*)
      |snap_app|
+     
      .. Tip::
        For smaller files (<1.9 GB), click **Choose File** to select from your local computer
   4. Leave others as defaults, and then click **Submit Job**. You will be asked to confirm and prompted to check the job status in the right panel.
