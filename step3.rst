@@ -63,9 +63,8 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
     
        - **Checkbox**: If checked, the analysis will be added to the workflow building page    
        - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below)
-       - **Re-submit**: Relaunch the analysis job with same inputs and parameters
-       
        |agave_status|
+       - **Re-submit**: Relaunch the analysis job with same inputs and parameters
      
      .. Note::
        Outputs displayed under job names are defined outpus in Agave app JSON. They are the ones that should be used in workflow construction. The output folder contains complete outputs from the analysis job and it can be accessed through the Information icon
