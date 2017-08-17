@@ -4,8 +4,8 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Section Title
--------------
+Sharing a Workflow
+-------------------
 
 .. #### Comment: short description
 
