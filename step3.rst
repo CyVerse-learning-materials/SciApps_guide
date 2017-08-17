@@ -55,19 +55,19 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
 
 
 
- .. Tip::
-   In the right panel, each job name is designated with a number and an app id (e.g. 1: SNAP-0.0.1). Outputs (e.g. my.all.hmm) are displayed after clicking the job name and job status will be displayed after clicking the (i) icon. 
+.. Tip::
+  In the right panel, each job name is designated with a number and an app id (e.g. 1: SNAP-0.0.1). Outputs (e.g. my.all.hmm) are displayed after clicking the job name and job status will be displayed after clicking the (i) icon. 
 
-     |status|
-   From left to right, there are three icons next to each job name:
+    |status|
+  From left to right, there are three icons next to each job name:
     
-   - **Checkbox**: If checked, the analysis will be added to the workflow building page    
-   - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below)
-   - **Re-submit**: Relaunch the analysis job with same inputs and parameters
+  - **Checkbox**: If checked, the analysis will be added to the workflow building page    
+  - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below)
+  - **Re-submit**: Relaunch the analysis job with same inputs and parameters
 
-     |agave_status|
+    |agave_status|
      
- .. Note::
+.. Note::
   Outputs displayed under job names are defined outpus in Agave app JSON. They are the ones that should be used in workflow construction. The output folder contains complete outputs from the analysis job and it can be accessed through the Information icon
 
 ----
