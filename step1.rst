@@ -19,7 +19,7 @@ SciApps leverages CyVerse Agave API and Data Store for efficient data transfer, 
 *Large datasets*
 
 - SciApps is designed to process massive amount of data locally for minimizing cross-sites data transfer
-- Existing workflows are built for execution on the CSHL computing system so it is not suitable to process large amount of data (>10GB) stored remotely (e.g. in the CyVerse Data Store)
+- Existing workflows are built for execution on the CSHL computing system so it is not suitable to process large amount of data (>2 GB or many files) stored remotely (e.g. in the CyVerse Data Store)
 
 
 ----
