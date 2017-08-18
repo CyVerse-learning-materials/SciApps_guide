@@ -53,7 +53,7 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
      |snap_app|
      
      .. Tip::
-       For smaller files (<2 MB), you can click **Choose File** to select from your local computer
+       For smaller files (<10 MB), you can click **Choose File** to select from your local computer
   4. Leave others as defaults, and then click **Submit Job**. You will be asked to confirm and prompted to check the job status in the right panel.
 
 
