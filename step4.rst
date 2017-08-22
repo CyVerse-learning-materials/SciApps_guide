@@ -6,66 +6,62 @@
 
 Building a Workflow
 --------------------
-
-.. #### Comment: short description
-
-**Some things to remember about the platoform**
-
-
-- reminder one
-- reminder two
-
+A workflow is a series of apps chained together to run in sequence as a batch operation. On SciApps, workflows are generated from the analysis already completed in a history. Workflows can be viewed, shared, imported, and executed. Additionally, SciApps workflows capture inputs, intermediate outputs, and final results along with the analysis history. Importing a workflow will import the analysis history used to build the workflow.
 
 ----
 
-*Descriptive title - refrence platform/tool name for searchability*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Step 1: Importing a Workflow History*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This step will show you how to import a history/workflow from a remote source into your own workspace. We will be using the this history to build a new workflow. The example history used here is the public association workflow.
 
-  1.
+  1. Login to `SciApps <https://www.SciApps.org/>`_
 
-  2.
-
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
+  2. Click 'Workflow' (from the top navigation bar), then 'Public workflows' to load the public workflow page
+     
+     .. Tip::
+       When the right panel (History) is empty, Click the 'public workflow' link (on the top of the History panel) to load the public workflow page
+       
+  3. Click the 'Association' link to load the Association Workflow
+  
+     .. Note::
+       The app forms are loaded in the main panel, and analysis history is loaded in the right panel. To view workflow diagram, scroll down the main panel and click the 'Show Diagram' button
+       
+       |association_workflow|
 
 ----
 
-*Summary*
-~~~~~~~~~
+*Step 2: Creating a Workflow*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This step will show you how to build a workflow from above loaded history. Assume we just want to use EMMAX for association analysis.
 
-..
-    Summary
+   1. Check the checkbox for step 1, 2, 3, and 6 in the History panel
+   
+   2. Click the 'build a workflow' link (on the top of the History panel) to load the Workflow building page
+      
+      |build_workflow|
+      
+      .. Note::
+        Alternatively, Click 'Workflow' (from the top navigation bar), then 'Build a workflow' to load the workflow building page
 
-**Next Steps:**
+   3. Modify **Workflow Name** and **Workflow Description**, then click the 'Build Workflow' button to visualize the workflow
+   
+   4. On the 'Workflow Diagram', you can choose to download or save the new workflow
+   
+      .. Tip::
+        History panel Checkboxes and the workflow building page are interactive. Use the 'Select All' or 'Reset' button to simplify the selections
+	
+----
 
-- Next step one
-- Next step two
+*Step 3: Launching a Workflow*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This step 
 
-More help and additional information
-`````````````````````````````````````
-
-..
-    Short description and links to any reading materials
-
-Search for an answer:
-    `CyVerse Learning Center <http://learning.cyverse.org>`_ or
-    `CyVerse Wiki <https://wiki.cyverse.org>`_
-
-Post your question to the user forum:
-    `Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
 
 ----
 
 **Fix or improve this documentation:**
 
-- On Github: `Repo link <FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
@@ -78,3 +74,9 @@ Post your question to the user forum:
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
+.. |association_workflow| image:: ./img/sci_apps/association_workflow.gif
+    :width: 550
+    :height: 328
+.. |build_workflow| image:: ./img/sci_apps/build_workflow.gif
+    :width: 550
+    :height: 299
