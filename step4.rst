@@ -12,11 +12,11 @@ A workflow is a series of apps chained together to run in sequence as a batch op
 
 *Step 1: Importing a Workflow History*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to import a history/workflow from a remote source into your own workspace. We will be using the this history to build a new workflow. The example history used here is the public association workflow.
+This step will show you how to import a history/workflow from a remote source into your own workspace. We will be using this history to build a new workflow. The example used here is the public association workflow.
 
   1. Login to `SciApps <https://www.SciApps.org/>`_
 
-  2. Click 'Workflow' (from the top navigation bar), then 'Public workflows' to load the public workflow page
+  2. Click 'Workflow' (from the top navigation bar), then 'Public workflows' to load the public workflow page in the main panel
      
      .. Tip::
        When the right panel (History) is empty, Click the 'public workflow' link (on the top of the History panel) to load the public workflow page
@@ -24,7 +24,7 @@ This step will show you how to import a history/workflow from a remote source in
   3. Click the 'Association' link to load the Association Workflow
   
      .. Note::
-       The app forms are loaded in the main panel, and analysis history is loaded in the right panel. To view workflow diagram, scroll down the main panel and click the 'Show Diagram' button
+       The app forms are loaded in the main panel, and analysis history is loaded in the right panel. To view the workflow diagram, scroll down the main panel and click the 'Show Diagram' button
        
        |association_workflow|
 
@@ -32,7 +32,7 @@ This step will show you how to import a history/workflow from a remote source in
 
 *Step 2: Creating a Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to build a workflow from above loaded history. Assume we just want to use EMMAX for association analysis.
+This step will show you how to build a workflow from the loaded history. Assume we just want to use EMMAX for association analysis.
 
    1. Check the checkbox for step 1, 2, 3, and 6 in the History panel
    
@@ -75,8 +75,8 @@ This step
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
 .. |association_workflow| image:: ./img/sci_apps/association_workflow.gif
-    :width: 550
-    :height: 328
+    :width: 660
+    :height: 394
 .. |build_workflow| image:: ./img/sci_apps/build_workflow.gif
-    :width: 550
-    :height: 299
+    :width: 660
+    :height: 359
