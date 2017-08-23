@@ -47,7 +47,7 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
 
   1. Login to `SciApps <https://www.SciApps.org/>`_
 
-  2. Click **Prediciton** category from the left panel; search for SNAP or click this link to `SNAP 0.0.1 <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
+  2. Click **Prediciton** category from the left panel; search for SNAP or `click this link to SNAP 0.0.1 <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
   
   3. Under “GFF file” click **or Browse DataStore**, then navigate to and select  `maker_out.gff <https://data.sciapps.org/example_data/maker/maker_out.gff>`_; then click 'Select and Close'. (Location: *public > maker > maker_out.gff*)
      |snap_app|
