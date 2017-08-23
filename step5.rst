@@ -4,63 +4,36 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Sharing a Workflow
+Running a Workflow
 -------------------
-
-.. #### Comment: short description
-
-**Some things to remember about the platoform**
-
-
-- reminder one
-- reminder two
-
+Here we will run the workflow created in the 'Building a Workflow' section. As a generic use case, we will replace the marker file in the first step. The only difference is that the new marker file has the version 2 Sorghum bicolor genome coordinates (old marker file has version 1), which is the Genome version hosted on the `Gramene <http://gramene.org/>`_website. Since we are going to visualize the results along with the Annotation data from Gramene.
 
 ----
 
-*Descriptive title - refrence platform/tool name for searchability*
+*Running the example Association Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  1.
+  1. Load the workflow created in the last section
 
-  2.
+  2. For **Step 1: MergeG2P**, under **Select marker file in Hapmap format** click the **Browse DataStore** button, then navigate to and select `myStudy_filt.c9.hmp.v2.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.v2.txt>`_; then click ‘Select and Close’. (Location: *public > gwas_raw > myStudy_filt.c9.hmp.v2.txt*) 
 
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
-
-----
-
-*Summary*
-~~~~~~~~~
-
-..
-    Summary
-
-**Next Steps:**
-
-- Next step one
-- Next step two
-
-More help and additional information
-`````````````````````````````````````
-
-..
-    Short description and links to any reading materials
-
-Search for an answer:
-    `CyVerse Learning Center <http://learning.cyverse.org>`_ or
-    `CyVerse Wiki <https://wiki.cyverse.org>`_
-
-Post your question to the user forum:
-    `Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
-
+     |run_workflow|
+   
+  3. Leave others as defaults, scroll down the main panel, and then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real time analysis status updates.
+  
+     |running_workflow|
+     
+     .. Note..
+       The color of the app nodes will change when the status of the analysis changes:
+       - **Yellow**: Pending
+       - **Blue**: Running
+       - **Green**: Completed
+       - **Red**: Failed
+    
+   4. Once completed, to visualize output, click **4: EMMAX-0.0.2** in the History panel to expand its outputs. Click **manhattan.plot**, you will be directed to the Manhattan plot of the results. Click the plot to check nearby genes around the clicking coordinate.
+   
+      |manhattan_plot|
+  
 ----
 
 **Fix or improve this documentation:**
@@ -78,3 +51,12 @@ Post your question to the user forum:
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
+.. |run_workflow| image:: ./img/sci_apps/run_workflow.gif
+    :width: 660
+    :height: 295
+.. |running_workflow| image:: ./img/sci_apps/running_workflow.gif
+    :width: 660
+    :height: 289
+.. |manhattan_plot| image:: ./img/sci_apps/manhattan_plot.gif
+    :width: 660
+    :height: 364
