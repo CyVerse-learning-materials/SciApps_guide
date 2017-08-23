@@ -52,7 +52,7 @@ This step will demo how to build a workflow from the loaded history. Assume we j
 	
 ----
 
-*Step 3: Adding additional analyses to the Workflow*
+*Step 3: Adding New Analysis to the Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will show you how to add new analysis to the workflow built above. We will perform PCA on the imputed marker data (imputed.txt), which is the output of the NPUTE step.
 
