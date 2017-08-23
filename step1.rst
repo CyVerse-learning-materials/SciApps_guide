@@ -16,11 +16,6 @@ SciApps leverages CyVerse Agave API and Data Store for efficient data transfer, 
 - Sample datasets are available under the ‘public’ tab. These datasets are placed on the computing system for reducing data transfers and should be used whenever possible for building workflows
 - More CyVerse sample datasets are available under the ‘shared’ tab (CyVerse credentials required). From there, sample datasets for most apps are available under ‘iplantcollaborative/example_data’
 
-*Large datasets*
-
-- SciApps is designed to process massive amount of data locally for minimizing cross-sites data transfer
-- Existing workflows are built for execution on the CSHL computing system so it is not suitable to process large amount of data (>2 GB or many files) stored remotely (e.g. in the CyVerse Data Store)
-
 
 ----
 
