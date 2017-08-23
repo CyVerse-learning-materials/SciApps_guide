@@ -34,23 +34,19 @@ This step will show you how to import a history/workflow from a remote source in
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will show you how to build a workflow from the loaded history. Assume we just want to use EMMAX for association analysis.
 
-   1. Check the checkbox for step 1, 2, 3, and 6 in the History panel
-   
-      |build_workflow|
-   
-   
-   2. Click the 'build a workflow' link (on the top of the History panel) to load the Workflow building page. Alternatively, Click 'Workflow' (from the top navigation bar), then 'Build a workflow' to load the workflow building page
-      
+   1. Check the checkbox for step 1, 2, 3, and 6 in the History panel, then click the 'build a workflow' link (on the top of the History panel) to load the Workflow building page. Alternatively, Click 'Workflow' (from the top navigation bar), then 'Build a workflow' to load the workflow building page
+
       .. Tip::
         History panel Checkboxes and the workflow building page are interactive. Use the 'Select All' or 'Reset' button to simplify the selections
+	|build_workflow|
 
-   3. Modify **Workflow Name** and **Workflow Description**, then click the 'Build Workflow' button to visualize the workflow
+   2. Modify **Workflow Name** and **Workflow Description**, then click the 'Build Workflow' button to visualize the workflow
    
-      .. Note::
+      .. Tip::
         All nodes of the diagram are interactive
         |emmax_workflow|
 	
-   4. On the 'Workflow Diagram', you can choose to download or save the new workflow
+   3. On the 'Workflow Diagram', you can choose to download or save the new workflow
    
 	
 ----
