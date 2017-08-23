@@ -66,7 +66,7 @@ This step will show you how to add new analysis to the workflow built above. We 
        
   4. Leave others as defaults, then click the "Submit Job" button
   
-  5. Once completed, select all analyses to build a new workflow
+  5. Once completed, select all analyses to build a new workflow. Save or download the workflow for running it in the next section
   
      .. Note::
        The connection between **imputed.txt** and **PCA-0.0.1** is recorded through analysis, which is exactly how the Association workflow is built
