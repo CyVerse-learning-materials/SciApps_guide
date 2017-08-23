@@ -32,7 +32,7 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
        - 'Green': Completed
        - 'Red': Failed
     
-   4. Once completed, to visualize output, click **4: EMMAX-0.0.2** in the History panel to expand its outputs. Click **manhattan.plot**, you will be directed to the Manhattan plot of the results. Click the plot to check nearby genes around the clicking coordinate.
+   4. Once completed, to visualize output, click **4: EMMAX-0.0.2** in the History panel to expand its outputs. Then Click **manhattan.plot** from the list of outputs, you will be directed to the Manhattan plot of the results. Click the plot to check nearby genes around the clicking coordinate.
    
       |manhattan_plot|
   
