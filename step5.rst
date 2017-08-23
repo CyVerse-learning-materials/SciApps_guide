@@ -20,10 +20,9 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
      |run_workflow|
    
   3. Leave others as defaults, scroll down the main panel, and then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real time analysis status updates.
-  
-     |running_workflow|
      
-     .. Note..
+     .. Note::
+       |running_workflow|
        The color of the app nodes will change when the status of the analysis changes:
        - **Yellow**: Pending
        - **Blue**: Running
