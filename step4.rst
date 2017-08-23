@@ -58,16 +58,17 @@ This step will show you how to add new analysis to the workflow built above. We 
   1. Click 'Workflow' (from the top navigation bar), then 'Load a workflow' to loaded the downloaded JSON file. Alternatively, click 'My Workflow' to load the workflow if you have saved the workflow in your workspace.
   
   2. Click **Clustering** category from the left panel or search for PCA, then click **PCA** to load PCA 0.0.1
-
-     |pca_workflow|
      
   3. Click **2: NPUTE-0.0.1** in the History panel to expand its outputs, then drag and drop **imputed.txt** into the **Marker file** field
+  
+     |pca_workflow|
        
-  4. Leave others as defaults, and click the "Submit Job" button
+  4. Leave others as defaults, then click the "Submit Job" button
   
   5. Once completed, select all analyses to build a new workflow
-  
-     |emmax_pca_workflow|
+     .. Note::
+       The connection between **imputed.txt** and **PCA-0.0.1** is recorded through analysis, which is exactly how the Association workflow is built
+       |emmax_pca_workflow|
      
 ----
 
