@@ -100,7 +100,7 @@ This step will show you how to add new analysis to the workflow built above. We 
     :height: 325
 .. |pca_workflow| image:: ./img/sci_apps/pca_workflow.gif
     :width: 660
-    :height: 409
+    :height: 361
 .. |emmax_pca_workflow| image:: ./img/sci_apps/emmax_pca_workflow.gif
     :width: 660
     :height: 295
