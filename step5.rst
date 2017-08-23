@@ -22,12 +22,15 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
   3. Leave others as defaults, scroll down the main panel, and then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real time analysis status updates.
      
      .. Note::
+     
        |running_workflow|
+       
        The color of the app nodes will change when the status of the analysis changes:
-       - **Yellow**: Pending
-       - **Blue**: Running
-       - **Green**: Completed
-       - **Red**: Failed
+       
+       - 'Yellow': Pending
+       - 'Blue': Running
+       - 'Green': Completed
+       - 'Red': Failed
     
    4. Once completed, to visualize output, click **4: EMMAX-0.0.2** in the History panel to expand its outputs. Click **manhattan.plot**, you will be directed to the Manhattan plot of the results. Click the plot to check nearby genes around the clicking coordinate.
    
@@ -37,7 +40,7 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
 
 **Fix or improve this documentation:**
 
-- On Github: `Repo link <FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
