@@ -36,19 +36,19 @@ This step will show you how to build a workflow from the loaded history. Assume 
 
    1. Check the checkbox for step 1, 2, 3, and 6 in the History panel
    
-   2. Click the 'build a workflow' link (on the top of the History panel) to load the Workflow building page
-      
       |build_workflow|
+   
+   2. Click the 'build a workflow' link (on the top of the History panel) to load the Workflow building page. Alternatively, Click 'Workflow' (from the top navigation bar), then 'Build a workflow' to load the workflow building page
       
-      .. Note::
-        Alternatively, Click 'Workflow' (from the top navigation bar), then 'Build a workflow' to load the workflow building page
+      .. Tip::
+        History panel Checkboxes and the workflow building page are interactive. Use the 'Select All' or 'Reset' button to simplify the selections
 
    3. Modify **Workflow Name** and **Workflow Description**, then click the 'Build Workflow' button to visualize the workflow
    
+      |emmax_workflow|
+	
    4. On the 'Workflow Diagram', you can choose to download or save the new workflow
    
-      .. Tip::
-        History panel Checkboxes and the workflow building page are interactive. Use the 'Select All' or 'Reset' button to simplify the selections
 	
 ----
 
@@ -80,3 +80,6 @@ This step
 .. |build_workflow| image:: ./img/sci_apps/build_workflow.gif
     :width: 660
     :height: 359
+.. |emmax_workflow| image:: ./img/sci_apps/emmax_workflow.gif
+    :width: 660
+    :height: 325
