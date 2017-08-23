@@ -21,12 +21,12 @@ This step will show you how to import a history/workflow from a remote source in
      .. Tip::
        When the right panel (History) is empty, Click the 'public workflow' link (on the top of the History panel) to load the public workflow page
        
-  3. Click the 'Association' link to load the Association Workflow
+  3. Click the 'Association' link to load the Association Workflow. The app forms are loaded in the main panel, and analysis history is loaded in the right panel.
   
      |association_workflow|
       
-     .. Note::
-       The app forms are loaded in the main panel, and analysis history is loaded in the right panel. To view the workflow diagram, scroll down the main panel and click the 'Show Diagram' button
+     .. Tip::
+       To view the workflow diagram, scroll down the main panel and click the 'Show Diagram' button
 
 ----
 
