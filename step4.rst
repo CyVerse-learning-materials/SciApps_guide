@@ -38,6 +38,7 @@ This step will show you how to build a workflow from the loaded history. Assume 
    
       |build_workflow|
    
+   
    2. Click the 'build a workflow' link (on the top of the History panel) to load the Workflow building page. Alternatively, Click 'Workflow' (from the top navigation bar), then 'Build a workflow' to load the workflow building page
       
       .. Tip::
@@ -45,7 +46,8 @@ This step will show you how to build a workflow from the loaded history. Assume 
 
    3. Modify **Workflow Name** and **Workflow Description**, then click the 'Build Workflow' button to visualize the workflow
    
-      |emmax_workflow|
+      .. Workflow Diagram::
+       |emmax_workflow|
 	
    4. On the 'Workflow Diagram', you can choose to download or save the new workflow
    
