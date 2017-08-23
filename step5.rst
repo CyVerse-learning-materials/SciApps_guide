@@ -25,7 +25,7 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
      
        |running_workflow|
        
-       The color of the app nodes will change when the status of the analysis changes:
+       The color of the app node will change when the status of the analysis changes:
        
        - 'Yellow': Pending
        - 'Blue': Running
