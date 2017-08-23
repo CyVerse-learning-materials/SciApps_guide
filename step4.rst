@@ -32,7 +32,7 @@ This step will show you how to import a history/workflow from a remote source in
 
 *Step 2: Creating a Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to build a workflow from the loaded history. Assume we just want to use EMMAX for association analysis.
+This step will demo how to build a workflow from the loaded history. Assume we just want to use EMMAX for association analysis.
 
    1. Check the checkbox for step 1, 2, 3, and 6 in the History panel, then click the 'build a workflow' link (on the top of the History panel) to load the Workflow building page. Alternatively, Click 'Workflow' (from the top navigation bar), then 'Build a workflow' to load the workflow building page
 
@@ -46,16 +46,29 @@ This step will show you how to build a workflow from the loaded history. Assume 
         All nodes of the diagram are interactive
         |emmax_workflow|
 	
-   3. On the 'Workflow Diagram', you can choose to download or save the new workflow
+   3. On the 'Workflow Diagram', you can choose to download or save the workflow. For downloading, you will get a JSON file, which can be passed to others for sharing the entire analysis. 
    
 	
 ----
 
-*Step 3: Launching a Workflow*
+*Step 3: Adding additional analyses to a Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step 
+This step will show you how to add new analysis to the workflow built above. We will perform PCA on the imputed marker data (imputed.txt), which is the output of the NPUTE step.
 
+  1. Click 'Workflow' (from the top navigation bar), then 'Load a workflow' to loaded the downloaded JSON file. Alternatively, click 'My Workflow' to load the workflow if you have saved the workflow in your workspace.
+  
+  2. Click **Clustering** category from the left panel or search for PCA, then click **PCA** to load PCA 0.0.1
 
+     |pca_workflow|
+     
+  3. Click **2: NPUTE-0.0.1** in the History panel to expand its outputs, then drag and drop **imputed.txt** into the **Marker file** field
+       
+  4. Leave others as defaults, and click the "Submit Job" button
+  
+  5. Once completed, select all analyses to build a new workflow
+  
+     |emmax_pca_workflow|
+     
 ----
 
 **Fix or improve this documentation:**
@@ -82,3 +95,9 @@ This step
 .. |emmax_workflow| image:: ./img/sci_apps/emmax_workflow.gif
     :width: 660
     :height: 325
+.. |pca_workflow| image:: ./img/sci_apps/pca_workflow.gif
+    :width: 660
+    :height: 409
+.. |emmax_pca_workflow| image:: ./img/sci_apps/emmax_pca_workflow.gif
+    :width: 660
+    :height: 295
