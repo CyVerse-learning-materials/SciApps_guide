@@ -13,13 +13,18 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
 *Running the example Association Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  1. Load the workflow created in the last section
+  1. Login to `SciApps <https://www.SciApps.org/>`_
+  
+  2. Load the workflow created in the last section
 
-  2. For **Step 1: MergeG2P**, under **Select marker file in Hapmap format** click the **Browse DataStore** button, then navigate to and select `myStudy_filt.c9.hmp.v2.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.v2.txt>`_; then click ‘Select and Close’. (Location: *public > gwas_raw > myStudy_filt.c9.hmp.v2.txt*) 
+     .. Tip::
+       Before loading a workflow, refresh the Browser tab will clean out the History panel 
+       
+  3. For **Step 1: MergeG2P**, under **Select marker file in Hapmap format** click the **or Browse DataStore** button, then navigate to and select `myStudy_filt.c9.hmp.v2.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.v2.txt>`_; then click ‘Select and Close’. (Location: *public > gwas_raw > myStudy_filt.c9.hmp.v2.txt*) 
 
      |run_workflow|
    
-  3. Leave others as defaults, scroll down the main panel, and then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real time analysis status updates.
+  4. Leave others as defaults, scroll down the main panel, and then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real time analysis status updates.
      
      .. Note::
      
@@ -32,7 +37,7 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
        - 'Green': Completed
        - 'Red': Failed
     
-   4. Once completed, to visualize output, click **4: EMMAX-0.0.2** in the History panel to expand its outputs. Then Click **manhattan.plot** from the list of outputs, you will be directed to the Manhattan plot of the results. Click the plot to check nearby genes around the clicking coordinate.
+   5. Once completed, to visualize output, click **4: EMMAX-0.0.2** in the History panel to expand its outputs. Then Click **manhattan.plot** from the list of outputs, you will be directed to the Manhattan plot of the results. Click the plot to check nearby genes around the clicking coordinate.
    
       |manhattan_plot|
   
@@ -58,7 +63,7 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
     :height: 295
 .. |running_workflow| image:: ./img/sci_apps/running_workflow.gif
     :width: 660
-    :height: 289
+    :height: 299
 .. |manhattan_plot| image:: ./img/sci_apps/manhattan_plot.gif
     :width: 660
     :height: 364
