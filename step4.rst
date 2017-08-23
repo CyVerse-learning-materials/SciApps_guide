@@ -75,8 +75,8 @@ This step
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
 .. |association_workflow| image:: ./img/sci_apps/association_workflow.gif
-    :width: 600
-    :height: 358
+    :width: 660
+    :height: 394
 .. |build_workflow| image:: ./img/sci_apps/build_workflow.gif
-    :width: 620
-    :height: 337
+    :width: 660
+    :height: 359
