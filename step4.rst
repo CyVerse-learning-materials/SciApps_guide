@@ -46,8 +46,9 @@ This step will show you how to build a workflow from the loaded history. Assume 
 
    3. Modify **Workflow Name** and **Workflow Description**, then click the 'Build Workflow' button to visualize the workflow
    
-      .. Workflow Diagram::
-       |emmax_workflow|
+      .. Note::
+        All nodes of the diagram are interactive
+        |emmax_workflow|
 	
    4. On the 'Workflow Diagram', you can choose to download or save the new workflow
    
