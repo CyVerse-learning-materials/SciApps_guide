@@ -78,5 +78,5 @@ This step
     :width: 600
     :height: 358
 .. |build_workflow| image:: ./img/sci_apps/build_workflow.gif
-    :width: 600
-    :height: 326
+    :width: 620
+    :height: 337
