@@ -23,6 +23,9 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
   3. For **Step 1: MergeG2P**, under **Select marker file in Hapmap format** click the **or Browse DataStore** button, then navigate to and select `myStudy_filt.c9.hmp.v2.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.v2.txt>`_; then click ‘Select and Close’. (Location: *public > gwas_raw > myStudy_filt.c9.hmp.v2.txt*) 
 
      |run_workflow|
+     
+     .. Note::
+       When browsing DataStore, default is always the location you recently visited, unless you cleared your browser cache 
    
   4. Leave others as defaults, scroll down the main panel, and then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real time analysis status updates.
      
