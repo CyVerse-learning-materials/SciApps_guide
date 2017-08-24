@@ -99,3 +99,9 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
 .. |agave_status| image:: ./img/sci_apps/agave_status.gif
     :width: 550
     :height: 322
+.. |pca_output1| image:: ./img/sci_apps/pca_output1.gif
+    :width: 250
+    :height: 248
+.. |pca_output2| image:: ./img/sci_apps/pca_output2.gif
+    :width: 250
+    :height: 237
