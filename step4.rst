@@ -60,7 +60,7 @@ A workflow is a series of apps chained together to run in sequence as a batch op
       - 5.1.23
       - Mixed Linear Model analysis using TASSEL
       - `App link <https://www.sciapps.org/app_id/MLM-TASSEL-5.1.23>`_
-      - `Source: <http://www.maizegenetics.net/>`_
+      - `Source <http://www.maizegenetics.net/>`_
     * - EMMAX
       - 0.0.2
       - A statistical test for large scale human or model organism association mapping accounting for the sample structure
