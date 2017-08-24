@@ -10,6 +10,73 @@ A workflow is a series of apps chained together to run in sequence as a batch op
 
 ----
 
+
+**Example Data**
+
+.. list-table::
+    :header-rows: 1
+    
+    * - Input
+      - Description
+      - Example
+    * - Marker file
+      - Marker data in TASSEL Hapmap format
+      - `maker_out.gff <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.txt>`_
+    * - Trait file
+      - Trait data in TASSEL triat format
+      - `trait.txt <https://data.sciapps.org/example_data/gwas_raw/trait.txt>`_
+
+**SciApps App(s):**
+
+.. list-table::
+    :header-rows: 1
+    
+    * - App name
+      - Version
+      - Description
+      - App link
+      - Notes/other links
+    * - MergeG2P
+      - 0.0.2
+      - Intersect marker data with trait data
+      - `App link <https://www.sciapps.org/app_id/MergeG2P-0.0.2>`_
+      - 
+    * - NPUTE
+      - 0.0.1
+      - Imputes missing markers via voting from K-nearest-neighbors (KNN)
+      - `App link <https://www.sciapps.org/app_id/NPUTE-0.0.1>`_
+      - `Source: <http://compgen.unc.edu/NPUTE_README.html>`_
+    * - NumericalTransform-TASSEL
+      - 4.3.15
+      - Numerical Transform of marker data using TASSEL and PLINK
+      - `App link <https://www.sciapps.org/app_id/NumericalTransform-TASSEL-4.3.15>`_
+      - 
+    * - CloudSTRUCTURE
+      - 2.3.4
+      - A parallel version of the STRUCTURE software (version 2.3.4) for estimating various assumption of population structures simultaneously
+      - `App link <https://www.sciapps.org/app_id/CloudSTRUCTURE-2.3.4>`_
+      - `Source: <http://pritch.bsd.uchicago.edu/structure.html>`_
+    * - MLM-TASSEL
+      - 5.1.23
+      - Mixed Linear Model analysis using TASSEL
+      - `App link <https://www.sciapps.org/app_id/MLM-TASSEL-5.1.23>`_
+      - `Source: <http://www.maizegenetics.net/>`_
+    * - EMMAX
+      - 0.0.2
+      - A statistical test for large scale human or model organism association mapping accounting for the sample structure
+      - `App link <https://www.sciapps.org/app_id/EMMAX-0.0.2>`_
+      - `Source: <http://genetics.cs.ucla.edu/emmax/>`_
+    * - MLMM
+      - 0.0.2
+      - An efficient multi-locus mixed-model approach for genome-wide association studies in structured populations
+      - `App link <https://www.sciapps.org/app_id/MLMM-0.0.2>`_
+      - `Source: <https://cynin.gmi.oeaw.ac.at/home/resources/mlmm>`_
+    * - PCA
+      - 0.0.1
+      - Principal Component Analysis
+      - `App link <https://www.sciapps.org/app_id/PCA-0.0.1>`_
+      - `Source: <https://stat.ethz.ch/R-manual/R-patched/library/stats/html/prcomp.html>`_
+
 *Step 1: Importing a Workflow History*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will show you how to import a history/workflow from a remote source into your own workspace. We will be using this history to build a new workflow. The example used here is the public association workflow.
