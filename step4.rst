@@ -19,10 +19,10 @@ A workflow is a series of apps chained together to run in sequence as a batch op
     * - Input
       - Description
       - Example
-    * - Marker file
+    * - Marker file (Sorghum bicolor assembly v1)
       - Marker data in TASSEL Hapmap format
       - `myStudy_filt.c9.hmp.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.txt>`_
-    * - Marker file
+    * - Marker file (Sorghum bicolor assembly v2)
       - Marker data in TASSEL Hapmap format
       - `myStudy_filt.c9.hmp.v2.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.v2.txt>`_
     * - Trait file
