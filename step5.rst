@@ -79,4 +79,4 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
     :height: 299
 .. |manhattan_plot| image:: ./img/sci_apps/manhattan_plot.gif
     :width: 660
-    :height: 364
+    :height: 355
