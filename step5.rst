@@ -60,6 +60,22 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
      
 ----
 
+*Summary*
+~~~~~~~~~
+
+Using the Association workflow as an example, you have gotten an overview of how SciApps workflows work - from accessing data in CyVerse Data Store, to launching jobs, building workflows, running workflows, and visualizing results.
+
+..
+    Summary
+
+**Next Steps:**
+
+- Try a tutorial using the Discovery Environment in the `Learning Center <http://learning.cyverse.org>`_
+
+More help and additional information
+`````````````````````````````````````
+
+
 **Fix or improve this documentation:**
 
 - On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide>`_
