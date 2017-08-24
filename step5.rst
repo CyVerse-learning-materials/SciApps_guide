@@ -81,6 +81,9 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
 .. |running_workflow| image:: ./img/sci_apps/running_workflow.gif
     :width: 660
     :height: 299
+.. |workflow_results| image:: ./img/sci_apps/workflow_results.gif
+    :width: 660
+    :height: 300
 .. |manhattan_plot| image:: ./img/sci_apps/manhattan_plot.gif
     :width: 660
     :height: 355
