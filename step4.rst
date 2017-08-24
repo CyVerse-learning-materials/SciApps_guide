@@ -53,7 +53,7 @@ A workflow is a series of apps chained together to run in sequence as a batch op
       - 
     * - CloudSTRUCTURE
       - 2.3.4
-      - A parallel version of the STRUCTURE software (version 2.3.4) for estimating various assumption of population structures simultaneously
+      - A parallel version of the STRUCTURE software for estimating population structures
       - `App link <https://www.sciapps.org/app_id/CloudSTRUCTURE-2.3.4>`_
       - `Source <http://pritch.bsd.uchicago.edu/structure.html>`_
     * - MLM-TASSEL
@@ -63,12 +63,12 @@ A workflow is a series of apps chained together to run in sequence as a batch op
       - `Source <http://www.maizegenetics.net/>`_
     * - EMMAX
       - 0.0.2
-      - A statistical test for large scale human or model organism association mapping accounting for the sample structure
+      - Association mapping with consideration of sample structure
       - `App link <https://www.sciapps.org/app_id/EMMAX-0.0.2>`_
       - `Source <http://genetics.cs.ucla.edu/emmax/>`_
     * - MLMM
       - 0.0.2
-      - An efficient multi-locus mixed-model approach for genome-wide association studies in structured populations
+      - An efficient multi-locus mixed-model approach for GWAS in structured populations
       - `App link <https://www.sciapps.org/app_id/MLMM-0.0.2>`_
       - `Source <https://cynin.gmi.oeaw.ac.at/home/resources/mlmm>`_
     * - PCA
