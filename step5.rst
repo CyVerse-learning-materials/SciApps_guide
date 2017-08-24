@@ -15,10 +15,10 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
 
   1. Login to `SciApps <https://www.SciApps.org/>`_
   
-  2. Load the workflow created in the last section
+  2. Load the workflow you created in the last section or use `this file <https://data.sciapps.org/misc/my_pca_workflow.json>`_
 
      .. Tip::
-       Before loading a workflow, refresh the Browser tab to clean out the History panel 
+       Before loading a workflow, refresh the Browser tab to clear the History panel 
        
   3. For **Step 1: MergeG2P**, under **Select marker file in Hapmap format** click the **or Browse DataStore** button, then navigate to and select `myStudy_filt.c9.hmp.v2.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.v2.txt>`_; then click ‘Select and Close’. (Location: *public > gwas_raw > myStudy_filt.c9.hmp.v2.txt*) 
 
