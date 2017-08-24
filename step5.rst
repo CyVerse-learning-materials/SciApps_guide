@@ -70,7 +70,7 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
 *Summary*
 ~~~~~~~~~
 
-Using the app SNAP and the Association workflow as examples, you have gotten an overview of how SciApps workflows work - from accessing data in CyVerse Data Store, to launching jobs, building workflows, running workflows, and visualizing results.
+Using the app SNAP and the Association workflow as examples, you have gotten an overview of how SciApps workflows work - from accessing data in CyVerse Data Store, to launching jobs, building workflows, importing workflows, running workflows, and visualizing results.
 
 ..
     Summary
