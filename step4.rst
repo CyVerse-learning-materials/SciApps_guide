@@ -61,7 +61,7 @@ This step will show you how to add new analysis to the workflow built above. We 
 
   1. Click 'Workflow' (from the top navigation bar), then 'Load a workflow' to loaded the downloaded JSON file. Alternatively, click 'My Workflow' to load the workflow if you have saved the workflow in your workspace.
   
-  2. Click **Clustering** category from the left panel or search for PCA, then click **PCA** to load PCA 0.0.1
+  2. Click **Clustering** category from the left panel or search for **PCA**, then click **PCA** to load **PCA 0.0.1**
      
   3. Click **2: NPUTE-0.0.1** in the History panel to expand its outputs, then drag and drop **imputed.txt** into the **Marker file** field
   
