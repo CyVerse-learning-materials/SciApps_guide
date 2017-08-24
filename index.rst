@@ -9,7 +9,7 @@ SciApps Guide
 Goal
 ----
 
-Introduce SciApps, a cloud-based platform for building and sharing reproducible bioinformatics workflows across distributed computing and storage systems. This guide will cover accessing CyVerse Data Store, launcning analysis jobs, building, sharing, and running workflows.
+Introduce SciApps, a cloud-based platform for building and sharing reproducible bioinformatics workflows across distributed computing and storage systems. This guide will cover accessing CyVerse Data Store, launcning analysis jobs, visualizing results, building, sharing, and running workflows.
 
 ----
 
