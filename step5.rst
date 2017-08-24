@@ -73,7 +73,7 @@ Using the app SNAP and the Association workflow as examples, you have gotten an 
 
 **Next Steps:**
 
-- Try a tutorial using the Discovery Environment in the `Learning Center <http://learning.cyverse.org>`_
+- Try a tutorial using the SciApps in the `Learning Center <http://learning.cyverse.org>`_
 
 More help and additional information
 `````````````````````````````````````
