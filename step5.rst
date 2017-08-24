@@ -53,7 +53,7 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
    4. Use the options on the left side for P-values adjustments, specifying species, chromosome, and neighbouring window size, or display Q-Q plot.
    
    .. Note::
-     The example here is using Chromosome 9 only. And the Manhattan plot is pre-configured to display the same Chromosome. For your own data, use the options in the left to check a specific Chromosome, or the whole genome.
+     The example here is using Chromosome 9 only. And the Manhattan plot is pre-configured to display the same Chromosome. For your own data, use the options on the left side to check a specific Chromosome, or all Chromosomes of your specific genome.
 ----
 
 **Fix or improve this documentation:**
