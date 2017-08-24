@@ -46,7 +46,7 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
    
    2. Then Click **manhattan.plot** from the list of outputs, you will be directed to the Manhattan plot of the results. 
    
-   3. Click the Manhattan plot to check nearby genes around the clicking coordinate.
+   3. Click the Manhattan plot to check nearby genes around the clicked position.
    
       |manhattan_plot|
   
