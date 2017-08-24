@@ -39,7 +39,7 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
     
 ----
 
-*Visualizing the Results*
+*Visualizing Results*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
    1. Once the entire workflow is completed, click **4: EMMAX-0.0.2** in the History panel to expand its outputs. 
