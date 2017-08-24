@@ -18,7 +18,7 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
   2. Load the workflow created in the last section
 
      .. Tip::
-       Before loading a workflow, refresh the Browser tab will clean out the History panel 
+       Before loading a workflow, refresh the Browser tab to clean out the History panel 
        
   3. For **Step 1: MergeG2P**, under **Select marker file in Hapmap format** click the **or Browse DataStore** button, then navigate to and select `myStudy_filt.c9.hmp.v2.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.v2.txt>`_; then click ‘Select and Close’. (Location: *public > gwas_raw > myStudy_filt.c9.hmp.v2.txt*) 
 
