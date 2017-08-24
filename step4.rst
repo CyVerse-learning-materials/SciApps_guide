@@ -45,7 +45,7 @@ A workflow is a series of apps chained together to run in sequence as a batch op
       - 0.0.1
       - Imputes missing markers via voting from K-nearest-neighbors (KNN)
       - `App link <https://www.sciapps.org/app_id/NPUTE-0.0.1>`_
-      - `Source: <http://compgen.unc.edu/NPUTE_README.html>`_
+      - `Source <http://compgen.unc.edu/NPUTE_README.html>`_
     * - NumericalTransform-TASSEL
       - 4.3.15
       - Numerical Transform of marker data using TASSEL and PLINK
@@ -55,7 +55,7 @@ A workflow is a series of apps chained together to run in sequence as a batch op
       - 2.3.4
       - A parallel version of the STRUCTURE software (version 2.3.4) for estimating various assumption of population structures simultaneously
       - `App link <https://www.sciapps.org/app_id/CloudSTRUCTURE-2.3.4>`_
-      - `Source: <http://pritch.bsd.uchicago.edu/structure.html>`_
+      - `Source <http://pritch.bsd.uchicago.edu/structure.html>`_
     * - MLM-TASSEL
       - 5.1.23
       - Mixed Linear Model analysis using TASSEL
@@ -65,17 +65,17 @@ A workflow is a series of apps chained together to run in sequence as a batch op
       - 0.0.2
       - A statistical test for large scale human or model organism association mapping accounting for the sample structure
       - `App link <https://www.sciapps.org/app_id/EMMAX-0.0.2>`_
-      - `Source: <http://genetics.cs.ucla.edu/emmax/>`_
+      - `Source <http://genetics.cs.ucla.edu/emmax/>`_
     * - MLMM
       - 0.0.2
       - An efficient multi-locus mixed-model approach for genome-wide association studies in structured populations
       - `App link <https://www.sciapps.org/app_id/MLMM-0.0.2>`_
-      - `Source: <https://cynin.gmi.oeaw.ac.at/home/resources/mlmm>`_
+      - `Source <https://cynin.gmi.oeaw.ac.at/home/resources/mlmm>`_
     * - PCA
       - 0.0.1
       - Principal Component Analysis
       - `App link <https://www.sciapps.org/app_id/PCA-0.0.1>`_
-      - `Source: <https://stat.ethz.ch/R-manual/R-patched/library/stats/html/prcomp.html>`_
+      - `Source <https://stat.ethz.ch/R-manual/R-patched/library/stats/html/prcomp.html>`_
 
 *Step 1: Importing a Workflow History*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
