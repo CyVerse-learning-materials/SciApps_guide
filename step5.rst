@@ -61,6 +61,10 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
       .. Tip::
         Both Manhattan plot and Q-Q plot are interactive with all of the options.
      
+   4. For visualizing **PCA** outputs, click the *i* icon for **5: PCA-0.0.1**, then click the output folder link, you will be directed to the output folders with PCA outputs. There are two image outputs:
+   
+      |pca_output1| |pca_output2|
+      
 ----
 
 *Summary*
@@ -117,3 +121,9 @@ Post your question to the user forum:
 .. |manhattan_plot| image:: ./img/sci_apps/manhattan_plot.gif
     :width: 660
     :height: 355
+.. |pca_output1| image:: ./img/sci_apps/pca_output1.gif
+    :width: 250
+    :height: 248
+.. |pca_output2| image:: ./img/sci_apps/pca_output2.gif
+    :width: 250
+    :height: 237
