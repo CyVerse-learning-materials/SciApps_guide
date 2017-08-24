@@ -75,6 +75,17 @@ Using the Association workflow as an example, you have gotten an overview of how
 More help and additional information
 `````````````````````````````````````
 
+..
+    Short description and links to any reading materials
+
+Search for an answer:
+    `CyVerse Learning Center <http://learning.cyverse.org>`_ or
+    `CyVerse Wiki <https://wiki.cyverse.org>`_
+
+Post your question to the user forum:
+    `Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
+
+----
 
 **Fix or improve this documentation:**
 
