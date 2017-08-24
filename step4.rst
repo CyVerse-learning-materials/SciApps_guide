@@ -47,7 +47,10 @@ This step will demo how to build a workflow from the loaded history. Assume we j
         All nodes of the diagram are interactive
         |emmax_workflow|
 	
-   3. On the 'Workflow Diagram', you can choose to download or save the workflow. For downloading, you will get a JSON file, which can be passed to others for sharing the entire analysis. 
+   3. On the 'Workflow Diagram', you can choose to download or save the workflow. 
+   
+      .. Tip::
+        For downloading, you will get a JSON file, which can be passed to others for **sharing** the entire analysis. 
    
 	
 ----
