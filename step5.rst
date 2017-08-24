@@ -11,7 +11,7 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
 ----
 
 *Running the example Association Workflow*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   1. Login to `SciApps <https://www.SciApps.org/>`_
   
@@ -37,10 +37,23 @@ Here we will run the workflow created in the 'Building a Workflow' section. As a
        - 'Green': Completed
        - 'Red': Failed
     
-   5. Once completed, to visualize output, click **4: EMMAX-0.0.2** in the History panel to expand its outputs. Then Click **manhattan.plot** from the list of outputs, you will be directed to the Manhattan plot of the results. Click the plot to check nearby genes around the clicking coordinate.
+----
+
+*Visualizing the Results*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   1. Once the entire workflow is completed, click **4: EMMAX-0.0.2** in the History panel to expand its outputs. 
+   
+   2. Then Click **manhattan.plot** from the list of outputs, you will be directed to the Manhattan plot of the results. 
+   
+   3. Click the Manhattan plot to check nearby genes around the clicking coordinate.
    
       |manhattan_plot|
   
+   4. Use the options on the left side for P-values adjustments, specifying species, chromosome, and neighbouring window size, or display Q-Q plot.
+   
+   .. Note::
+     The example here is using Chromosome 9 only. And the Manhattan plot is pre-configured to display the same Chromosome. For your own data, use the options in the left to check a specific Chromosome, or the whole genome.
 ----
 
 **Fix or improve this documentation:**
