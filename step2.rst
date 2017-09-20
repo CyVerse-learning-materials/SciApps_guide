@@ -7,46 +7,58 @@
 Viewing and Accessing Data
 --------------------------
 
-SciApps uses CyVerse Data Store for user data management. After logging into SciApps with your CyVerse credentials, you get permission to read from a special directory in your Data Store named "sci_data". If you put files into that directory, you can see them on SciApps and use them for analysis. You can use `Discovery Environment <https://learning.cyverse.org/projects/discovery-environment-guide/en/latest/>`_ for uploading smaller files (< 1.9 GB) to your Data Store.
+SciApps uses `CyVerse Data Store <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/>`_
+for user data management. After logging into SciApps with your CyVerse
+credentials, a folder called **sci_data** will be created in your Data Store.
+If you put files into that directory, you can see them on SciApps and use them
+for analysis.
 
 ----
 
-
-*Navigating Data on SciApps*
+*Browsing/Navigating Data on SciApps*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  1. Logging into SciApps at https://www.SciApps.org
+  1. Log in into SciApps at `https://www.SciApps.org <https://www.SciApps.org>`_
 
-  2. Enable 'SciApps' service in `CyVerse User portal <https://user.cyverse.org/>`_ (one time operation)
-  
-    .. Tip::
-      You can check if you already have SciApps service by logging into the portal and visiting the 'My Service' page. If SciApps is not listed, click on 'Available services' to request access. Once enabled, A sci_data folder will be created in your Data Store root folder 
+      .. Tip::
 
-  3. Load any app form by clicking on an app name in the left panel, then click on 'or Browse DataStore' to open the browsing window
-  
-    .. Tip::
-      Through authentication, your CyVerse username is captured to direct SciApps to the sci_data folder of the user being logged in, as shown below for user lwang
-  
-      |data_window|
-  
-      The other tabs include:
-  
-      - ‘public’: Example data used for public workflows
-      - ‘shared’: CyVerse’s public data hosted in CyVerse Data Store
-      - 'Go up': Move up one level
-      - 'Refresh': Reload current folder
+        Ensure you have access to SciApps by logging into the `CyVerse User portal <https://user.cyverse.org/>`_
+        You can check if you already have SciApps service by logging into the
+        portal and visiting the 'My Service' page. If SciApps is not listed,
+        click on 'Available' to request access. Once enabled, A **sci_data** folder
+        will be created in your Data Store home folder. Requesting access is a
+        one-time operation.
+
+  2. Load any app form by clicking on an app name in the left panel, then click
+     on 'or Browse DataStore' to open the browsing window.
+
+       .. tip::
+
+         You can browse the files in your Data Store SciApps has access to:
+
+         |data_window|
+
+         Other tabs include:
+
+         - **public**: Example data used for public workflows
+         - **shared**: CyVerse’s public data hosted in CyVerse Data Store
+         - **Go up**: Move up one level
+         - **Refresh**: Reload current folder
 
 ----
 
 *Accessing Data on SciApps*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   1. Access SciApps at https://www.SciApps.org
-  
-  2. Click on ‘Data’ (from the top navigation bar), you will be directed to the SciApps data page
-  
+
+  2. Click on ‘Data’ (from the top navigation bar), you will be directed to the
+     SciApps data page
+
     .. Note::
-      Only public data (example_data) is available on the data page. Analysis results will also be accessible here with random folder names (hidden for security reasons)
-    
+      Only public data (example_data) is available on the data page. Analysis
+      results will also be accessible here with random folder names
+      (hidden for security reasons)
+
       |data_web|
 ----
 
@@ -67,8 +79,8 @@ SciApps uses CyVerse Data Store for user data management. After logging into Sci
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
 .. |data_window| image:: ./img/sci_apps/data_window.gif
-    :width: 550
-    :height: 218
+    :width: 500
+    :height: 200
 .. |data_web| image:: ./img/sci_apps/data_web.gif
     :width: 550
     :height: 276
