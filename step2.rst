@@ -15,8 +15,8 @@ for analysis.
 
 ----
 
-*Browsing/Navigating Data on SciApps*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Browsing/Navigating CyVerse Data Store on SciApps*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   1. Log in into SciApps at `https://www.SciApps.org <https://www.SciApps.org>`_
 
@@ -29,8 +29,9 @@ for analysis.
         will be created in your Data Store home folder. Requesting access is a
         one-time operation.
 
-  2. Load any app form by clicking on an app name in the left panel, then click
-     on 'or Browse DataStore' to open the browsing window.
+  2. Load any App form by clicking on an App name in the left panel. For any
+     step that requires a file in put, click 'or Browse DataStore' to open
+     browse the Data Store.
 
        .. tip::
 
@@ -48,7 +49,7 @@ for analysis.
 ----
 
 *Accessing Data on SciApps*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   1. Access SciApps at https://www.SciApps.org
 
   2. Click on ‘Data’ (from the top navigation bar), you will be directed to the
