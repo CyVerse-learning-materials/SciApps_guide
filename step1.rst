@@ -51,7 +51,7 @@ jobs, or save workflows. You can however preview applications and public workflo
    1. Access the SciApps website at https://www.SciApps.org/
 
    2. To preview the SciApps and their parameters, load any App by clicking on
-      the App name in **Apps** panel (left panel)
+      the App name in Apps panel (left panel)
 
    3. To preview public workflows, click "Workflow" on the menu at the top of
       the page. Select 'Public workflows' (workflow templates) to preview.

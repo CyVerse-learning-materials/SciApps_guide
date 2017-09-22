@@ -25,9 +25,11 @@ for analysis.
         Ensure you have access to SciApps by logging into the `CyVerse User portal <https://user.cyverse.org/>`_
         You can check if you already have SciApps service by logging into the
         portal and visiting the 'My Service' page. If SciApps is not listed,
-        click on 'Available' to request access. Once enabled, A **sci_data** folder
-        will be created in your Data Store home folder. Requesting access is a
+        click on 'Available' to request access. Requesting access is a
         one-time operation.
+
+        Once enabled, **SciApps will create a A sci_data folder in your Data Store home folder.**
+
 
   2. Load any App form by clicking on an App name in the left panel. For any
      step that requires a file in put, click 'or Browse DataStore' to open

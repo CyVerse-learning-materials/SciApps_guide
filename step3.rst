@@ -4,10 +4,14 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Launching an Analysis Job
---------------------------
+Launching an SciApps Analysis Job
+----------------------------------
 
-For analyzing data, you can select an app from the left panel of SciApps. In this example, to cover the minimum you need to launch an analysis, we will use the **SNAP** gene finding app to estimate Hidden Markov Model (HMM) parameters with a GFF file output from MAKER, an annotation app. 
+For analyzing data, you can select an App from the left panel of SciApps.
+In this example, to cover the minimum you need to launch an analysis, we will
+use the `SNAP <https://github.com/KorfLab/SNAP>`_ gene finding app to estimate
+Hidden Markov Model (HMM) parameters with a GFF file output from MAKER, an
+annotation App.
 
 ----
 
@@ -17,7 +21,7 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
 
 .. list-table::
     :header-rows: 1
-    
+
     * - Input
       - Description
       - Example
@@ -29,7 +33,7 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
 
 .. list-table::
     :header-rows: 1
-    
+
     * - App name
       - Version
       - Description
@@ -39,7 +43,7 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
       - 0.0.1
       - Semi-HMM-based Nucleic Acid Parser
       - `App link <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
-      - `Source: <http://korflab.ucdavis.edu/software.html>`_
+      - `App documentation <http://korflab.ucdavis.edu/software.html>`_
 
 
 *Example Analysis: HMM parameters estimation with SNAP*
@@ -47,30 +51,45 @@ For analyzing data, you can select an app from the left panel of SciApps. In thi
 
   1. Login to `SciApps <https://www.SciApps.org/>`_
 
-  2. Click **Prediciton** category from the left panel; search for SNAP or `click this link to SNAP 0.0.1 <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
-  
-  3. Under “GFF file” click **or Browse DataStore**, then navigate to and select  `maker_out.gff <https://data.sciapps.org/example_data/maker/maker_out.gff>`_; then click 'Select and Close'. (Location: *public > maker > maker_out.gff*)
-     |snap_app|
-     
-     .. Tip::
-       For smaller files (<10 MB), you can click **Choose File** to select from your local computer
-  4. Leave others as defaults, and then click **Submit Job**. You will be asked to confirm and prompted to check the job status in the right panel.
+  2. Click this `link to open to SNAP 0.0.1 <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
+     or click **Prediciton** category from the left panel; and select SNAP.
 
+  3. Under “GFF file” click **or Browse DataStore**, then navigate the example data
+     (*public > maker > maker_out.gff*); select **maker_out.gff** and click
+     'Select and Close'. to and select
 
-     .. Tip::
-       In the right panel, each analysis job is designated with a number and an app id (e.g. 1: SNAP-0.0.1). Outputs (e.g. my.all.hmm) are displayed after clicking the job name and job status is displayed after clicking the (i) icon. 
+       |snap_app|
 
-       |status|
+       .. Tip::
+         For smaller files (<10 MB), you can click **Choose File** to select from
+         your local computer
 
-       From left to right, there are three icons next to each job name:
-    
-       - **Checkbox**: If checked, the analysis will be added to the workflow building page    
-       - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below)
-         |agave_status|
-       - **Re-submit**: Relaunch the analysis job with same inputs and parameters
-     
+  4. Leave other parameters as default, and then click **Submit Job**. You will
+     be asked to confirm; click "Submit". You will be prompted to check the job
+     status in the right panel.
+
+       .. Tip::
+         In the right panel, each analysis job is designated with a number and an
+         App id (e.g. 1: SNAP-0.0.1). Outputs (e.g. my.all.hmm) are displayed after
+         clicking the job name and job status is displayed after clicking the (i)
+         icon.
+
+         |status|
+
+         From left to right, there are three icons next to each job name:
+
+         - **Checkbox**: If checked, the analysis will be added to the workflow
+           building page
+         - **Information**: More information about the status of the analysis
+           job and link to the output folder (for an example, check the screenshot below)
+         - **Re-submit**: Relaunch the analysis job with same inputs and parameters
+           |agave_status|
+
      .. Note::
-       Outputs displayed under job names are defined outpus in Agave app JSON. They are the ones that should be used in workflow construction. The output folder contains complete outputs from the analysis job and it can be accessed through the Information icon
+       Outputs displayed under job names are defined outputs in Agave app JSON.
+       They are the ones that should be used in workflow construction.
+       The output folder contains complete outputs from the analysis job and it
+       can be accessed through the Information icon
 
 ----
 
