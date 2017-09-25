@@ -168,9 +168,6 @@ of the NPUTE step.
      |pca_workflow|
 
   4. Leave others as defaults, then click the "Submit Job" button
-
-     .. Note::
-       The output of PCA can also be used with **MLM-TASSEL** for correcting population structure
          
   5. Once completed, select all analyses to build a new workflow. Save or
      download the workflow for running it in the next section
