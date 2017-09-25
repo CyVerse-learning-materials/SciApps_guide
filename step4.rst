@@ -96,9 +96,9 @@ The example used here is the public association workflow.
   2. Click 'Workflow' (from the top navigation bar), then 'Public workflows' to
      load the public workflow page in the main panel
 
-       .. Tip::
-         When the right panel (History) is empty, click the 'public workflow'
-         link (on the top of the History panel) to load the public workflow page
+     .. Tip::
+       When the right panel (History) is empty, click the 'public workflow'
+       link (on the top of the History panel) to load the public workflow page
 
   3. Click the 'Association' link to load the Association Workflow. The App
      forms are loaded in the main panel, and analysis history is loaded in the
@@ -169,17 +169,17 @@ of the NPUTE step.
 
   4. Leave others as defaults, then click the "Submit Job" button
 
-       .. Note::
-         The output of PCA can also be used with **MLM-TASSEL** for correcting population structure
+     .. Note::
+       The output of PCA can also be used with **MLM-TASSEL** for correcting population structure
          
   5. Once completed, select all analyses to build a new workflow. Save or
      download the workflow for running it in the next section
 
-       .. Note::
-         The connection between **imputed.txt** and **PCA-0.0.1** is recorded
-         through **dragging and dropping**, which is one way to build SciApps workflows
-         from scratch
-         |emmax_pca_workflow|
+     .. Note::
+       The connection between **imputed.txt** and **PCA-0.0.1** is recorded
+       through **dragging and dropping**, which is one way to build SciApps workflows
+       from scratch
+       |emmax_pca_workflow|
 
 ----
 
