@@ -91,8 +91,8 @@ Gramene.
 
       |pca_output1| |pca_output2|
       
-       .. Note::
-         The output of PCA can also be used with **MLM-TASSEL** for correcting population structure
+      .. Note::
+        The output of PCA, **pca_output.txt**, can also be used with **MLM-TASSEL** for correcting population structure
 ----
 
 *Summary*
