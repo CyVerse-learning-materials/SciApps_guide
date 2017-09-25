@@ -81,8 +81,8 @@ Gramene.
    3. Use the options on the left side for P-values adjustments, specifying
       species, chromosome, neighboring window size, and display Q-Q plot.
 
-      .. Tip::
-        Both Manhattan plot and Q-Q plot are interactive with all of the options.
+        .. Tip::
+          Both Manhattan plot and Q-Q plot are interactive with all of the options.
 
    4. For visualizing **PCA** outputs, click the **(i)** icon for **5: PCA-0.0.1**,
       then click the output folder link, you will be directed to the data page of
