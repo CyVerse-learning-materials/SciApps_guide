@@ -67,8 +67,6 @@ annotation App.
   4. Leave other parameters as default, and then click **Submit Job**. You will
      be asked to confirm; click "Submit". You will be prompted to check the job
      status in the right panel.
-
-     |agave_status|
        
      .. Tip::
        In the right panel, each analysis job is designated with a number and an
@@ -84,6 +82,7 @@ annotation App.
            building page
        - **Information**: More information about the status of the analysis
            job and link to the output folder (for an example, check the screenshot below)
+           |agave_status|
        - **Re-submit**: Relaunch the analysis job with same inputs and parameters
 
      .. Note::
