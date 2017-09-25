@@ -78,11 +78,9 @@ annotation App.
        
        From left to right, there are three icons next to each job name:
 
-       - **Checkbox**: If checked, the analysis will be added to the workflow
-           building page
-       - **Information**: More information about the status of the analysis
-           job and link to the output folder (for an example, check the screenshot below)
-           |agave_status|
+       - **Checkbox**: If checked, the analysis will be added to the workflow building page
+       - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below)
+         |agave_status|
        - **Re-submit**: Relaunch the analysis job with same inputs and parameters
 
      .. Note::
