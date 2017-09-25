@@ -85,11 +85,11 @@ annotation App.
          - **Re-submit**: Relaunch the analysis job with same inputs and parameters
            |agave_status|
 
-     .. Note::
-       Outputs displayed under job names are defined outputs in Agave app JSON.
-       They are the ones that should be used in workflow construction.
-       The output folder contains complete outputs from the analysis job and it
-       can be accessed through the Information icon
+       .. Note::
+         Outputs displayed under job names are defined outputs in Agave app JSON.
+         They are the ones that should be used in workflow construction.
+         The output folder contains complete outputs from the analysis job and it
+         can be accessed through the Information icon
 
 ----
 
