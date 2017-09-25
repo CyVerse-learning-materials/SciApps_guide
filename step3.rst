@@ -58,38 +58,38 @@ annotation App.
      (*public > maker > maker_out.gff*); select **maker_out.gff** and click
      'Select and Close'. to and select
 
-       |snap_app|
+     |snap_app|
 
-       .. Tip::
-         For smaller files (<10 MB), you can click **Choose File** to select from
-         your local computer
+     .. Tip::
+       For smaller files (<10 MB), you can click **Choose File** to select from
+       your local computer
 
   4. Leave other parameters as default, and then click **Submit Job**. You will
      be asked to confirm; click "Submit". You will be prompted to check the job
      status in the right panel.
 
-       .. Tip::
-         In the right panel, each analysis job is designated with a number and an
-         App id (e.g. 1: SNAP-0.0.1). Outputs (e.g. my.all.hmm) are displayed after
-         clicking the job name and job status is displayed after clicking the (i)
-         icon.
+     .. Tip::
+       In the right panel, each analysis job is designated with a number and an
+       App id (e.g. 1: SNAP-0.0.1). Outputs (e.g. my.all.hmm) are displayed after
+       clicking the job name and job status is displayed after clicking the (i)
+       icon.
 
-         |status|
+       |status|
 
-         From left to right, there are three icons next to each job name:
+       From left to right, there are three icons next to each job name:
 
-         - **Checkbox**: If checked, the analysis will be added to the workflow
+       - **Checkbox**: If checked, the analysis will be added to the workflow
            building page
-         - **Information**: More information about the status of the analysis
+       - **Information**: More information about the status of the analysis
            job and link to the output folder (for an example, check the screenshot below)
-         - **Re-submit**: Relaunch the analysis job with same inputs and parameters
+       - **Re-submit**: Relaunch the analysis job with same inputs and parameters
            |agave_status|
 
-       .. Note::
-         Outputs displayed under job names are defined outputs in Agave app JSON.
-         They are the ones that should be used in workflow construction.
-         The output folder contains complete outputs from the analysis job and it
-         can be accessed through the Information icon
+     .. Note::
+       Outputs displayed under job names are defined outputs in Agave app JSON.
+       They are the ones that should be used in workflow construction.
+       The output folder contains complete outputs from the analysis job and it
+       can be accessed through the Information icon
 
 ----
 
