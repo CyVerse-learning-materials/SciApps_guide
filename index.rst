@@ -51,7 +51,11 @@ Downloads, access, and services
     * - CyVerse account
       - You will need a CyVerse account to complete this exercise
       - `Register <https://user.cyverse.org/>`_
-
+    * - SciApps Access
+      - You will need to request access to SciApps from the user portal. Check the
+         'My Services' tab; if SciApps is not listed, click the 'Available' tab,
+         locate SciApps and click the link to request access.  
+      - `CyVerse User Portal <https://user.cyverse.org/>`__
 
 ----
 

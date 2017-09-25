@@ -4,9 +4,14 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Building a Workflow
---------------------
-A workflow is a series of apps chained together to run in sequence as a batch operation. On SciApps, workflows are generated from the analysis already completed in a history. Workflows can be viewed, shared, imported, and executed. Additionally, SciApps workflows capture inputs, intermediate outputs, and final results along with the analysis history. Importing a workflow will import the analysis history used to build the workflow.
+Building a SciApps Workflow
+------------------------------
+A workflow is a series of Apps chained together to run in sequence as a batch
+operation. On SciApps, workflows can be generated from the analysis already
+completed in a history. Workflows can be viewed, shared, imported, and executed.
+Additionally, SciApps workflows capture inputs, intermediate outputs, and final
+results along with the analysis history. Importing a workflow will import the
+analysis history used to build the workflow.
 
 ----
 
@@ -15,7 +20,7 @@ A workflow is a series of apps chained together to run in sequence as a batch op
 
 .. list-table::
     :header-rows: 1
-    
+
     * - Input
       - Description
       - Example
@@ -26,14 +31,14 @@ A workflow is a series of apps chained together to run in sequence as a batch op
       - Marker data in TASSEL Hapmap format
       - `myStudy_filt.c9.hmp.v2.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.v2.txt>`_
     * - Trait file
-      - Trait data in TASSEL triat format
+      - Trait data in TASSEL trait format
       - `trait.txt <https://data.sciapps.org/example_data/gwas_raw/trait.txt>`_
 
 **SciApps App(s):**
 
 .. list-table::
     :header-rows: 1
-    
+
     * - App name
       - Version
       - Description
@@ -43,108 +48,136 @@ A workflow is a series of apps chained together to run in sequence as a batch op
       - 0.0.2
       - Intersect marker data with trait data
       - `App link <https://www.sciapps.org/app_id/MergeG2P-0.0.2>`_
-      - 
+      -
     * - NPUTE
       - 0.0.1
       - Imputes missing markers via voting from K-nearest-neighbors (KNN)
       - `App link <https://www.sciapps.org/app_id/NPUTE-0.0.1>`_
-      - `Source <http://compgen.unc.edu/NPUTE_README.html>`_
+      - `App documentation <http://compgen.unc.edu/NPUTE_README.html>`_
     * - NumericalTransform-TASSEL
       - 4.3.15
       - Numerical Transform of marker data using TASSEL and PLINK
       - `App link <https://www.sciapps.org/app_id/NumericalTransform-TASSEL-4.3.15>`_
-      - 
+      -
     * - CloudSTRUCTURE
       - 2.3.4
       - Parallelized STRUCTURE software for estimating population structures
       - `App link <https://www.sciapps.org/app_id/CloudSTRUCTURE-2.3.4>`_
-      - `Source <http://pritch.bsd.uchicago.edu/structure.html>`_
+      - `App documentation <http://pritch.bsd.uchicago.edu/structure.html>`_
     * - MLM-TASSEL
       - 5.1.23
       - Mixed Linear Model analysis using TASSEL
       - `App link <https://www.sciapps.org/app_id/MLM-TASSEL-5.1.23>`_
-      - `Source <http://www.maizegenetics.net/>`_
+      - `App documentation <http://www.maizegenetics.net/>`_
     * - EMMAX
       - 0.0.2
       - Association mapping with consideration of sample structure
       - `App link <https://www.sciapps.org/app_id/EMMAX-0.0.2>`_
-      - `Source <http://genetics.cs.ucla.edu/emmax/>`_
+      - `App documentation <http://genetics.cs.ucla.edu/emmax/>`_
     * - MLMM
       - 0.0.2
       - An efficient multi-locus mixed-model approach for GWAS
       - `App link <https://www.sciapps.org/app_id/MLMM-0.0.2>`_
-      - `Source <https://cynin.gmi.oeaw.ac.at/home/resources/mlmm>`_
+      - `App documentation <https://cynin.gmi.oeaw.ac.at/home/resources/mlmm>`_
     * - PCA
       - 0.0.1
       - Principal Component Analysis
       - `App link <https://www.sciapps.org/app_id/PCA-0.0.1>`_
-      - `Source <https://stat.ethz.ch/R-manual/R-patched/library/stats/html/prcomp.html>`_
+      - `App documentation <https://stat.ethz.ch/R-manual/R-patched/library/stats/html/prcomp.html>`_
 
-*Step 1: Importing a Workflow History*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to import a history/workflow from a remote source into your own workspace. We will be using this history to build a new workflow. The example used here is the public association workflow.
+*Step 1: Importing a SciApps Workflow History*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This step will show you how to import a history/workflow from a remote source
+into your own workspace. We will be using this history to build a new workflow.
+The example used here is the public association workflow.
 
-  1. Login to `SciApps <https://www.SciApps.org/>`_
+  1. If necessary, login to `SciApps <https://www.SciApps.org/>`_
 
-  2. Click 'Workflow' (from the top navigation bar), then 'Public workflows' to load the public workflow page in the main panel
-     
-     .. Tip::
-       When the right panel (History) is empty, Click the 'public workflow' link (on the top of the History panel) to load the public workflow page
-       
-  3. Click the 'Association' link to load the Association Workflow. The app forms are loaded in the main panel, and analysis history is loaded in the right panel.
-  
+  2. Click 'Workflow' (from the top navigation bar), then 'Public workflows' to
+     load the public workflow page in the main panel
+
+       .. Tip::
+         When the right panel (History) is empty, Click the 'public workflow'
+         link (on the top of the History panel) to load the public workflow page
+
+  3. Click the 'Association' link to load the Association Workflow. The App
+     forms are loaded in the main panel, and analysis history is loaded in the
+     right panel
+
      |association_workflow|
-      
+
      .. Tip::
-       To view the workflow diagram, scroll down the main panel and click the 'Show Diagram' button
+       To view the workflow diagram, scroll down to the bottom of the center
+       panel and click the 'Show Diagram' button
 
 ----
 
-*Step 2: Creating a Workflow*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will demo how to build a workflow from the loaded history. Assume we just want to use EMMAX for association analysis.
+*Step 2: Creating a SciApps Workflow*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This step will demo how to build a workflow from the loaded history. Assume we
+just want to use EMMAX for association analysis.
 
-   1. Check the checkbox for step 1, 2, 3, and 6 in the History panel, then click the 'build a workflow' link (on the top of the History panel) to load the Workflow building page. Alternatively, Click 'Workflow' (from the top navigation bar), then 'Build a workflow' to load the workflow building page
-      
+   1. Using the previously loaded Association workflow as our starting point,
+      check the checkbox for step 1 (MergeG2P), 2 (NPUTE), 3 (NumericalTransform-TASSEL),
+      and 6 (EMMAX)in the History panel, then click the 'build a workflow' link
+      (on the top of the History panel) to load the Workflow building page.
+      Alternatively, Click 'Workflow' (from the top navigation bar), then 'Build
+      a workflow' to load the workflow building page
+
       |build_workflow|
-      
-      .. Tip::
-        History panel Checkboxes and the workflow building page are interactive. Use the 'Select All' or 'Reset' button to simplify the selection step
 
-   2. Modify **Workflow Name** and **Workflow Description**, then click the 'Build Workflow' button to visualize the workflow
-   
+      .. Tip::
+        History panel Checkboxes and the workflow building page are interactive.
+        Use the 'Select All' or 'Reset' button to simplify the selection step
+
+   2. Modify **Workflow Name** and **Workflow Description**, then click the
+      'Build Workflow' button to visualize the workflow
+
       .. Tip::
         All nodes of the diagram are interactive
         |emmax_workflow|
-	
-   3. On the 'Workflow Diagram', you can choose to download or save the workflow. 
-   
+
+   3. On the 'Workflow Diagram', you can choose to download or save the workflow.
+      Click 'Download Workflow' to save the workflow as a JSON file.
+
       .. Tip::
-        For downloading, you will get a JSON file, which can be passed to others for **sharing** the entire analysis. 
-   
-	
+        For downloading, you will get a JSON file, which can be passed to others
+        for **sharing** the entire analysis. Your saved workflows will appear in
+        the "Workflow" menu at the top of the page under "My Workflows"
+
+
 ----
 
-*Step 3: Adding New Analysis to the Workflow*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to add new analysis to the workflow built above. We will perform PCA on the imputed marker data (imputed.txt), which is the output of the NPUTE step.
+*Step 3: Adding New Analysis to the SciApps Workflow*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This step will show you how to add new analysis to the workflow built above. We
+will perform PCA on the imputed marker data (imputed.txt), which is the output
+of the NPUTE step.
 
-  1. Click 'Workflow' (from the top navigation bar), then 'Load a workflow' to loaded the downloaded JSON file. Alternatively, click 'My Workflow' to load the workflow if you have saved the workflow in your workspace.
-  
-  2. Click **Clustering** category from the left panel or search for **PCA**, then click **PCA** to load **PCA 0.0.1**
-     
-  3. Click **2: NPUTE-0.0.1** in the History panel to expand its outputs, then drag and drop **imputed.txt** into the **Marker file** field
-  
+  1. Refresh your web browser to clear you history. Click 'Workflow'
+    (from the top navigation bar), then 'Load a workflow' to
+    load the downloaded JSON file. Alternatively, click 'My Workflow' to load the
+    workflow if you have saved the workflow in your workspace.
+
+  2. Click **Clustering** category from the left panel or search for **PCA**,
+     then click **PCA** to load **PCA 0.0.1**
+
+  3. Click **2: NPUTE-0.0.1** in the History panel to expand its outputs, then
+     drag and drop **imputed.txt** into the **Marker file** field
+
      |pca_workflow|
-       
+
   4. Leave others as defaults, then click the "Submit Job" button
-  
-  5. Once completed, select all analyses to build a new workflow. Save or download the workflow for running it in the next section
-  
-     .. Note::
-       The connection between **imputed.txt** and **PCA-0.0.1** is recorded through **dragging and dropping**, which is how SciApps workflows are built from scratch
-       |emmax_pca_workflow|
-     
+
+  5. Once completed, select all analyses to build a new workflow. Save or
+     download the workflow for running it in the next section
+
+       .. Note::
+         The connection between **imputed.txt** and **PCA-0.0.1** is recorded
+         through **dragging and dropping**, which is how SciApps workflows are
+         built from scratch
+         |emmax_pca_workflow|
+
 ----
 
 **Fix or improve this documentation:**
