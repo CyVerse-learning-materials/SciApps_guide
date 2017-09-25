@@ -20,33 +20,33 @@ for analysis.
 
   1. Log in into SciApps at `https://www.SciApps.org <https://www.SciApps.org>`_
 
-      .. Tip::
+     .. Tip::
 
-        Ensure you have access to SciApps by logging into the `CyVerse User portal <https://user.cyverse.org/>`_
-        You can check if you already have SciApps service by logging into the
-        portal and visiting the 'My Service' page. If SciApps is not listed,
-        click on 'Available' to request access. Requesting access is a
-        one-time operation.
+       Ensure you have access to SciApps by logging into the `CyVerse User portal <https://user.cyverse.org/>`_
+       You can check if you already have SciApps service by logging into the
+       portal and visiting the 'My Service' page. If SciApps is not listed,
+       click on 'Available' to request access. Requesting access is a
+       one-time operation.
 
-        Once enabled, **SciApps will create a A sci_data folder in your Data Store home folder.**
+       Once enabled, **SciApps will create a A sci_data folder in your Data Store home folder.**
 
 
   2. Load any App form by clicking on an App name in the left panel. For any
      step that requires a file in put, click 'or Browse DataStore' to open
      browse the Data Store.
 
-       .. tip::
+     .. tip::
 
-         You can browse the files in your Data Store SciApps has access to:
+       You can browse the files in your Data Store SciApps has access to:
 
-         |data_window|
+       |data_window|
 
-         Other tabs include:
+       Other tabs include:
 
-         - **public**: Example data used for public workflows
-         - **shared**: CyVerse’s public data hosted in CyVerse Data Store
-         - **Go up**: Move up one level
-         - **Refresh**: Reload current folder
+       - **public**: Example data used for public workflows
+       - **shared**: CyVerse’s public data hosted in CyVerse Data Store
+       - **Go up**: Move up one level
+       - **Refresh**: Reload current folder
 
 ----
 
@@ -57,12 +57,12 @@ for analysis.
   2. Click on ‘Data’ (from the top navigation bar), you will be directed to the
      SciApps data page
 
-    .. Note::
-      Only public data (example_data) is available on the data page. Analysis
-      results will also be accessible here with random folder names
-      (hidden for security reasons)
+     .. Note::
+       Only public data (example_data) is available on the data page. Analysis
+       results will also be accessible here with random folder names
+       (hidden for security reasons)
 
-      |data_web|
+       |data_web|
 ----
 
 
