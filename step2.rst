@@ -28,7 +28,7 @@ for analysis.
        click on 'Available' to request access. Requesting access is a
        one-time operation.
 
-       Once enabled, **SciApps will create a A sci_data folder in your Data Store home folder.**
+       Once enabled, SciApps will create a A **sci_data** folder in your Data Store home folder.
 
 
   2. Load any App form by clicking on an App name in the left panel. For any
