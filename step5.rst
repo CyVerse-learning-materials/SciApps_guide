@@ -25,9 +25,9 @@ Gramene.
      created in the last section or use
      `this file <https://data.sciapps.org/misc/my_pca_workflow.json>`_
 
-       .. Tip::
-         Before loading a workflow, refresh the web browser tab to clear the
-         History panel
+     .. Tip::
+       Before loading a workflow, refresh the web browser tab to clear the
+       History panel
 
   3. For **Step 1: MergeG2P**, under **Select marker file in Hapmap format**
      click the **or Browse DataStore** button, then navigate to and select
@@ -36,9 +36,9 @@ Gramene.
 
      |run_workflow|
 
-       .. Note::
-         When browsing DataStore, default is always the location you recently
-         visited, unless you cleared your browser cache
+     .. Note::
+       When browsing DataStore, default is always the location you recently
+       visited, unless you cleared your browser cache
 
   4. Leave others as defaults, scroll down the main panel, and then click
      **Submit Workflow**. You will be asked to confirm and prompted to check
@@ -72,17 +72,17 @@ Gramene.
 
       |manhattan_plot|
 
-        .. Note::
-          The example here is using Chromosome 9 only. And the Manhattan plot is
-          pre-configured to display the same Chromosome. For your own data, use
-          the options on the left side to check a specific Chromosome, or all
-          Chromosomes of your specific genome.
+      .. Note::
+        The example here is using Chromosome 9 only. And the Manhattan plot is
+        pre-configured to display the same Chromosome. For your own data, use
+        the options on the left side to check a specific Chromosome, or all
+        Chromosomes of your specific genome.
 
    3. Use the options on the left side for P-values adjustments, specifying
       species, chromosome, neighboring window size, and display Q-Q plot.
 
-        .. Tip::
-          Both Manhattan plot and Q-Q plot are interactive with all of the options.
+      .. Tip::
+        Both Manhattan plot and Q-Q plot are interactive with all of the options.
 
    4. For visualizing **PCA** outputs, click the **(i)** icon for **5: PCA-0.0.1**,
       then click the output folder link, you will be directed to the data page of
@@ -90,7 +90,9 @@ Gramene.
       and `scree plot <http://support.minitab.com/en-us/minitab/17/topic-library/modeling-statistics/multivariate/principal-components-and-factor-analysis/what-is-a-scree-plot/>`_
 
       |pca_output1| |pca_output2|
-
+      
+       .. Note::
+         The output of PCA can also be used with **MLM-TASSEL** for correcting population structure
 ----
 
 *Summary*
