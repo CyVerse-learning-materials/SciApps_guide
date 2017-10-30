@@ -59,7 +59,6 @@ for analysis.
      .. Note::
        Only exampleData (example_data) is available on the data page. Analysis
        results will also be accessible here with random folder names
-       (hidden for security reasons)
 
        |data_web|
 ----
