@@ -193,7 +193,7 @@ of the NPUTE step.
 .. |emmax_workflow| image:: ./img/sci_apps/emmax_workflow.gif
     :width: 660
     :height: 329
-.. |pca_workflow| image:: ./img/sci_apps/pca_workflow.gif
+.. |pca_workflow| image:: ./img/sci_apps/PCA_workflow.gif
     :width: 660
     :height: 361
 .. |emmax_pca_workflow| image:: ./img/sci_apps/emmax_pca_workflow.gif
