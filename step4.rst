@@ -202,4 +202,4 @@ of the NPUTE step.
     :height: 361
 .. |emmax_pca_workflow| image:: ./img/sci_apps/emmax_pca_workflow.gif
     :width: 660
-    :height: 295
+    :height: 287
