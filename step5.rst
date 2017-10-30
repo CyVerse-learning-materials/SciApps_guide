@@ -31,7 +31,7 @@ Here we will run the workflow created in the 'Building a Workflow' section.
      |run_workflow|
 
      .. Note::
-       Marker file aligned to version 1 assembly of Sorghum is also available as myStudy_filt.c9.hmp.v2.txt
+       Marker file aligned to version 1 assembly of Sorghum is also available as myStudy_filt.c9.hmp.txt
 
   4. Leave others as defaults, scroll down the main panel, and then click
      **Submit Workflow**. You will be asked to confirm and prompted to check
