@@ -7,6 +7,7 @@
 Running a SciApps Workflow
 ---------------------------
 Here we will run the workflow created in the 'Building a Workflow' section.
+
 ----
 
 *Running the example Association Workflow*
