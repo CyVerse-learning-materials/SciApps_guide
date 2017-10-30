@@ -59,11 +59,6 @@ analysis history used to build the workflow.
       - Numerical Transform of marker data using TASSEL and PLINK
       - `App link <https://www.sciapps.org/app_id/NumericalTransform-TASSEL-4.3.15>`_
       -
-    * - CloudSTRUCTURE
-      - 2.3.4
-      - Parallelized STRUCTURE software for estimating population structures
-      - `App link <https://www.sciapps.org/app_id/CloudSTRUCTURE-2.3.4>`_
-      - `App documentation <http://pritch.bsd.uchicago.edu/structure.html>`_
     * - MLM-TASSEL
       - 5.1.23
       - Mixed Linear Model analysis using TASSEL
@@ -119,7 +114,7 @@ just want to use EMMAX for association analysis.
 
    1. Using the previously loaded Association workflow as our starting point,
       check the checkbox for step 1 (MergeG2P), 2 (NPUTE), 3 (NumericalTransform-TASSEL),
-      and 6 (EMMAX)in the History panel, then click the 'build a workflow' link
+      and 5 (EMMAX)in the History panel, then click the 'build a workflow' link
       (on the top of the History panel) to load the Workflow building page.
       Alternatively, Click 'Workflow' (from the top navigation bar), then 'Build
       a workflow' to load the workflow building page
@@ -137,13 +132,11 @@ just want to use EMMAX for association analysis.
         All nodes of the diagram are interactive
         |emmax_workflow|
 
-   3. On the 'Workflow Diagram', you can choose to download or save the workflow.
-      Click 'Download Workflow' to save the workflow as a JSON file.
+   3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My Workflows' (under the 'Workflow' menu from top navigation panel)
 
       .. Tip::
-        For downloading, you will get a JSON file, which can be passed to others
-        for **sharing** the entire analysis. Your saved workflows will appear in
-        the "Workflow" menu at the top of the page under "My Workflows"
+        You can download the workflow from 'My workflow' as a JSON file, which can be passed to others
+        for **sharing** the entire analysis.
 
 
 ----
@@ -197,13 +190,13 @@ of the NPUTE step.
 .. _Home_Icon: http://learning.cyverse.org/
 .. |association_workflow| image:: ./img/sci_apps/association_workflow.gif
     :width: 660
-    :height: 394
+    :height: 401
 .. |build_workflow| image:: ./img/sci_apps/build_workflow.gif
     :width: 660
-    :height: 359
+    :height: 355
 .. |emmax_workflow| image:: ./img/sci_apps/emmax_workflow.gif
     :width: 660
-    :height: 325
+    :height: 329
 .. |pca_workflow| image:: ./img/sci_apps/pca_workflow.gif
     :width: 660
     :height: 361

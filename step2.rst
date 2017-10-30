@@ -32,19 +32,18 @@ for analysis.
 
 
   2. Load any App form by clicking on an App name in the left panel. For any
-     step that requires a file in put, click 'or Browse DataStore' to open
-     browse the Data Store.
+     step that requires an input, click 'or Browse DataStore' to open
+     the browsing window.
 
      .. tip::
 
-       You can browse the files in your Data Store SciApps has access to:
+       You can browse the files in your **CyVerse** Data Store that SciApps has access to:
 
        |data_window|
 
        Other tabs include:
 
-       - **public**: Example data used for public workflows
-       - **shared**: CyVerse’s public data hosted in CyVerse Data Store
+       - **exampleData**: Example data used for public workflows
        - **Go up**: Move up one level
        - **Refresh**: Reload current folder
 
@@ -58,7 +57,7 @@ for analysis.
      SciApps data page
 
      .. Note::
-       Only public data (example_data) is available on the data page. Analysis
+       Only exampleData (example_data) is available on the data page. Analysis
        results will also be accessible here with random folder names
        (hidden for security reasons)
 
@@ -86,4 +85,4 @@ for analysis.
     :height: 200
 .. |data_web| image:: ./img/sci_apps/data_web.gif
     :width: 550
-    :height: 276
+    :height: 295

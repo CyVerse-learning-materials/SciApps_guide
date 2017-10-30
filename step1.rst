@@ -15,13 +15,9 @@ required to access these systems
 
 *Sample datasets*
 
-- Sample datasets are available under the ‘public’ tab. These datasets are
+- Sample datasets are available under the ‘exampleData’ tab. These datasets are
   local to the SciApps computing resources to for minimize data transfers and
   should be used whenever possible for building workflows
-- More CyVerse sample datasets are available under the ‘shared’ tab (CyVerse
-  credentials required). From there, sample datasets for most apps are available
-  in the Data Store  ‘/iplant/home/shared/iplantcollaborative/example_data/’
-
 
 ----
 
