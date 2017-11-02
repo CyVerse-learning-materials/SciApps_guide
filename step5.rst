@@ -27,12 +27,12 @@ Here we will run the workflow created in the 'Building a Workflow' section.
        - **Download**: Download the workflow json
        - **Delete**: Delete the workflow from your account
 
-  3. Alternatively, you can load the workflow by navigating to 'Workflow', 'Load a workflow', and then paste this URL: `https://data.sciapps.org/misc/my_pca_workflow.json<https://data.sciapps.org/misc/my_pca_workflow.json>`_
+  3. Alternatively, you can load the workflow by navigating to 'Workflow', 'Load a workflow', and then paste this `URL <https://data.sciapps.org/misc/my_pca_workflow.json>`_
 
      |load_workflow|
  
      .. Tip::
-       Before loading a workflow, you can refresh the browser window to clean out the History panel
+       Before loading a workflow, you can refresh the browser window to clear the History panel
 
   4. Optional: For **Step 1: MergeG2P**, under **Select marker file in Hapmap format**
      click the **or Browse DataStore** button, then navigate to and select
@@ -139,11 +139,11 @@ Post your question to the user forum:
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
 .. |my_workflow| image:: ./img/sci_apps/my_workflow.gif
-    :width: 480
-    :height: 208
+    :width: 600
+    :height: 260
 .. |load_workflow| image:: ./img/sci_apps/load_workflow.gif
-    :width: 480
-    :height: 172
+    :width: 550
+    :height: 124
 .. |run_workflow| image:: ./img/sci_apps/run_workflow.gif
     :width: 660
     :height: 318
