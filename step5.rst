@@ -142,8 +142,8 @@ Post your question to the user forum:
     :width: 600
     :height: 260
 .. |load_workflow| image:: ./img/sci_apps/load_workflow.gif
-    :width: 550
-    :height: 124
+    :width: 600
+    :height: 135
 .. |run_workflow| image:: ./img/sci_apps/run_workflow.gif
     :width: 660
     :height: 318
