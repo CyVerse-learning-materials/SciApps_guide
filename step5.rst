@@ -27,7 +27,7 @@ Here we will run the workflow created in the 'Building a Workflow' section.
        - **Download**: Download the workflow json
        - **Delete**: Delete the workflow from your account
 
-  3. Alternatively, you can load the workflow by navigating to 'Workflow', 'Load a workflow', and then paste this URL: https://data.sciapps.org/misc/my_pca_workflow.json(`Link <https://data.sciapps.org/misc/my_pca_workflow.json>`_)
+  3. Alternatively, you can load the workflow by navigating to 'Workflow', 'Load a workflow', and then paste this URL: `https://data.sciapps.org/misc/my_pca_workflow.json<https://data.sciapps.org/misc/my_pca_workflow.json>`_
 
      |load_workflow|
  
