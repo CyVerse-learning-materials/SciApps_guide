@@ -15,15 +15,26 @@ Here we will run the workflow created in the 'Building a Workflow' section.
 
   1. If necessary, login to `SciApps <https://www.SciApps.org/>`_
 
-  2. Refresh your web browser to clear your history, than load the workflow you
-     created in the last section or use
-     `this file <https://data.sciapps.org/misc/my_pca_workflow.json>`_
+  2. Navigate to 'Workflow', then 'My workflows', to load the workflow you created and saved in the last section
+
+     |my_workflow|
 
      .. Tip::
-       Before loading a workflow, refresh the web browser tab to clear the
-       History panel
+       From left to right, there are four icons next to the workflow name and description:
 
-  3. For **Step 1: MergeG2P**, under **Select marker file in Hapmap format**
+       - **Load**: Load the workflow with app forms in main panel and history in right panel
+       - **Edit**: Modify the workflow name and/or description
+       - **Download**: Download the workflow json
+       - **Delete**: Delete the workflow from your account
+
+  3. Alternatively, you can load the workflow by navigating to 'Workflow', 'Load a workflow', and then paste this URL: https://data.sciapps.org/misc/my_pca_workflow.json(`Link <https://data.sciapps.org/misc/my_pca_workflow.json>`_)
+
+     |load_workflow|
+ 
+     .. Tip::
+       Before loading a workflow, you can refresh the browser window to clean out the History panel
+
+  4. Optional: For **Step 1: MergeG2P**, under **Select marker file in Hapmap format**
      click the **or Browse DataStore** button, then navigate to and select
      `myStudy_filt.c9.hmp.v2.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.v2.txt>`_
      ; then click ‘Select and Close’. (Location: *example_data > gwas_raw > myStudy_filt.c9.hmp.v2.txt*)
@@ -33,7 +44,7 @@ Here we will run the workflow created in the 'Building a Workflow' section.
      .. Note::
        Marker file aligned to version 1 assembly of Sorghum is also available as myStudy_filt.c9.hmp.txt
 
-  4. Leave others as defaults, scroll down the main panel, and then click
+  5. Leave others as defaults, scroll down the main panel, and then click
      **Submit Workflow**. You will be asked to confirm and prompted to check
      the job status in the right panel. Then a live workflow diagram will be
      displayed with real time analysis status updates.
@@ -127,6 +138,12 @@ Post your question to the user forum:
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
+.. |my_workflow| image:: ./img/sci_apps/my_workflow.gif
+    :width: 480
+    :height: 208
+.. |load_workflow| image:: ./img/sci_apps/load_workflow.gif
+    :width: 480
+    :height: 172
 .. |run_workflow| image:: ./img/sci_apps/run_workflow.gif
     :width: 660
     :height: 318
