@@ -20,10 +20,9 @@ Here we will run the workflow created in the 'Building a Workflow' section.
      |my_workflow|
 
      .. Tip::
-       From left to right, there are four icons next to the workflow name and description:
+       From left to right, there are three buttons on top of the workflow table:
 
        - **Load**: Load the workflow with app forms in main panel and history in right panel
-       - **Edit**: Modify the workflow name and/or description
        - **Download**: Download the workflow json
        - **Delete**: Delete the workflow from your account
 
@@ -140,7 +139,7 @@ Post your question to the user forum:
 .. _Home_Icon: http://learning.cyverse.org/
 .. |my_workflow| image:: ./img/sci_apps/my_workflow.gif
     :width: 600
-    :height: 260
+    :height: 462
 .. |load_workflow| image:: ./img/sci_apps/load_workflow.gif
     :width: 600
     :height: 135
