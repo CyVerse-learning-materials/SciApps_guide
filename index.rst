@@ -21,8 +21,6 @@ Introduce SciApps, a cloud-based platform for building and sharing reproducible 
 	Viewing and Accessing Data <step2.rst>
 	Launching an Analysis Job <step3.rst>
 	Building a Workflow <step4.rst>
-	Running a Workflow <step5.rst>
-
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
 	you have an additional page called 'First Step' with content located in 'step1.rst'.

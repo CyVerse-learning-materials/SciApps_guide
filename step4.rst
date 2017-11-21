@@ -6,12 +6,7 @@
 
 Building a SciApps Workflow
 ------------------------------
-A workflow is a series of Apps chained together to run in sequence as a batch
-operation. On SciApps, workflows can be generated from the analysis already
-completed in a history. Workflows can be viewed, shared, imported, and executed.
-Additionally, SciApps workflows capture inputs, intermediate outputs, and final
-results along with the analysis history. Importing a workflow will import the
-analysis history used to build the workflow.
+A workflow is a series of Apps chained together to run in sequence as a batch operation. On SciApps, workflows are generated from the completed analyses. Here we will show how to build a two-step workflow with SNAP and MAKER for a second round annotation.  
 
 ----
 
@@ -24,15 +19,15 @@ analysis history used to build the workflow.
     * - Input
       - Description
       - Example
-    * - Marker file (Sorghum bicolor assembly v1)
-      - Marker data in TASSEL Hapmap format
-      - `myStudy_filt.c9.hmp.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.txt>`_
-    * - Marker file (Sorghum bicolor assembly v2)
-      - Marker data in TASSEL Hapmap format
-      - `myStudy_filt.c9.hmp.v2.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.v2.txt>`_
-    * - Trait file
-      - Trait data in TASSEL trait format
-      - `trait.txt <https://data.sciapps.org/example_data/gwas_raw/trait.txt>`_
+    * - Assembled genome
+      - A scaled-down genome that is comprised of the first 300kb of three chromosomes of rice
+      - `test_genome.fasta <https://data.sciapps.org/example_data/maker/test_genome.fasta>`_
+    * - Annotated gene models
+      - MAKER output in GFF3 format (gzipped)
+      - `maker_out.gff <https://data.sciapps.org/results/job-7054048854647631385-242ac113-0001-007-job-for-maker-0-0-1/my.all.gff.gz>`_
+    * - SNAP HMM estimation
+      - HMM parameters estimated with SNAP
+      - `my.all.hmm <https://data.sciapps.org/results/job-6189497920853643751-242ac113-0001-007-job-for-snap-0-0-1/my.all.hmm>`_
 
 **SciApps App(s):**
 
@@ -44,128 +39,123 @@ analysis history used to build the workflow.
       - Description
       - App link
       - Notes/other links
-    * - MergeG2P
-      - 0.0.2
-      - Intersect marker data with trait data
-      - `App link <https://www.sciapps.org/app_id/MergeG2P-0.0.2>`_
-      -
-    * - NPUTE
+    * - MAKER
       - 0.0.1
-      - Imputes missing markers via voting from K-nearest-neighbors (KNN)
-      - `App link <https://www.sciapps.org/app_id/NPUTE-0.0.1>`_
-      - `App documentation <http://compgen.unc.edu/NPUTE_README.html>`_
-    * - NumericalTransform-TASSEL
-      - 4.3.15
-      - Numerical Transform of marker data using TASSEL and PLINK
-      - `App link <https://www.sciapps.org/app_id/NumericalTransform-TASSEL-4.3.15>`_
-      -
-    * - MLM-TASSEL
-      - 5.1.23
-      - Mixed Linear Model analysis using TASSEL
-      - `App link <https://www.sciapps.org/app_id/MLM-TASSEL-5.1.23>`_
-      - `App documentation <http://www.maizegenetics.net/>`_
-    * - EMMAX
-      - 0.0.2
-      - Association mapping with consideration of sample structure
-      - `App link <https://www.sciapps.org/app_id/EMMAX-0.0.2>`_
-      - `App documentation <http://genetics.cs.ucla.edu/emmax/>`_
-    * - MLMM
-      - 0.0.2
-      - An efficient multi-locus mixed-model approach for GWAS
-      - `App link <https://www.sciapps.org/app_id/MLMM-0.0.2>`_
-      - `App documentation <https://cynin.gmi.oeaw.ac.at/home/resources/mlmm>`_
-    * - PCA
+      - A portable and easily configurable genome annotation pipeline
+      - `SciApps App link <https://www.sciapps.org/app_id/MAKER-0.0.1>`_
+      - `App documentation <http://www.yandell-lab.org/software/maker.html/>`_
+    * - SNAP
       - 0.0.1
-      - Principal Component Analysis
-      - `App link <https://www.sciapps.org/app_id/PCA-0.0.1>`_
-      - `App documentation <https://stat.ethz.ch/R-manual/R-patched/library/stats/html/prcomp.html>`_
+      - Semi-HMM-based Nucleic Acid Parser
+      - `SciApps App link <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
+      - `App documentation <http://korflab.ucdavis.edu/software.html>`_
 
-*Step 1: Importing a SciApps Workflow History*
+*Step 1: Running MAKER with SNAP output*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to import a history/workflow from a remote source
-into your own workspace. We will be using this history to build a new workflow.
-The example used here is the public association workflow.
+This step will show you how to use SNAP output with MAKER to do a second around annotation.
 
-  1. If necessary, login to `SciApps <https://www.SciApps.org/>`_
+  1. Login to `SciApps <https://www.SciApps.org/>`_
 
-  2. Click 'Workflow' (from the top navigation bar), then 'Public workflows' to
-     load the public workflow page in the main panel
+  2. Run SNAP as in the last section if you haven't. 
 
+     |myjobs_window|
+  
      .. Tip::
-       When the right panel (History) is empty, click the 'public workflow'
-       link (on the top of the History panel) to load the public workflow page
+       Jobs disappear from the History panel when browser gets refreshed. To load completed jobs to the History panel, click 'Workflow' then 'My jobs' to select.
+      
+  3. Click **Annotation** category (left panel) or search for **MAKER**, then click **MAKER** to load **MAKER 0.0.1**
 
-  3. Click the 'Association' link to load the Association Workflow. The App
-     forms are loaded in the main panel, and analysis history is loaded in the
-     right panel
+  4. Under “Genome sequence file” click **or Browse DataStore**, then navigate the exampleData (*example_data > maker*); select **test_genome.fasta** and click 'Select and Close'.
 
-     |association_workflow|
+  5. Click **SNAP-0.0.1** in the History panel to expand its outputs, then
+     drag and drop **my.all.hmm** into the **SNAP HMM file** field
 
-     .. Tip::
-       To view the workflow diagram, scroll down to the bottom of the center
-       panel and click the 'Show Diagram' button
+     |build_workflow2|
+
+  6. Under “Maker annotations” click **or Browse DataStore**, then navigate the example data (*example_data > maker*); select **maker_out.gff** and click 'Select and Close'.
+
+  7. Leave others as defaults, then click the "Submit Job" button
+
+  8. Once COMPLETED, click **MAKER-0.0.1** in the History panel to expand its outputs, then click **maker_output.jbrowse** to visualize annotation results.
+
+     .. Note::
+       You will get email notification if selected 'Yes' before 'Submit Job', or you can click on the 'i' icon to check the analysis status. For manual annotation of the MAKER results with Apollo, go to http://data.maizecode.org/apollo with username: demo@demo.com, and password: demo         
 
 ----
 
 *Step 2: Creating a SciApps Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will demo how to build a workflow from the loaded history. Assume we
-just want to use EMMAX for association analysis.
+This step will show you how to build a two-step workflow with previously completed MAKER and SNAP jobs.
 
-   1. Using the previously loaded Association workflow as our starting point,
-      check the checkbox for step 1 (MergeG2P), 2 (NPUTE), 3 (NumericalTransform-TASSEL),
-      and 5 (EMMAX)in the History panel, then click the 'build a workflow' link
-      (on the top of the History panel) to load the Workflow building page.
-      Alternatively, Click 'Workflow' (from the top navigation bar), then 'Build
-      a workflow' to load the workflow building page
+  1. Check the checkboxes for step 1 (SNAP), and step 2 (MAKER) in the History panel, then click the ‘build a workflow’ link to load the Workflow building page.
 
-      |build_workflow|
+     |build_workflow3|
+    
+     .. Tip::
+        History panel Checkboxes and the workflow building page are interactive. Use the 'Select All' or 'Reset' button to simplify the selection process
 
-      .. Tip::
-        History panel Checkboxes and the workflow building page are interactive.
-        Use the 'Select All' or 'Reset' button to simplify the selection step
+  2. Modify **Workflow Name** and **Workflow Description**, then click the ‘Build Workflow’ button to visualize the workflow
 
-   2. Modify **Workflow Name** and **Workflow Description**, then click the
-      'Build Workflow' button to visualize the workflow
+     |annotation_workflow2|
 
-      .. Tip::
-        All nodes of the diagram are interactive
-        |emmax_workflow|
+     .. Note::
+       The connection between **SNAP-0.0.1** and **MAKER-0.0.1**  (via **my.all.hmm**) is recorded through **dragging and dropping**
 
-   3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My Workflows' (under the 'Workflow' menu from top navigation panel)
+  3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My Workflows' (under the 'Workflow' menu from top navigation panel)
 
-      .. Tip::
-        You can download the workflow from 'My workflow' as a JSON file, which can be passed to others
-        for **sharing** the entire analysis.
-
+     .. Tip::
+       You can download the workflow from 'My workflows' as a JSON file, which can be passed to others for **sharing** the entire analysis.
 
 ----
 
-*Step 3: Adding New Analysis to the SciApps Workflow*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to add new analysis to the workflow built above. We
-will perform PCA on the imputed marker data (imputed.txt), which is the output
-of the NPUTE step.
+*Step 3: Running a SciApps Workflow*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This step will show you how to run a workflow you created or someone shared with you.
 
-  1. Refresh your web browser to clear you history. Click 'Workflow' (from the top navigation bar), then 'Load a workflow' to load the downloaded JSON file. Alternatively, click 'My Workflow' to load the workflow if you have saved the workflow in your workspace.
+  1. Navigate to ‘Workflow’, then ‘My workflows’, to load the workflow you created and saved (in **Step 2**)
 
-  2. Click **Clustering** category (left panel) or search for **PCA**, then click **PCA** to load **PCA 0.0.1**
+     |myworkflows_window|
 
-  3. Click **2: NPUTE-0.0.1** in the History panel to expand its outputs, then
-     drag and drop **imputed.txt** into the **Marker file** field
+  2. Alternatively, you can load the workflow by navigating to 'Workflow', 'Load a workflow', then paste this URL: https://data.sciapps.org/misc/my_workflow.json or load a workflow JSON file from your PC
 
-     |pca_workflow|
+     |load_workflow|
+ 
+     .. Tip::
+       Before loading a workflow, you can refresh the browser window to clear the History panel
 
-  4. Leave others as defaults, then click the "Submit Job" button
-         
-  5. Once completed, select all analyses to build a new workflow. Save or
-     download the workflow for running it in the next section
+  3. Scroll down the main panel, then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real time analysis status updates.
 
      .. Note::
-       The connection between **imputed.txt** and **PCA-0.0.1** is recorded
-       through **dragging and dropping**, which is one way to build SciApps workflows
-       from scratch
-       |emmax_pca_workflow|
+
+       |running_workflow|
+
+       The color of the app node will change when the status of the analysis changes:
+
+       - 'Yellow': Pending
+       - 'Blue': Running
+       - 'Green': Completed
+       - 'Red': Failed
+
+----
+
+*Summary*
+~~~~~~~~~
+
+Using the apps SNAP and MAKER as examples, you have gotten an overview of how to use SciApps - from accessing data in CyVerse Data Store, to launching jobs, building workflows, importing workflows, running workflows, and visualizing results.
+
+
+More help and additional information
+`````````````````````````````````````
+
+..
+    Short description and links to any reading materials
+
+Search for an answer:
+    `CyVerse Learning Center <http://learning.cyverse.org>`_ or
+    `CyVerse Wiki <https://wiki.cyverse.org>`_
+
+Post your question to the user forum:
+    `Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
 
 ----
 
@@ -184,18 +174,24 @@ of the NPUTE step.
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
-.. |association_workflow| image:: ./img/sci_apps/association_workflow.gif
+.. |myjobs_window| image:: ./img/sci_apps/myjobs_window.gif
     :width: 660
-    :height: 401
-.. |build_workflow| image:: ./img/sci_apps/build_workflow.gif
+    :height: 232
+.. |build_workflow2| image:: ./img/sci_apps/build_workflow2.gif
     :width: 660
-    :height: 355
-.. |emmax_workflow| image:: ./img/sci_apps/emmax_workflow.gif
+    :height: 246
+.. |build_workflow3| image:: ./img/sci_apps/build_workflow3.gif
     :width: 660
-    :height: 329
-.. |pca_workflow| image:: ./img/sci_apps/PCA_workflow.gif
+    :height: 294
+.. |annotation_workflow2| image:: ./img/sci_apps/annotation_workflow2.gif
     :width: 660
-    :height: 361
-.. |emmax_pca_workflow| image:: ./img/sci_apps/emmax_pca_workflow.gif
+    :height: 320
+.. |myworkflows_window| image:: ./img/sci_apps/my_workflow.gif
     :width: 660
-    :height: 287
+    :height: 222
+.. |load_workflow| image:: ./img/sci_apps/load_workflow.gif
+    :width: 600
+    :height: 135
+.. |running_workflow| image:: ./img/sci_apps/running_workflow2.gif
+    :width: 660
+    :height: 199

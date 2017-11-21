@@ -18,26 +18,26 @@ for analysis.
 *Browsing/Navigating CyVerse Data Store on SciApps*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  1. Log in into SciApps at `https://www.SciApps.org <https://www.SciApps.org>`_
+  1. Log into CyVerse User portal at https://user.cyverse.org
 
-     .. Tip::
+  2. By default, you will see 'My SERVICES'. If SciApps is not listed, click on 'AVAILABLE', then 'REQUEST ACCESS'
 
-       Ensure you have access to SciApps by logging into the `CyVerse User portal <https://user.cyverse.org/>`_
-       You can check if you already have SciApps service by logging into the
-       portal and visiting the 'My Service' page. If SciApps is not listed,
-       click on 'Available' to request access. Requesting access is a
-       one-time operation.
+     |cyverse_user|
 
-       Once enabled, SciApps will create a A **sci_data** folder in your Data Store home folder.
+  3. If SciApps is listed, click on 'LAUNCH'_
 
+     |sciapps_launch|
 
-  2. Load any App form by clicking on an App name in the left panel. For any
-     step that requires an input, click 'or Browse DataStore' to open
+     .. Note::
+
+       Once requested, SciApps will create a A **sci_data** folder in your Data Store home folder. Any data you put in this folder can be used to build workflows. This is one time operation, and after this, you can log into SciApps directly at https://www.sciapps.org 
+
+  2. Load any App form by clicking on an App name in the left panel. For any steps that require an input, click 'or Browse DataStore' to open
      the browsing window.
 
      .. tip::
 
-       You can browse the files in your **CyVerse** Data Store that SciApps has access to:
+       Click on **CyVerse** to browse the CyVerse Data Store (**sci_data** folder only):
 
        |data_window|
 
@@ -85,3 +85,9 @@ for analysis.
 .. |data_web| image:: ./img/sci_apps/data_web.gif
     :width: 550
     :height: 295
+.. |cyverse_user| image:: ./img/sci_apps/cyverse_user.gif
+    :width: 660
+    :height: 362
+.. |sciapps_launch| image:: ./img/sci_apps/sciapps_launch.gif
+    :width: 550
+    :height: 172

@@ -55,8 +55,8 @@ annotation App.
      or click **Prediciton** category from the left panel; and select SNAP.
 
   3. Under “GFF file” click **or Browse DataStore**, then navigate the example data
-     (*example_data > maker > maker_out.gff*); select **maker_out.gff** and click
-     'Select and Close'. to and select
+     (*example_data > maker*); select **maker_out.gff** and click
+     'Select and Close'.
 
      |snap_app|
 
