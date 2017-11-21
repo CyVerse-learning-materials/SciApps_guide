@@ -24,15 +24,15 @@ for analysis.
 
      |cyverse_user|
 
+     .. Note::
+
+       Once requested, SciApps will create a A **sci_data** folder in your Data Store home folder. Any data you put in this folder can be used to build workflows. This is one time operation, and after this, you can log into SciApps directly at https://www.sciapps.org
+
   3. If SciApps is listed, click on 'LAUNCH'_
 
      |sciapps_launch|
 
-     .. Note::
-
-       Once requested, SciApps will create a A **sci_data** folder in your Data Store home folder. Any data you put in this folder can be used to build workflows. This is one time operation, and after this, you can log into SciApps directly at https://www.sciapps.org 
-
-  2. Load any App form by clicking on an App name in the left panel. For any steps that require an input, click 'or Browse DataStore' to open
+  4. Load any App form by clicking on an App name in the left panel. For any steps that require an input, click '**or Browse DataStore**' to open
      the browsing window.
 
      .. tip::
