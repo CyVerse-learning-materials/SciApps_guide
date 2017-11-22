@@ -104,7 +104,7 @@ This step will show you how to visualize association results for EMMAX and PCA. 
 
    1. Once the workflow is loaded, click **EMMAX-0.0.2** in the History panel to expand its outputs.
     
-   2. Click **manhattan.plot** from the list of outputs, you will be directed to the Manhattan plot of the results. You can also check Q-Q plot and/or click the Manhattan plot to check nearby genes around the clicked position.
+   2. Click **manhattan.plot** from the list of outputs, you will be directed to the Manhattan plot of the results. You can also check Q-Q plot and click the Manhattan plot to check nearby genes around the clicked position.
 
       |manhattan_plot|
 
