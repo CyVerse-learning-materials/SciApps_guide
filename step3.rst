@@ -27,7 +27,7 @@ annotation App.
       - Example
     * - Annotated gene models
       - MAKER output in GFF3 format
-      - `maker_out.gff <https://data.sciapps.org/example_data/maker/maker_out.gff>`_
+      - `my.all.gff.gz <https://data.sciapps.org/results/job-7054048854647631385-242ac113-0001-007-job-for-maker-0-0-1/my.all.gff.gz>`_
 
 **SciApps App(s):**
 
@@ -51,8 +51,7 @@ annotation App.
 
   1. Login to `SciApps <https://www.SciApps.org/>`_
 
-  2. Click this `link to open to SNAP 0.0.1 <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
-     or click **Prediciton** category from the left panel; and select SNAP.
+  2. Click **Prediciton** category (left panel) or search for **SNAP**, then click **SNAP** to load **SNAP-0.0.1**.
 
   3. Under “GFF file” click **or Browse DataStore**, then navigate the example data
      (*example_data > maker*); select **maker_out.gff** and click

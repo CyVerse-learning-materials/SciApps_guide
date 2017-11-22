@@ -24,7 +24,7 @@ A workflow is a series of Apps chained together to run in sequence as a batch op
       - `test_genome.fasta <https://data.sciapps.org/example_data/maker/test_genome.fasta>`_
     * - Annotated gene models
       - MAKER output in GFF3 format (gzipped)
-      - `maker_out.gff <https://data.sciapps.org/results/job-7054048854647631385-242ac113-0001-007-job-for-maker-0-0-1/my.all.gff.gz>`_
+      - `my.all.gff.gz <https://data.sciapps.org/results/job-7054048854647631385-242ac113-0001-007-job-for-maker-0-0-1/my.all.gff.gz>`_
     * - SNAP HMM estimation
       - HMM parameters estimated with SNAP
       - `my.all.hmm <https://data.sciapps.org/results/job-6189497920853643751-242ac113-0001-007-job-for-snap-0-0-1/my.all.hmm>`_
@@ -63,7 +63,7 @@ This step will show you how to use SNAP output with MAKER to do a second around 
 
        |myjobs_window|
 
-  3. Click **Annotation** category (left panel) or search for **MAKER**, then click **MAKER** to load **MAKER 0.0.1**
+  3. Click **Annotation** category (left panel) or search for **MAKER**, then click **MAKER** to load **MAKER-0.0.1**
 
      |build_workflow2|
 
