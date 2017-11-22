@@ -6,7 +6,7 @@
 
 The Association Workflow
 ---------------------------------
-A genome-wide association study (or GWAS) is an examination of a genome-wide set of genetic variants in a population of individuals aimed at determining whether any variant is associated with a trait. In this section, we will run the Association workflow available on the 'Public workflows' page. The workflow contains following operations in order: intersecting marker data with trait data, imputing missing markers, estimating population structure with PCA, and performing mixed-model based analyses with three different tools (EMMAX, TASSEL, and MLMM). 
+A genome-wide association study (or GWAS) is an examination of a genome-wide set of genetic variants in a population of individuals aimed at determining whether any variant is associated with a trait. In this section, we will walk through the Association workflow available on the 'Public workflows' page. The workflow contains following operations in order: intersecting marker data with trait data, imputing missing markers, estimating population structure with PCA, and performing mixed-model based analyses with three different tools (EMMAX, TASSEL, and MLMM). 
 
 We will start by loading the workflow, visualizing results, creating a new workflow with EMMAX method only, and then add additional analyses to estimate population structure and perform mixed model analysis.  
 
@@ -93,7 +93,7 @@ This step will show you how to import the Association workflow into your own wor
 
      |association_workflow|
 
-     .. Tip::
+     .. Note::
        To view the workflow diagram, scroll down to the bottom of the main panel and click the 'Show Diagram' button
  
 ----
@@ -154,7 +154,7 @@ This step will show you how to add new analysis to the workflow built above. We 
 
   2. Click **NumericalTransform-TASSEL-4.3.15** in the History panel to expand its outputs, then drag and drop **nt.txt** into the **Select marker file** field
 
-  3. Enter **12559** for 'number of loci' and **310** for 'number of individuals, leave others as defaults, then click the "Submit Job" button. Once completed, click to expand its outputs and outputs of **MergeG2P-0.0.2** and **NPUTE-0.0.1**. 
+  3. Enter **12559** for 'number of loci' and **310** for 'number of individuals, leave others as defaults, then click the "Submit Job" button. Once completed, click to expand its outputs. 
       
      .. Note::
        These numbers are in the `nt.txt.log <https://data.sciapps.org/results/job-5681552548147892711-242ac113-0001-007-job-for-numericaltransform-tassel-4-3-15/nt.txt.log>`_ file from the **NumericalTransform-TASSEL-4.3.15** job   
@@ -167,7 +167,7 @@ This step will show you how to add new analysis to the workflow built above. We 
 
      |association_workflow3|
 
-  6. As in **Step 2**, you can visualize the **Manhattan plot** with MLM-TASSEL outputs and compare it with the EMMAX output or MLM-TASSEL output when PCA is used.
+  6. As in **Step 2**, you can visualize the **Manhattan plot** of MLM-TASSEL outputs and compare it with the EMMAX output or MLM-TASSEL output when PCA is used.
 
 ----
 
@@ -209,9 +209,9 @@ Post your question to the user forum:
 .. |public_workflows| image:: ./img/sci_apps/public_workflows.gif
     :width: 660
     :height: 223
-.. |association_workflow| image:: ./img/sci_apps/association_workflow.gif
+.. |association_workflow| image:: ./img/sci_apps/association_workflow0.gif
     :width: 660
-    :height: 573
+    :height: 458
 .. |build_workflow| image:: ./img/sci_apps/build_workflow.gif
     :width: 660
     :height: 355
