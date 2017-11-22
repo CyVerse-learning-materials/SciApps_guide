@@ -4,7 +4,7 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Launching an SciApps Analysis Job
+Launching an Analysis Job
 ----------------------------------
 
 For analyzing data, you can select an App from the left panel of SciApps.
