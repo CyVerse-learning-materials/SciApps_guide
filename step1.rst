@@ -56,7 +56,7 @@ jobs, or save workflows. You can however preview applications and public workflo
 
 **Fix or improve this documentation:**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/sciapps_guide>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide/blob/master/step1.rst>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----

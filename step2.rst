@@ -66,7 +66,7 @@ for analysis.
 
 **Fix or improve this documentation:**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide/blob/master/step2.rst>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----

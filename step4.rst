@@ -58,19 +58,19 @@ This step will show you how to use SNAP output with MAKER to do a second around 
 
   2. Run SNAP as in the last section if you haven't. 
 
-     |myjobs_window|
-  
      .. Tip::
        Jobs disappear from the History panel when browser gets refreshed. To load completed jobs to the History panel, click 'Workflow' then 'My jobs' to select.
-      
+
+       |myjobs_window|
+
   3. Click **Annotation** category (left panel) or search for **MAKER**, then click **MAKER** to load **MAKER 0.0.1**
+
+     |build_workflow2|
 
   4. Under “Genome sequence file” click **or Browse DataStore**, then navigate the exampleData (*example_data > maker*); select **test_genome.fasta** and click 'Select and Close'.
 
   5. Click **SNAP-0.0.1** in the History panel to expand its outputs, then
      drag and drop **my.all.hmm** into the **SNAP HMM file** field
-
-     |build_workflow2|
 
   6. Under “Maker annotations” click **or Browse DataStore**, then navigate the example data (*example_data > maker*); select **maker_out.gff** and click 'Select and Close'.
 
@@ -161,7 +161,7 @@ Post your question to the user forum:
 
 **Fix or improve this documentation:**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide/blob/master/step4.rst>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----

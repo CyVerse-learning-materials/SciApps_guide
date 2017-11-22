@@ -4,9 +4,10 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Running a SciApps Workflow
+The Association Workflow
 ---------------------------
-Here we will run the workflow created in the 'Building a Workflow' section.
+Here we will run the Association workflow available on the 'Public workflows' page. A genome-wide association study (or GWAS) is an examination of a genome-wide set of genetic variants in a population of individuals aimed at determining whether any variant is associated with a trait.
+
 
 ----
 
@@ -124,7 +125,7 @@ Post your question to the user forum:
 
 **Fix or improve this documentation:**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide/blob/master/annotation.rst>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
