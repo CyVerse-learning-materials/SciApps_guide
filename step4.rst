@@ -4,7 +4,7 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Building a SciApps Workflow
+Building a Workflow
 ------------------------------
 A workflow is a series of Apps chained together to run in sequence as a batch operation. On SciApps, workflows are generated from the completed analyses. Here we will show how to build a two-step workflow with SNAP and MAKER for a second round annotation.  
 
@@ -83,7 +83,7 @@ This step will show you how to use SNAP output with MAKER to do a second around 
 
 ----
 
-*Step 2: Creating a SciApps Workflow*
+*Step 2: Creating a Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will show you how to build a two-step workflow with previously completed MAKER and SNAP jobs.
 
@@ -108,7 +108,7 @@ This step will show you how to build a two-step workflow with previously complet
 
 ----
 
-*Step 3: Running a SciApps Workflow*
+*Step 3: Running a Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will show you how to run a workflow you created or someone shared with you.
 
