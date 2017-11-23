@@ -123,7 +123,7 @@ This step will show you how to visualize the results of EMMAX and PCA. You can c
       
 *Step 3: Creating a New Association Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will demo how to build a workflow from the loaded history. Assuming we just want to use EMMAX for association analysis, based on the workflow diagram above, we will need MergeG2P, NPUTE, and NumericalTransform-TASSEL if given new marker data and/or new trait data.
+This step will demo how to build a workflow from the loaded history. Assuming we just want to use EMMAX for association analysis, based on the workflow diagram above, we will also need MergeG2P, NPUTE, and NumericalTransform-TASSEL if given new marker data and/or new trait data.
 
    1. Check the checkboxes for step 1 (MergeG2P), 2 (NPUTE), 3 (NumericalTransform-TASSEL), and 5 (EMMAX) in the History panel, then click the 'build a workflow' link to load the Workflow building page.
 
@@ -163,7 +163,7 @@ This step will show you how to add new analysis to the workflow built above. We 
 
      |association_workflow2|
 
-  5. Leave others as defaults, then click the "Submit Job" button. Once completed, select all jobs to build and save a new workflow. The workflow can be re-run or shared as described before.
+  5. Leave others as defaults, then click the "Submit Job" button. Once completed, select all jobs to build a new workflow. The workflow can be re-run or shared as described before.
 
      |association_workflow3|
 
