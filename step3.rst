@@ -29,7 +29,7 @@ annotation App.
       - MAKER output in GFF3 format
       - `my.all.gff.gz <https://data.sciapps.org/results/job-7054048854647631385-242ac113-0001-007-job-for-maker-0-0-1/my.all.gff.gz>`_
 
-**SciApps App(s):**
+**Apps:**
 
 .. list-table::
     :header-rows: 1

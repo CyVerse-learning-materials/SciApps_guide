@@ -6,7 +6,7 @@
 
 The Association Workflow
 ---------------------------------
-A genome-wide association study (or GWAS) is an examination of a genome-wide set of genetic variants in a population of individuals aimed at determining whether any variant is associated with a trait. In this section, we will walk through the Association workflow available on the 'Public workflows' page. The workflow contains following operations in order: intersecting marker data with trait data, imputing missing markers, estimating population structure with PCA, and performing mixed-model based analyses with three different tools (EMMAX, TASSEL, and MLMM). 
+A genome-wide association study (or GWAS) is an examination of a genome-wide set of genetic variants in a population of individuals aimed at determining whether any variant is associated with a trait. In this section, we will walk through the Association workflow available on the 'Public workflows' page. The workflow contains following operations in order: intersecting marker data with trait data, imputing missing markers, estimating population structure with PCA, and performing mixed-model based analyses with three different tools (EMMAX, TASSEL, and MLMM). The example data used here are a subset of the published data (Morris, G., et al. `PNAS 110.2 (2013): 453-458 <http://www.pnas.org/content/110/2/453.long>`_).
 
 We will start by loading the workflow, visualizing results, creating a new workflow with EMMAX method only, and then add additional analyses to estimate population structure and perform mixed model analysis.  
 
@@ -28,7 +28,7 @@ We will start by loading the workflow, visualizing results, creating a new workf
       - Trait data in TASSEL trait format
       - `trait.txt <https://data.sciapps.org/example_data/gwas_raw/trait.txt>`_
 
-**SciApps App(s):**
+**Apps:**
 
 .. list-table::
     :header-rows: 1
@@ -100,7 +100,7 @@ This step will show you how to import the Association workflow into your own wor
 
 *Step 2: Visualizing the Association Workflow Results*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to visualize association results for EMMAX and PCA. You can check other results with the similar operations.
+This step will show you how to visualize the results of EMMAX and PCA. You can check other results with the similar operations.
 
    1. Once the workflow is loaded, click **EMMAX-0.0.2** in the History panel to expand its outputs.
     
@@ -123,7 +123,7 @@ This step will show you how to visualize association results for EMMAX and PCA. 
       
 *Step 3: Creating a New Association Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will demo how to build a workflow from the loaded history. Assume we just want to use EMMAX for association analysis.
+This step will demo how to build a workflow from the loaded history. Assuming we just want to use EMMAX for association analysis, based on the workflow diagram above, we will need MergeG2P, NPUTE, and NumericalTransform-TASSEL if given new marker data and/or new trait data.
 
    1. Check the checkboxes for step 1 (MergeG2P), 2 (NPUTE), 3 (NumericalTransform-TASSEL), and 5 (EMMAX) in the History panel, then click the 'build a workflow' link to load the Workflow building page.
 
@@ -148,7 +148,7 @@ This step will demo how to build a workflow from the loaded history. Assume we j
 
 *Step 4: Adding New Analyses to the Association Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to add new analysis to the workflow built above. We will use CloudStructure instead of PCA to estimated population structure, then pass the estimation to MLM-TASSEL for performing association analysis.
+This step will show you how to add new analysis to the workflow built above. We will use CloudStructure instead of PCA to estimate population structure, then pass the estimation to MLM-TASSEL for performing association analysis.
 
   1. Click **Clustering** category (left panel) or search for **structure**, then click **CloudSTRUCUTRE** to load **CloudSTRUCTURE-2.3.4**
 
@@ -163,11 +163,11 @@ This step will show you how to add new analysis to the workflow built above. We 
 
      |association_workflow2|
 
-  5. Leave others as defaults, then click the "Submit Job" button. Once completed, check all jobs to build and save a new workflow. The workflow can be re-run or shared as described before.
+  5. Leave others as defaults, then click the "Submit Job" button. Once completed, select all jobs to build and save a new workflow. The workflow can be re-run or shared as described before.
 
      |association_workflow3|
 
-  6. As in **Step 2**, you can visualize the **Manhattan plot** of MLM-TASSEL outputs and compare it with the EMMAX output or MLM-TASSEL output when PCA is used.
+  6. As in **Step 2**, you can visualize the **Manhattan plot** of MLM-TASSEL outputs and compare it with that of EMMAX or MLM-TASSEL (when PCA is used for estimating population structure).
 
 ----
 

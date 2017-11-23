@@ -29,7 +29,7 @@ A workflow is a series of Apps chained together to run in sequence as a batch op
       - HMM parameters estimated with SNAP
       - `my.all.hmm <https://data.sciapps.org/results/job-6189497920853643751-242ac113-0001-007-job-for-snap-0-0-1/my.all.hmm>`_
 
-**SciApps App(s):**
+**Apps:**
 
 .. list-table::
     :header-rows: 1
