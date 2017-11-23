@@ -16,7 +16,7 @@ required to access these systems
 *Sample datasets*
 
 - Sample datasets are available under the ‘exampleData’ tab. These datasets are
-  local to the SciApps computing resources to for minimize data transfers and
+  local to the SciApps computing resources for minimizing data transfers and
   should be used whenever possible for building workflows
 
 ----
