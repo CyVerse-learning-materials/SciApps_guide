@@ -18,22 +18,21 @@ for analysis.
 *Browsing/Navigating CyVerse Data Store on SciApps*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  1. Log into CyVerse User portal at https://user.cyverse.org
+  1. Log into CyVerse User portal at https://user.cyverse.org.
 
-  2. By default, you will see 'My SERVICES'. If SciApps is not listed, click on 'AVAILABLE', then 'REQUEST ACCESS'
+  2. By default, you will see 'My SERVICES'. If SciApps is not listed, click on 'AVAILABLE', then 'REQUEST ACCESS'.
 
      |cyverse_user|
 
      .. Note::
 
-       Once requested, SciApps will create the **sci_data** folder in your Data Store home folder. Any data you put in this folder can be used to build workflows. This is one-time operation, and after this, you can log into SciApps directly at https://www.sciapps.org
+       Once requested, SciApps will create the **sci_data** folder in your Data Store home folder. Any data you put in this folder can be used to build workflows. The REQUEST step is one-time operation, and after this, you can log into SciApps directly at https://www.SciApps.org.
 
-  3. If SciApps is listed, click on 'LAUNCH'_
+  3. If SciApps is listed, click on 'LAUNCH'.
 
      |sciapps_launch|
 
-  4. Load any App form by clicking on an App name in the left panel. For any steps that require an input, click '**or Browse DataStore**' to open
-     the browsing window.
+  4. Load any App form by clicking on an App name in the left panel. For any steps that require an input, click '**or Browse DataStore**' to open the browsing window.
 
      .. tip::
 
@@ -54,7 +53,7 @@ for analysis.
   1. Access SciApps at https://www.SciApps.org
 
   2. Click on ‘Data’ (from the top navigation bar), you will be directed to the
-     SciApps data page
+     SciApps data page.
 
      .. Note::
        Only exampleData (example_data) is available on the data page. 

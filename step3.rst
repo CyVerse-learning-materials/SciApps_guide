@@ -49,7 +49,7 @@ annotation App.
 *Example Analysis: HMM parameters estimation with SNAP*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  1. Login to `SciApps <https://www.SciApps.org/>`_
+  1. Login to SciApps at https://www.SciApps.org.
 
   2. Click **Prediciton** category (left panel) or search for **SNAP**, then click **SNAP** to load **SNAP-0.0.1**.
 
@@ -61,7 +61,7 @@ annotation App.
 
      .. Tip::
        For smaller files (<10 MB), you can click **Choose File** to select from
-       your local computer
+       your local computer.
 
   4. Leave other parameters as default, and then click **Submit Job**. You will
      be asked to confirm; click "Submit". You will be prompted to check the job
@@ -78,15 +78,15 @@ annotation App.
        From left to right, there are three icons next to each job name:
 
        - **Checkbox**: If checked, the analysis will be added to the workflow building page
-       - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below)
+       - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below).
          |agave_status|
-       - **Re-submit**: Relaunch the analysis job with same inputs and parameters
+       - **Re-submit**: Relaunch the analysis job with same inputs and parameters.
 
      .. Note::
        Outputs displayed under job names are defined outputs in Agave app JSON.
        They are the ones that should be used in workflow construction.
        The output folder contains complete outputs from the analysis job and it
-       can be accessed through the Information icon
+       can be accessed through the Information icon.
 
 ----
 

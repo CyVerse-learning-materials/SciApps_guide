@@ -54,7 +54,7 @@ A workflow is a series of Apps chained together to run in sequence as a batch op
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will show you how to use SNAP output with MAKER to do a second around annotation.
 
-  1. Login to `SciApps <https://www.SciApps.org/>`_
+  1. Login to SciApps at https://www.SciApps.org.
 
   2. Run SNAP as in the last section if you haven't. 
 
@@ -63,23 +63,23 @@ This step will show you how to use SNAP output with MAKER to do a second around 
 
        |myjobs_window|
 
-  3. Click **Annotation** category (left panel) or search for **MAKER**, then click **MAKER** to load **MAKER-0.0.1**
+  3. Click **Annotation** category (left panel) or search for **MAKER**, then click **MAKER** to load **MAKER-0.0.1**.
 
      |build_workflow2|
 
   4. Under “Genome sequence file” click **or Browse DataStore**, then navigate the exampleData (*example_data > maker*); select **test_genome.fasta** and click 'Select and Close'.
 
   5. Click **SNAP-0.0.1** in the History panel to expand its outputs, then
-     drag and drop **my.all.hmm** into the **SNAP HMM file** field
+     drag and drop **my.all.hmm** into the **SNAP HMM file** field.
 
   6. Under “Maker annotations” click **or Browse DataStore**, then navigate the example data (*example_data > maker*); select **maker_out.gff** and click 'Select and Close'.
 
-  7. Leave others as defaults, then click the "Submit Job" button
+  7. Leave others as defaults, then click the "Submit Job" button.
 
   8. Once COMPLETED, click **MAKER-0.0.1** in the History panel to expand its outputs, then click **maker_output.jbrowse** to visualize annotation results.
 
      .. Note::
-       You will get an email notification if selected 'Yes' before 'Submit Job', or you can click on the 'i' icon to check the analysis status. For manual annotation of the MAKER results with Apollo, go to http://data.maizecode.org/apollo with username: demo@demo.com, and password: demo         
+       You will get an email notification if selected 'Yes' before 'Submit Job', or you can click on the 'i' icon to check the analysis status. For manual annotation of the MAKER results with Apollo, go to http://data.maizecode.org/apollo with username: demo@demo.com, and password: demo.         
 
 ----
 
@@ -92,16 +92,16 @@ This step will show you how to build a two-step workflow with previously complet
      |build_workflow3|
     
      .. Tip::
-        History panel Checkboxes and the workflow building page are interactive. Use the 'Select All' or 'Reset' button to simplify the selection process
+        History panel Checkboxes and the workflow building page are interactive. Use the 'Select All' or 'Reset' button to simplify the selection process.
 
-  2. Modify **Workflow Name** and **Workflow Description**, then click the ‘Build Workflow’ button to visualize the workflow
+  2. Modify **Workflow Name** and **Workflow Description**, then click the ‘Build Workflow’ button to visualize the workflow.
 
      |annotation_workflow2|
 
      .. Note::
-       The connection between **SNAP-0.0.1** and **MAKER-0.0.1**  (via **my.all.hmm**) is recorded through **dragging and dropping**
+       The connection between **SNAP-0.0.1** and **MAKER-0.0.1**  (via **my.all.hmm**) is recorded through **dragging and dropping**.
 
-  3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My Workflows' (under the 'Workflow' menu from top navigation panel)
+  3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My Workflows' (under the 'Workflow' menu from top navigation panel).
 
      .. Tip::
        You can download the workflow from 'My workflows' as a JSON file, which can be passed to others for **sharing** the entire analysis.
@@ -112,16 +112,16 @@ This step will show you how to build a two-step workflow with previously complet
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will show you how to run a workflow you created or someone shared with you.
 
-  1. Navigate to ‘Workflow’, then ‘My workflows’, to load the workflow you created and saved (in **Step 2**)
+  1. Navigate to ‘Workflow’, then ‘My workflows’, to load the workflow you created and saved (in **Step 2**).
 
      |myworkflows_window|
 
-  2. Alternatively, you can load the workflow by navigating to 'Workflow', 'Load a workflow', then paste this URL: https://data.sciapps.org/misc/my_workflow.json or load a workflow JSON file from your PC
+  2. Alternatively, you can load the workflow by navigating to 'Workflow', 'Load a workflow', then paste this URL: https://data.sciapps.org/misc/my_workflow.json or load a workflow JSON file from your PC.
 
      |load_workflow|
  
      .. Tip::
-       Before loading a workflow, you can refresh the browser window to clear the History panel
+       Before loading a workflow, you can refresh the browser window to clear the History panel.
 
   3. Scroll down the main panel, then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real-time analysis status updates.
 

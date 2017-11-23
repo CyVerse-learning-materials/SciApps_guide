@@ -83,18 +83,18 @@ We will start by loading the workflow, visualizing results, creating a new workf
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will show you how to import the Association workflow into your own workspace.
 
-  1. Log into `SciApps <https://www.SciApps.org/>`_
+  1. Log into SciApps at https://www.SciApps.org.
 
-  2. Click 'Workflow' (from the top navigation bar), then 'Public workflows' to load the public workflow page in the main panel
+  2. Click 'Workflow' (from the top navigation bar), then 'Public workflows' to load the public workflow page in the main panel.
 
      |public_workflows|
 
-  3. Check the 'Association' workflow, then click "Load". The App forms are loaded in the main panel, and analysis histories are loaded in the right panel
+  3. Check the 'Association' workflow, then click "Load". The App forms are loaded in the main panel, and analysis histories are loaded in the right panel.
 
      |association_workflow|
 
      .. Note::
-       To view the workflow diagram, scroll down to the bottom of the main panel and click the 'Show Diagram' button
+       To view the workflow diagram, scroll down to the bottom of the main panel and click the 'Show Diagram' button.
  
 ----
 
@@ -117,7 +117,7 @@ This step will show you how to visualize the results of EMMAX and PCA. You can c
         Both Manhattan plot and Q-Q plot are interactive with all of the options.
 
    4. For visualizing **PCA** outputs, click **PCA-0.0.1** in the History panel to expand its outputs. There are two image outputs:  `pcplot <https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html>`_.
-      and `scree plot <http://support.minitab.com/en-us/minitab/17/topic-library/modeling-statistics/multivariate/principal-components-and-factor-analysis/what-is-a-scree-plot/>`_
+      and `scree plot <http://support.minitab.com/en-us/minitab/17/topic-library/modeling-statistics/multivariate/principal-components-and-factor-analysis/what-is-a-scree-plot/>`_.
 
       |pca_output1| |pca_output2|
       
@@ -130,15 +130,15 @@ This step will demo how to build a workflow from the loaded history. Assuming we
       |build_workflow|
 
       .. Tip::
-        History panel checkboxes and the workflow building page are interactive. Use the 'Select All' or 'Reset' button to simplify the selection step
+        History panel checkboxes and the workflow building page are interactive. Use the 'Select All' or 'Reset' button to simplify the selection step.
 
-   2. Modify **Workflow Name** and **Workflow Description**, then click the 'Build Workflow' button to visualize the workflow
+   2. Modify **Workflow Name** and **Workflow Description**, then click the 'Build Workflow' button to visualize the workflow.
 
       .. Tip::
         All nodes of the diagram are interactive. Mouse over for hints for full name, documentation, etc.
         |emmax_workflow|
 
-   3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My Workflows' (under the 'Workflow' menu from top navigation panel)
+   3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My Workflows' (under the 'Workflow' menu from top navigation panel).
 
       .. Tip::
         From 'My workflow', You can load the new workflow to run or download the workflow as a JSON file, which can be passed to others for **sharing** the entire analysis.
@@ -150,14 +150,14 @@ This step will demo how to build a workflow from the loaded history. Assuming we
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will show you how to add new analysis to the workflow built above. We will use CloudStructure instead of PCA to estimate population structure, then pass the estimation to MLM-TASSEL for performing association analysis.
 
-  1. Click **Clustering** category (left panel) or search for **structure**, then click **CloudSTRUCUTRE** to load **CloudSTRUCTURE-2.3.4**
+  1. Click **Clustering** category (left panel) or search for **structure**, then click **CloudSTRUCUTRE** to load **CloudSTRUCTURE-2.3.4**.
 
-  2. Click **NumericalTransform-TASSEL-4.3.15** in the History panel to expand its outputs, then drag and drop **nt.txt** into the **Select marker file** field
+  2. Click **NumericalTransform-TASSEL-4.3.15** in the History panel to expand its outputs, then drag and drop **nt.txt** into the **Select marker file** field.
 
   3. Enter **12559** for 'number of loci' and **310** for 'number of individuals, leave others as defaults, then click the "Submit Job" button. Once completed, click to expand its outputs. 
       
      .. Note::
-       These numbers are in the `nt.txt.log <https://data.sciapps.org/results/job-5681552548147892711-242ac113-0001-007-job-for-numericaltransform-tassel-4-3-15/nt.txt.log>`_ file from the **NumericalTransform-TASSEL-4.3.15** job   
+       These numbers are in the `nt.txt.log <https://data.sciapps.org/results/job-5681552548147892711-242ac113-0001-007-job-for-numericaltransform-tassel-4-3-15/nt.txt.log>`_ file from the **NumericalTransform-TASSEL-4.3.15** job.   
 
   4. Click **Mapping** category, then **MLM-TASSEL** to load **MLM-TASSEL-5.1.23**. Drag and drop **m_trait.txt** (MergeG2P-0.0.2) to **Input Trait Data**, **imputed.txt** (NPUTE-0.0.1) to **Input Marker Data**, and **s3_f** (CloudSTRUCTURE-2.3.4) to **Input Structure Data**.
 
