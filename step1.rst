@@ -7,7 +7,7 @@
 SciApps Basics and Logging In
 ------------------------------
 
-SciApps leverages CyVerse Agave API and Data Store for efficient data transfer,
+SciApps uses CyVerse Agave API and Data Store for efficient data transfer,
 analysis, and management across heterogeneous systems. A CyVerse account is
 required to access these systems
 

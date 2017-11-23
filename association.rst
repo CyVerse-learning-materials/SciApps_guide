@@ -79,8 +79,8 @@ We will start by loading the workflow, visualizing results, creating a new workf
       - `App link <https://www.sciapps.org/app_id/CloudSTRUCTURE-2.3.4>`_
       - `App documentation <http://pritch.bsd.uchicago.edu/structure.html>`_
 
-*Step 1: Importing the Association Workflow*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Step 1: Importing the Workflow*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will show you how to import the Association workflow into your own workspace.
 
   1. Log into `SciApps <https://www.SciApps.org/>`_
@@ -98,8 +98,8 @@ This step will show you how to import the Association workflow into your own wor
  
 ----
 
-*Step 2: Visualizing the Association Workflow Results*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Step 2: Visualizing the Results*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will show you how to visualize the results of EMMAX and PCA. You can check other results with the similar operations.
 
    1. Once the workflow is loaded, click **EMMAX-0.0.2** in the History panel to expand its outputs.
@@ -121,8 +121,8 @@ This step will show you how to visualize the results of EMMAX and PCA. You can c
 
       |pca_output1| |pca_output2|
       
-*Step 3: Creating a New Association Workflow*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Step 3: Creating a New Workflow*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will demo how to build a workflow from the loaded history. Assuming we just want to use EMMAX for association analysis, based on the workflow diagram above, we will also need MergeG2P, NPUTE, and NumericalTransform-TASSEL if given new marker data and/or new trait data.
 
    1. Check the checkboxes for step 1 (MergeG2P), 2 (NPUTE), 3 (NumericalTransform-TASSEL), and 5 (EMMAX) in the History panel, then click the 'build a workflow' link to load the Workflow building page.
@@ -146,8 +146,8 @@ This step will demo how to build a workflow from the loaded history. Assuming we
 
 ----
 
-*Step 4: Adding New Analyses to the Association Workflow*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Step 4: Adding New Analyses to the Workflow*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will show you how to add new analysis to the workflow built above. We will use CloudStructure instead of PCA to estimate population structure, then pass the estimation to MLM-TASSEL for performing association analysis.
 
   1. Click **Clustering** category (left panel) or search for **structure**, then click **CloudSTRUCUTRE** to load **CloudSTRUCTURE-2.3.4**
