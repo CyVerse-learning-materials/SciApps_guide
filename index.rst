@@ -36,7 +36,7 @@ Prerequisites
 Downloads, access, and services
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*In order to complete this tutorial you will need access to the following services/software*
+*In order to complete this tutorial, you will need access to the following services/software*
 
 ..
 	#### comment: delete any row not needed in this table ####

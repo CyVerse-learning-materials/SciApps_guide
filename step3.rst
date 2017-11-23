@@ -9,7 +9,7 @@ Launching an Analysis Job
 
 For analyzing data, you can select an App from the left panel of SciApps.
 In this example, to cover the minimum you need to launch an analysis, we will
-use the `SNAP <https://github.com/KorfLab/SNAP>`_ gene finding app to estimate
+use `SNAP <https://github.com/KorfLab/SNAP>`_, a gene finding app, to estimate
 Hidden Markov Model (HMM) parameters with a GFF file output from MAKER, an
 annotation App.
 

@@ -42,7 +42,7 @@ required to access these systems
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Without logging in, you cannot view data in CyVerse Data Store, submit analysis
-jobs, or save workflows. You can however preview applications and public workflows.
+jobs, or save workflows. You can, however, preview applications and public workflows.
 
    1. Access the SciApps website at https://www.SciApps.org/
 

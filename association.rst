@@ -8,7 +8,7 @@ The Association Workflow
 ---------------------------------
 A genome-wide association study (or GWAS) is an examination of a genome-wide set of genetic variants in a population of individuals aimed at determining whether any variant is associated with a trait. In this section, we will walk through the Association workflow available on the 'Public workflows' page. The workflow contains following operations in order: intersecting marker data with trait data, imputing missing markers, estimating population structure with PCA, and performing mixed-model based analyses with three different tools (EMMAX, TASSEL, and MLMM). The example data used here are a subset of the published data (Morris, G., et al. `PNAS 110.2 (2013): 453-458 <http://www.pnas.org/content/110/2/453.long>`_).
 
-We will start by loading the workflow, visualizing results, creating a new workflow with EMMAX method only, and then add additional analyses to estimate population structure and perform mixed model analysis.  
+We will start by loading the workflow, visualizing results, creating a new workflow with EMMAX method only, and then add additional analyses to estimate population structure and perform an association analysis.  
 
 ----
 
@@ -109,14 +109,14 @@ This step will show you how to visualize the results of EMMAX and PCA. You can c
       |manhattan_plot|
 
       .. Note::
-        The example here is using chromosome 9 only. And the Manhattan plot is pre-configured to display the chromosome 9 of sorghum (BTx623). For your own data, use the options on the left side to select a specific chromosome, or all chromosomes of your genome.
+        The example here is using chromosome 9 only. And the Manhattan plot is pre-configured to display the chromosome 9 of sorghum (BTx623). For your own data, use the options on the left side to select a specific chromosome or all chromosomes of your genome.
 
-   3. Use the options on the left side for P-values adjustments, specifying species, chromosome, neighboring window size, and display Q-Q plot.
+   3. Use the options on the left side for P-values adjustments, specifying species, chromosome, neighbouring window size, and display Q-Q plot.
 
       .. Tip::
         Both Manhattan plot and Q-Q plot are interactive with all of the options.
 
-   4. For visualizing **PCA** outputs, click **PCA-0.0.1** in the History panel to expand its outputs. There are two image outputs:  `pcplot <https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html>`_
+   4. For visualizing **PCA** outputs, click **PCA-0.0.1** in the History panel to expand its outputs. There are two image outputs:  `pcplot <https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html>`_.
       and `scree plot <http://support.minitab.com/en-us/minitab/17/topic-library/modeling-statistics/multivariate/principal-components-and-factor-analysis/what-is-a-scree-plot/>`_
 
       |pca_output1| |pca_output2|
@@ -159,7 +159,7 @@ This step will show you how to add new analysis to the workflow built above. We 
      .. Note::
        These numbers are in the `nt.txt.log <https://data.sciapps.org/results/job-5681552548147892711-242ac113-0001-007-job-for-numericaltransform-tassel-4-3-15/nt.txt.log>`_ file from the **NumericalTransform-TASSEL-4.3.15** job   
 
-  4. Click **Mapping** category, then **MLM-TASSEL** to load **MLM-TASSEL-5.1.23**. Drag and drop **m_trait.txt** (MergeG2P-0.0.2) to **Input Trait Data**, **imputed.txt** (NPUTE-0.0.1) to **Input Marker Data**, and **s3_f** (CloudSTRUCTURE-2.3.4) to **Input Structure Data**
+  4. Click **Mapping** category, then **MLM-TASSEL** to load **MLM-TASSEL-5.1.23**. Drag and drop **m_trait.txt** (MergeG2P-0.0.2) to **Input Trait Data**, **imputed.txt** (NPUTE-0.0.1) to **Input Marker Data**, and **s3_f** (CloudSTRUCTURE-2.3.4) to **Input Structure Data**.
 
      |association_workflow2|
 
@@ -174,7 +174,7 @@ This step will show you how to add new analysis to the workflow built above. We 
 *Summary*
 ~~~~~~~~~
 
-As shown in this section, various customized Association workflows can be constructed on SciApps. The interactive Manhattan plot also provides an easy way to examine nearby gene annotations around a significant loci. 
+As shown in this section, various customized Association workflows can be constructed on SciApps. The interactive Manhattan plot also provides an easy way to examine nearby gene annotations around significant loci. 
 
 More help and additional information
 `````````````````````````````````````

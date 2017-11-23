@@ -59,7 +59,7 @@ This step will show you how to use SNAP output with MAKER to do a second around 
   2. Run SNAP as in the last section if you haven't. 
 
      .. Tip::
-       Jobs disappear from the History panel when browser gets refreshed. To load completed jobs to the History panel, click 'Workflow' then 'My jobs' to select.
+       Jobs disappear from the History panel when the browser gets refreshed. To load completed jobs to the History panel, click 'Workflow' then 'My jobs' to select.
 
        |myjobs_window|
 
@@ -79,7 +79,7 @@ This step will show you how to use SNAP output with MAKER to do a second around 
   8. Once COMPLETED, click **MAKER-0.0.1** in the History panel to expand its outputs, then click **maker_output.jbrowse** to visualize annotation results.
 
      .. Note::
-       You will get email notification if selected 'Yes' before 'Submit Job', or you can click on the 'i' icon to check the analysis status. For manual annotation of the MAKER results with Apollo, go to http://data.maizecode.org/apollo with username: demo@demo.com, and password: demo         
+       You will get an email notification if selected 'Yes' before 'Submit Job', or you can click on the 'i' icon to check the analysis status. For manual annotation of the MAKER results with Apollo, go to http://data.maizecode.org/apollo with username: demo@demo.com, and password: demo         
 
 ----
 
@@ -123,13 +123,13 @@ This step will show you how to run a workflow you created or someone shared with
      .. Tip::
        Before loading a workflow, you can refresh the browser window to clear the History panel
 
-  3. Scroll down the main panel, then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real time analysis status updates.
+  3. Scroll down the main panel, then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real-time analysis status updates.
 
      .. Note::
 
        |running_workflow|
 
-       The color of the app node will change when the status of the analysis changes:
+       The colour of the app node will change when the status of the analysis changes:
 
        - 'Yellow': Pending
        - 'Blue': Running
@@ -141,7 +141,7 @@ This step will show you how to run a workflow you created or someone shared with
 *Summary*
 ~~~~~~~~~
 
-Using the apps SNAP and MAKER as examples, you have gotten an overview of how to use SciApps - from accessing data in CyVerse Data Store, to launching jobs, building workflows, importing workflows, running workflows, and visualizing results.
+Using the apps SNAP and MAKER as examples, you have gotten an overview of how to use SciApps - from accessing data in CyVerse Data Store to launching jobs, building workflows, importing workflows, running workflows, and visualizing results.
 
 
 More help and additional information

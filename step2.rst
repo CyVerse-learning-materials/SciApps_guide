@@ -26,7 +26,7 @@ for analysis.
 
      .. Note::
 
-       Once requested, SciApps will create a A **sci_data** folder in your Data Store home folder. Any data you put in this folder can be used to build workflows. This is one time operation, and after this, you can log into SciApps directly at https://www.sciapps.org
+       Once requested, SciApps will create the **sci_data** folder in your Data Store home folder. Any data you put in this folder can be used to build workflows. This is one-time operation, and after this, you can log into SciApps directly at https://www.sciapps.org
 
   3. If SciApps is listed, click on 'LAUNCH'_
 
@@ -57,8 +57,7 @@ for analysis.
      SciApps data page
 
      .. Note::
-       Only exampleData (example_data) is available on the data page. Analysis
-       results will also be accessible here with random folder names
+       Only exampleData (example_data) is available on the data page. 
 
        |data_web|
 ----
