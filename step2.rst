@@ -50,7 +50,7 @@ for analysis.
 
 *Accessing Data on SciApps*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  1. Access SciApps at https://www.SciApps.org
+  1. Access SciApps at https://www.SciApps.org.
 
   2. Click on ‘Data’ (from the top navigation bar), you will be directed to the
      SciApps data page.
