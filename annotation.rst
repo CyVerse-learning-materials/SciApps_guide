@@ -4,108 +4,197 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-The Association Workflow
+The Annotation Tutorial
 ---------------------------
-Here we will run the Association workflow available on the 'Public workflows' page. A genome-wide association study (or GWAS) is an examination of a genome-wide set of genetic variants in a population of individuals aimed at determining whether any variant is associated with a trait.
+This tutorial is a step-by-step guide for the Bioinformatics workshop of 2017 Plant Genome & Biotechnology meeting. It will cover the basic steps of using SciApps for performing annotation. Please refer to the above sections for more details.
 
 
 ----
 
-*Running the example Association Workflow*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Example Data**
 
-  1. If necessary, login to `SciApps <https://www.SciApps.org/>`_
+.. list-table::
+    :header-rows: 1
 
-  2. Navigate to 'Workflow', then 'My workflows', to load the workflow you created and saved in the last section
+    * - Input
+      - Description
+      - Example
+    * - Assembled genome
+      - A scaled-down genome that is comprised of the first 300kb of three chromosomes of rice
+      - `test_genome.fasta <https://data.sciapps.org/example_data/maker/test_genome.fasta>`_
+    * - Annotated gene models
+      - MAKER output in GFF3 format (gzipped)
+      - `my.all.gff.gz <https://data.sciapps.org/example_data/maker/my.all.gff.gz>`_
 
-     |my_workflow|
+**Apps:**
+
+.. list-table::
+    :header-rows: 1
+
+    * - App name
+      - Version
+      - Description
+      - App link
+      - Notes/other links
+    * - MAKER
+      - 0.0.1
+      - A portable and easily configurable genome annotation pipeline
+      - `SciApps App link <https://www.sciapps.org/app_id/MAKER-0.0.1>`_
+      - `App documentation <http://www.yandell-lab.org/software/maker.html/>`_
+    * - SNAP
+      - 0.0.1
+      - Semi-HMM-based Nucleic Acid Parser
+      - `SciApps App link <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
+      - `App documentation <http://korflab.ucdavis.edu/software.html>`_
+
+*Step 1: Requiring access to SciApps*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This is one-time operation. Please login to `SciApps <https://www.SciApps.org/>`_ directly if you have completed this step once.
+
+  1. Log into CyVerse User portal at https://user.cyverse.org.
+
+  2. By default, you will be under the 'Services' page, click on 'AVAILABLE', then 'REQUEST ACCESS' to SciApps.
+
+     |cyverse_user|
+
+  3. Click on 'MY SERVICES', then click on 'LAUNCH' for Discovery Environment.
+
+  4. Once in Discovery Environment, click to open the 'Data' window. You should see the **sci_data** folder under your root folder:/iplant/home/YOUR_USER_NAME.
+
+     |de_data|
+
+----
+
+*Step 2: Uploading data for SciApps*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This step will demo how to upload data to the sci_data folder for accessing from SciApps.
+
+   1. Click **sci_data** folder to open it.
+
+   2. Click 'Upload', then 'Import from URL' to import this URL: https://data.sciapps.org/example_data/maker/my.all.gff.gz
+
+      |url_window|
+
+      .. Note::
+        This may take a few minutes. You can check the status by clicking the 'Bell' on the top corner of DE. Once importing completed, 'Refresh' the window to see the file. This is a GFF3 formatted file from MAKER.
+  
+   3. Alternatively, download the file and upload it using 'Simple Upload from Desktop'.
+
+
+*Step 3: HMM parameters estimation with SNAP*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  1. Login to SciApps at https://www.SciApps.org.
+
+  2. Click **Prediciton** category (left panel) or search for **SNAP**, then click **SNAP** to load **SNAP-0.0.1**.
+
+  3. Under “GFF file” click **or Browse DataStore**, then navigate the CyVerse **sci_data** folder; select **my.all.gff.gz** and click 'Select and Close'.
+
+     |data_window2|
 
      .. Tip::
-       From left to right, there are three buttons on top of the workflow table:
+       'Refresh' the window if you can not see the file under 'sci_data'. 
 
-       - **Load**: Load the workflow with app forms in main panel and history in right panel
-       - **Download**: Download the workflow json
-       - **Delete**: Delete the workflow from your account
+  4. Leave other parameters as default, and click **Submit Job**. You will be asked to confirm; click "Submit". You will be prompted to check the job status in the right panel.
+       
+     .. Tip::
+       If you choose 'Yes' for Email Notification, an email will be sent once your analysis is completed.
 
-  3. Alternatively, you can load the workflow by navigating to 'Workflow', then 'Load a workflow', and paste this `URL <https://data.sciapps.org/misc/my_pca_workflow.json>`_
+*Step 4: Running MAKER with SNAP output*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This step will show you how to use SNAP output with MAKER to do a second around annotation.
+
+  1. Click **Annotation** category (left panel) or search for **MAKER**, then click **MAKER** to load **MAKER-0.0.1**.
+
+     |build_workflow2|
+
+  2. Under “Genome sequence file” click **or Browse DataStore**, then navigate the exampleData (*example_data > maker*); select **test_genome.fasta** and click 'Select and Close'.
+
+  3. Click **SNAP-0.0.1** in the History panel to expand its outputs, then
+     drag and drop **my.all.hmm** into the **SNAP HMM file** field.
+
+  4. Under “Maker annotations” click **or Browse DataStore**, then navigate the exampleData (*example_data > maker*); select **my.all.gff.gz** and click 'Select and Close'.
+
+  5. Leave others as defaults, then click the "Submit Job" button.
+
+  6. Once COMPLETED, click **MAKER-0.0.1** in the History panel to expand its outputs, then click **maker_output.jbrowse** to visualize annotation results.
+
+*Step 5: Creating a Workflow*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This step will show you how to build a two-step workflow with previously completed MAKER and SNAP jobs.
+
+  1. Check the checkboxes for step 1 (SNAP), and step 2 (MAKER) in the History panel, then click the ‘build a workflow’ link to load the Workflow building page.
+
+     |build_workflow3|
+    
+     .. Tip::
+        History panel Checkboxes and the workflow building page are interactive. Use the 'Select All' or 'Reset' button to simplify the selection process.
+
+  2. Modify **Workflow Name** and **Workflow Description**, then click the ‘Build Workflow’ button to visualize the workflow.
+
+     |annotation_workflow2|
+
+     .. Note::
+       The connection between **SNAP-0.0.1** and **MAKER-0.0.1**  (via **my.all.hmm**) is recorded through **dragging and dropping**.
+
+  3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My Workflows' (under the 'Workflow' menu from top navigation panel).
+
+     .. Tip::
+       You can download the workflow from 'My workflows' as a JSON file, which can be passed to others for **sharing** the entire analysis.
+
+----
+
+*Step 6: Running a Workflow*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This step will show you how to run a workflow you created or someone shared with you.
+
+  1. Navigate to ‘Workflow’, then ‘My workflows’, to load the workflow you created and saved (in **Step 2**).
+
+     |myworkflows_window|
+
+  2. Alternatively, you can load the workflow by navigating to 'Workflow', 'Load a workflow', then paste this URL: https://data.sciapps.org/misc/my_workflow.json or load a workflow JSON file from your PC.
 
      |load_workflow|
  
      .. Tip::
-       Before loading a workflow, you can refresh the browser window to clear the History panel
+       Before loading a workflow, you can refresh the browser window to clear the History panel.
 
-  4. Optional: For **Step 1: MergeG2P**, under **Select marker file in Hapmap format**
-     click the **or Browse DataStore** button, then navigate to and select
-     `myStudy_filt.c9.hmp.v2.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.v2.txt>`_
-     ; then click ‘Select and Close’. (Location: *example_data > gwas_raw > myStudy_filt.c9.hmp.v2.txt*)
+  3. Scroll down the main panel, then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real-time analysis status updates.
 
-     |run_workflow|
-
-     .. Note::
-       Marker file aligned to version 1 assembly of Sorghum is also available as myStudy_filt.c9.hmp.txt
-
-  5. Leave others as defaults, scroll down the main panel, and then click
-     **Submit Workflow**. You will be asked to confirm and prompted to check
-     the job status in the right panel. Then a live workflow diagram will be
-     displayed with real time analysis status updates.
-
-     .. Note::
-
-       |running_workflow|
-
-       The color of the app node will change when the status of the analysis changes:
-
-       - 'Yellow': Pending
-       - 'Blue': Running
-       - 'Green': Completed
-       - 'Red': Failed
-
-----
-
-*Visualizing SciApps Workflow Result*
+*Step 7: Using Annotation with GWAS*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This step shows how we can use Gramene annotation data to examine GWAS outputs on SciApps. 
 
-   1. Once the entire workflow is completed, click **4: EMMAX-0.0.2** in the
-      History panel to expand its outputs.
+  1. Click 'Workflow' (from the top navigation bar), then 'Public workflows' to load the public workflow page in the main panel.
 
-      |workflow_results|
+     |public_workflows|
 
-   2. Click **manhattan.plot** from the list of outputs, you will be directed
-      to the Manhattan plot of the results. Check Q-Q plot and click the
-      Manhattan plot to check nearby genes around the clicked position.
+  2. Check the 'Association' workflow, then click "Load". The App forms are loaded in the main panel, and analysis histories are loaded in the right panel.
+
+     |association_workflow|
+
+     .. Note::
+       To view the workflow diagram, scroll down to the bottom of the main panel and click the 'Show Diagram' button.
+ 
+   4. Once the workflow is loaded, click **EMMAX-0.0.2** in the History panel to expand its outputs.
+    
+   5. Click **manhattan.plot** from the list of outputs, you will be directed to the Manhattan plot of the results. Click on the Manhattan plot to check nearby annotated genes around the clicked position.
 
       |manhattan_plot|
 
       .. Note::
-        The example here is using Chromosome 9 only. And the Manhattan plot is
-        pre-configured to display the same Chromosome. For your own data, use
-        the options on the left side to check a specific Chromosome, or all
-        Chromosomes of your specific genome.
+        The example here is using Sorghum chromosome 9 only. For your own data, use the options on the left side to check a specific chromosome or all chromosomes of your specific genome.
 
-   3. Use the options on the left side for P-values adjustments, specifying
-      species, chromosome, neighboring window size, and display Q-Q plot.
-
-      .. Tip::
-        Both Manhattan plot and Q-Q plot are interactive with all of the options.
-
-   4. For visualizing **PCA** outputs, click the **(i)** icon for **5: PCA-0.0.1**,
-      then click the output folder link, you will be directed to the data page of
-      PCA outputs. There are two image outputs:  `pcplot <https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html>`_
-      and `scree plot <http://support.minitab.com/en-us/minitab/17/topic-library/modeling-statistics/multivariate/principal-components-and-factor-analysis/what-is-a-scree-plot/>`_
-
-      |pca_output1| |pca_output2|
-      
-      .. Note::
-        The output of PCA, **pca_output.txt**, can also be used with **MLM-TASSEL** for correcting population structure
 ----
+
+*Step 8: Using Apollo for Community Annotation*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In reality, annotated genes from MAKER will be further filtered or even manually annotated before being released (for example, by Gramene/Plant Ensembl). For manual annotation of the MAKER results with Apollo, we set up a demo at http://data.maizecode.org/apollo. You can login with username: demo@demo.com, and password: demo.
 
 *Summary*
 ~~~~~~~~~
 
-Using the app SNAP and the Association workflow as examples, you have gotten an
-overview of how SciApps workflows work - from accessing data in CyVerse Data
-Store, to launching jobs, building workflows, importing workflows,
-running workflows, and visualizing results.
+This tutorial covers how to use SciApps for your annotaition work - from accessing data in CyVerse Data Store to launching jobs, building workflows, running workflows, visualizing results, importing workflows, and using annotation to interpret GWAS results.
 
 
 More help and additional information
@@ -159,9 +248,39 @@ Post your question to the user forum:
 .. |manhattan_plot| image:: ./img/sci_apps/manhattan_plot.gif
     :width: 660
     :height: 355
-.. |pca_output1| image:: ./img/sci_apps/pca_output1.gif
-    :width: 300
-    :height: 297
-.. |pca_output2| image:: ./img/sci_apps/pca_output2.gif
-    :width: 300
-    :height: 284
+.. |de_data| image:: ./img/sci_apps/de_data.gif
+    :width: 660
+    :height: 370
+.. |url_window| image:: ./img/sci_apps/url_window.gif
+    :width: 660
+    :height: 431
+.. |data_window2| image:: ./img/sci_apps/data_window2.gif
+    :width: 660
+    :height: 317
+.. |status| image:: ./img/sci_apps/status.gif
+    :width: 250
+    :height: 60
+.. |agave_status| image:: ./img/sci_apps/agave_status.gif
+    :width: 550
+    :height: 322
+.. |cyverse_user| image:: ./img/sci_apps/cyverse_user.gif
+    :width: 660
+    :height: 362
+.. |build_workflow2| image:: ./img/sci_apps/build_workflow2.gif
+    :width: 660
+    :height: 246
+.. |build_workflow3| image:: ./img/sci_apps/build_workflow3.gif
+    :width: 660
+    :height: 294
+.. |annotation_workflow2| image:: ./img/sci_apps/annotation_workflow2.gif
+    :width: 660
+    :height: 320
+.. |myworkflows_window| image:: ./img/sci_apps/my_workflow.gif
+    :width: 660
+    :height: 222
+.. |public_workflows| image:: ./img/sci_apps/public_workflows.gif
+    :width: 660
+    :height: 223
+.. |association_workflow| image:: ./img/sci_apps/association_workflow0.gif
+    :width: 660
+    :height: 458
