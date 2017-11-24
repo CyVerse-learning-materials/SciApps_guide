@@ -6,7 +6,7 @@
 
 The Annotation Tutorial
 ---------------------------
-This tutorial is a step-by-step guide for the Bioinformatics workshop of 2017 Plant Genome & Biotechnology meeting. It will cover the basic steps of using SciApps for performing annotation. Please refer to the above sections for more details.
+This tutorial is a step-by-step guide for the Bioinformatics workshop of 2017 Plant Genome & Biotechnology meeting. It will cover the basic steps of using SciApps for performing annotation.
 
 
 ----
