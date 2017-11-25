@@ -116,7 +116,12 @@ This step will show you how to visualize the results of EMMAX and PCA. You can c
       .. Tip::
         Both Manhattan plot and Q-Q plot are interactive with all of the options.
 
-   4. For visualizing **PCA** outputs, click **PCA-0.0.1** in the History panel to expand its outputs. There are two image outputs:  `pcplot <https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html>`_.
+   4. Try to search **229800** near the most significant loci to locate a dwarf gene, dw1 (SORBI_009G229800). The search box is above the table.
+
+      .. Hint::
+        You will need to increase the 'window size' for listing more nearby genes.
+
+   5. For visualizing **PCA** outputs, click **PCA-0.0.1** in the History panel to expand its outputs. There are two image outputs:  `pcplot <https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html>`_.
       and `scree plot <http://support.minitab.com/en-us/minitab/17/topic-library/modeling-statistics/multivariate/principal-components-and-factor-analysis/what-is-a-scree-plot/>`_.
 
       |pca_output1| |pca_output2|

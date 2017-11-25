@@ -185,6 +185,11 @@ This step shows how we can use Gramene annotation data to examine GWAS outputs o
       .. Note::
         The example here is using Sorghum chromosome 9 only. For your own data, use the options on the left side to check a specific chromosome or all chromosomes of your specific genome.
 
+   6. Try to search **229800** near the most significant loci (associated with plant height) to locate a dwarf gene, dw1 (SORBI_009G229800). The search box is above the table.
+
+      .. Hint::
+        You will need to increase the 'window size' for listing more nearby genes.
+ 
 ----
 
 *Step 8: Using Apollo for Community Annotation*
@@ -194,7 +199,7 @@ In reality, annotated genes from MAKER will be further filtered or even manually
 *Summary*
 ~~~~~~~~~
 
-This tutorial covers how to use SciApps for your annotaition work - from accessing data in CyVerse Data Store to launching jobs, building workflows, running workflows, visualizing results, importing workflows, and using annotation to interpret GWAS results.
+This tutorial covers how to use SciApps for your annotaition work - accessing data in CyVerse Data Store, launching jobs, building workflows, running workflows, visualizing results, importing workflows, and using annotation to interpret GWAS results.
 
 
 More help and additional information
