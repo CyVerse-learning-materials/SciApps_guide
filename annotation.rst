@@ -208,15 +208,19 @@ More help and additional information
 ..
     Short description and links to any reading materials
 
-More annotation tutorials:
-    `GMOD MAKER tutorial <http://gmod.org/wiki/MAKER_Tutorial>`_, `MAKER 2.31.9 with CCTOOLS Jetstream Tutorial <https://pods.iplantcollaborative.org/wiki/display/TUT/MAKER+2.31.9+with+CCTOOLS+Jetstream+Tutorial>`_
-
 Search for an answer:
     `CyVerse Learning Center <http://learning.cyverse.org>`_ or
     `CyVerse Wiki <https://wiki.cyverse.org>`_
 
 Post your question to the user forum:
     `Ask CyVerse <http://ask.iplantcollaborative.org/questions>`_
+
+----
+
+**More annotation tutorials:**
+
+- `GMOD MAKER tutorial <http://gmod.org/wiki/MAKER_Tutorial>`_
+- `MAKER 2.31.9 with CCTOOLS Jetstream Tutorial <https://pods.iplantcollaborative.org/wiki/display/TUT/MAKER+2.31.9+with+CCTOOLS+Jetstream+Tutorial>`_
 
 ----
 
