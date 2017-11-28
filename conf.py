@@ -19,11 +19,5 @@ epub_title = project
 epub_author = author
 epub_publisher = author
 epub_copyright = copyright
-html_static_path = ['_static']
-
-html_context = {
-    'css_files': [
-        '_static/theme_overrides.css',  # override wide tables in RTD theme
-        ],
-     }
+html_static_path = []
 exclude_patterns = ['README.md', 'License.md', 'Contributors_maintainers.md']
