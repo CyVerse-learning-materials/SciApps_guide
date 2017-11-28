@@ -21,7 +21,7 @@ We will start by loading the workflow, visualizing results, creating a new workf
     * - Input
       - Description
       - Example
-    * - Marker file (Sorghum bicolor assembly v2 chromosome 9 only)
+    * - Marker file (Sorghum bicolor v2 chromosome 9)
       - Marker data in TASSEL Hapmap format
       - `myStudy_filt.c9.hmp.v2.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.v2.txt>`_
     * - Trait file

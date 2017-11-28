@@ -42,9 +42,8 @@ annotation App.
     * - SNAP
       - 0.0.1
       - Semi-HMM-based Nucleic Acid Parser
-      - `App link <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
-      - `App documentation <http://korflab.ucdavis.edu/software.html>`_
-
+      - `SNAP-0.0.1 <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
+      - `SNAP documentation <http://korflab.ucdavis.edu/software.html>`_
 
 *Example Analysis: HMM parameters estimation with SNAP*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
