@@ -41,43 +41,43 @@ We will start by loading the workflow, visualizing results, creating a new workf
     * - MergeG2P
       - 0.0.2
       - Intersect marker data with trait data
-      - `App link <https://www.sciapps.org/app_id/MergeG2P-0.0.2>`_
+      - `MergeG2P-0.0.2 <https://www.sciapps.org/app_id/MergeG2P-0.0.2>`_
       -
     * - NPUTE
       - 0.0.1
       - Imputes missing markers via voting from K-nearest-neighbors (KNN)
-      - `App link <https://www.sciapps.org/app_id/NPUTE-0.0.1>`_
-      - `App documentation <http://compgen.unc.edu/NPUTE_README.html>`_
+      - `NPUTE-0.0.1 <https://www.sciapps.org/app_id/NPUTE-0.0.1>`_
+      - `NPUTE documentation <http://compgen.unc.edu/NPUTE_README.html>`_
     * - NumericalTransform-TASSEL
       - 4.3.15
       - Numerical Transform of marker data using TASSEL and PLINK
-      - `App link <https://www.sciapps.org/app_id/NumericalTransform-TASSEL-4.3.15>`_
+      - `NumericalTransform-TASSEL-4.3.15 <https://www.sciapps.org/app_id/NumericalTransform-TASSEL-4.3.15>`_
       -
     * - MLM-TASSEL
       - 5.1.23
       - Mixed Linear Model analysis using TASSEL
-      - `App link <https://www.sciapps.org/app_id/MLM-TASSEL-5.1.23>`_
-      - `App documentation <http://www.maizegenetics.net/>`_
+      - `MLM-TASSEL-5.1.23 <https://www.sciapps.org/app_id/MLM-TASSEL-5.1.23>`_
+      - `TASSEL documentation <http://www.maizegenetics.net/>`_
     * - EMMAX
       - 0.0.2
       - Association mapping with consideration of sample structure
-      - `App link <https://www.sciapps.org/app_id/EMMAX-0.0.2>`_
-      - `App documentation <http://genetics.cs.ucla.edu/emmax/>`_
+      - `EMMAX-0.0.2 <https://www.sciapps.org/app_id/EMMAX-0.0.2>`_
+      - `EMMAX documentation <http://genetics.cs.ucla.edu/emmax/>`_
     * - MLMM
       - 0.0.2
       - An efficient multi-locus mixed-model approach for GWAS
-      - `App link <https://www.sciapps.org/app_id/MLMM-0.0.2>`_
-      - `App documentation <https://cynin.gmi.oeaw.ac.at/home/resources/mlmm>`_
+      - `MLMM-0.0.2 <https://www.sciapps.org/app_id/MLMM-0.0.2>`_
+      - `MLMM documentation <https://cynin.gmi.oeaw.ac.at/home/resources/mlmm>`_
     * - PCA
       - 0.0.1
       - Principal Component Analysis
-      - `App link <https://www.sciapps.org/app_id/PCA-0.0.1>`_
-      - `App documentation <https://stat.ethz.ch/R-manual/R-patched/library/stats/html/prcomp.html>`_
+      - `PCA-0.0.1 <https://www.sciapps.org/app_id/PCA-0.0.1>`_
+      - `PCA documentation <https://stat.ethz.ch/R-manual/R-patched/library/stats/html/prcomp.html>`_
     * - CloudSTRUCTURE
       - 2.3.4
       - Parallelized STRUCTURE software for estimating population structures
-      - `App link <https://www.sciapps.org/app_id/CloudSTRUCTURE-2.3.4>`_
-      - `App documentation <http://pritch.bsd.uchicago.edu/structure.html>`_
+      - `CloudSTRUCTURE-2.3.4 <https://www.sciapps.org/app_id/CloudSTRUCTURE-2.3.4>`_
+      - `STRUCTURE documentation <http://pritch.bsd.uchicago.edu/structure.html>`_
 
 *Step 1: Importing the Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -104,7 +104,7 @@ This step will show you how to visualize the results of EMMAX and PCA. You can c
 
    1. Once the workflow is loaded, click **EMMAX-0.0.2** in the History panel to expand its outputs.
     
-   2. Click **manhattan.plot** from the list of outputs, you will be directed to the Manhattan plot of the results. You can also check Q-Q plot and click the Manhattan plot to check nearby genes around the clicked position.
+   2. Click **manhattan.plot** from the list of outputs, you will be directed to the `Manhattan plot <https://en.wikipedia.org/wiki/Manhattan_plot>`_ of the results. You can also check Q-Q plot and click the Manhattan plot to check nearby genes around the clicked position.
 
       |manhattan_plot|
 
@@ -118,8 +118,8 @@ This step will show you how to visualize the results of EMMAX and PCA. You can c
 
    4. Try to search **229800** near the most significant loci to locate a dwarf gene, dw1 (SORBI_009G229800). The search box is above the table.
 
-      .. Hint::
-        You will need to increase the 'window size' for listing more nearby genes.
+      .. Note::
+        You can increase the 'window size' for listing more nearby genes.
 
    5. For visualizing **PCA** outputs, click **PCA-0.0.1** in the History panel to expand its outputs. There are two image outputs:  `pcplot <https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html>`_.
       and `scree plot <http://support.minitab.com/en-us/minitab/17/topic-library/modeling-statistics/multivariate/principal-components-and-factor-analysis/what-is-a-scree-plot/>`_.

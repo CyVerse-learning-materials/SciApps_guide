@@ -39,16 +39,16 @@ This tutorial is a step-by-step guide for the Bioinformatics workshop of 2017 Pl
     * - MAKER
       - 0.0.1
       - A portable and easily configurable genome annotation pipeline
-      - `SciApps App link <https://www.sciapps.org/app_id/MAKER-0.0.1>`_
-      - `App documentation <http://www.yandell-lab.org/software/maker.html/>`_
+      - `MAKER-0.0.1 <https://www.sciapps.org/app_id/MAKER-0.0.1>`_
+      - `MAKER documentation <http://www.yandell-lab.org/software/maker.html/>`_
     * - SNAP
       - 0.0.1
       - Semi-HMM-based Nucleic Acid Parser
-      - `SciApps App link <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
-      - `App documentation <http://korflab.ucdavis.edu/software.html>`_
+      - `SNAP-0.0.1 <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
+      - `SNAP documentation <http://korflab.ucdavis.edu/software.html>`_
 
 *Step 1: Requiring access to SciApps*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This is one-time operation. Please login to `SciApps <https://www.SciApps.org/>`_ directly if you have completed this step once.
 
   1. Log into CyVerse User portal at https://user.cyverse.org.
@@ -178,18 +178,15 @@ This step shows how we can use Gramene annotation data to examine GWAS outputs o
  
    4. Once the workflow is loaded, click **EMMAX-0.0.2** in the History panel to expand its outputs.
     
-   5. Click **manhattan.plot** from the list of outputs, you will be directed to the Manhattan plot of the results. Click on the Manhattan plot to check nearby annotated genes around the clicked position.
+   5. Click **manhattan.plot** from the list of outputs, you will be directed to the `Manhattan plot <https://en.wikipedia.org/wiki/Manhattan_plot>`_ of the results. Click on the Manhattan plot to check nearby annotated genes around the clicked position.
 
       |manhattan_plot|
 
       .. Note::
-        The example here is using Sorghum chromosome 9 only. For your own data, use the options on the left side to check a specific chromosome or all chromosomes of your specific genome.
+        The example here is using Sorghum chromosome 9 only. For your own data, use the options on the left side to check a specific chromosome or all chromosomes of your specific genome. 
 
    6. Try to search **229800** near the most significant loci (associated with plant height) to locate a dwarf gene, dw1 (SORBI_009G229800). The search box is above the table.
 
-      .. Hint::
-        You will need to increase the 'window size' for listing more nearby genes.
- 
 ----
 
 *Step 8: Using Apollo for Community Annotation*

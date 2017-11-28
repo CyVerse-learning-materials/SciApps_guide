@@ -36,7 +36,8 @@ required to access these systems.
         To log out of SciApps and CyVerse, you need to click on 'Logout' from
         the top navigation bar. Additionally, your job histories in the right
         panel will be discarded after closing or refreshing the browser tab.
-..
+
+----
 
 *Access SciApps Without Logging In*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

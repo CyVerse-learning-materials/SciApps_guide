@@ -42,13 +42,13 @@ A workflow is a series of Apps chained together to run in sequence as a batch op
     * - MAKER
       - 0.0.1
       - A portable and easily configurable genome annotation pipeline
-      - `SciApps App link <https://www.sciapps.org/app_id/MAKER-0.0.1>`_
-      - `App documentation <http://www.yandell-lab.org/software/maker.html/>`_
+      - `MAKER-0.0.1 <https://www.sciapps.org/app_id/MAKER-0.0.1>`_
+      - `MAKER documentation <http://www.yandell-lab.org/software/maker.html/>`_
     * - SNAP
       - 0.0.1
       - Semi-HMM-based Nucleic Acid Parser
-      - `SciApps App link <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
-      - `App documentation <http://korflab.ucdavis.edu/software.html>`_
+      - `SNAP-0.0.1 <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
+      - `SNAP documentation <http://korflab.ucdavis.edu/software.html>`_
 
 *Step 1: Running MAKER with SNAP output*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
