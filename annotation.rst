@@ -93,7 +93,7 @@ This step will demo how to upload data to the sci_data folder for accessing from
      |data_window2|
 
      .. Tip::
-       'Refresh' the window if you can not see the file under 'sci_data'. 
+       Click 'Refresh' if you can not see the file under 'sci_data'. 
 
   4. Leave other parameters as default, and click **Submit Job**. You will be asked to confirm; click "Submit". You will be prompted to check the job status in the right panel.
        
@@ -113,7 +113,7 @@ This step will show you how to use SNAP output with MAKER to do a second around 
   3. Click **SNAP-0.0.1** in the History panel to expand its outputs, then
      drag and drop **my.all.hmm** into the **SNAP HMM file** field.
 
-  4. Under “Maker annotations” click **or Browse DataStore**, then navigate the exampleData (*example_data > maker*); select **my.all.gff.gz** and click 'Select and Close'.
+  4. Under “Maker annotations” click **or Browse DataStore**, then navigate the CyVerse (*sci_data*); select **my.all.gff.gz** and click 'Select and Close'.
 
   5. Leave others as defaults, then click the "Submit Job" button.
 
