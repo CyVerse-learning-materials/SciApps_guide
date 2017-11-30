@@ -240,8 +240,8 @@ Post your question to the user forum:
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
 .. |my_workflow| image:: ./img/sci_apps/my_workflow.gif
-    :width: 600
-    :height: 462
+    :width: 660
+    :height: 240
 .. |load_workflow| image:: ./img/sci_apps/load_workflow.gif
     :width: 600
     :height: 135

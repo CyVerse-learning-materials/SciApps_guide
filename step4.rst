@@ -121,7 +121,7 @@ This step will show you how to run a workflow you created or someone shared with
      |load_workflow|
  
      .. Tip::
-       Before loading a workflow, you can refresh the browser window to clear the History panel.
+       Double click on workflow name or description to make modifications.
 
   3. Scroll down the main panel, then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real-time analysis status updates.
 
@@ -179,7 +179,7 @@ Post your question to the user forum:
 .. _Home_Icon: http://learning.cyverse.org/
 .. |myjobs_window| image:: ./img/sci_apps/myjobs_window.gif
     :width: 660
-    :height: 232
+    :height: 237
 .. |build_workflow2| image:: ./img/sci_apps/build_workflow2.gif
     :width: 660
     :height: 246
@@ -191,7 +191,7 @@ Post your question to the user forum:
     :height: 320
 .. |myworkflows_window| image:: ./img/sci_apps/my_workflow.gif
     :width: 660
-    :height: 222
+    :height: 240
 .. |load_workflow| image:: ./img/sci_apps/load_workflow.gif
     :width: 600
     :height: 135
