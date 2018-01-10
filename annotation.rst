@@ -88,7 +88,7 @@ This step will demo how to upload data to the sci_data folder for accessing from
 
   2. Click **Prediciton** category (left panel) or search for **SNAP**, then click **SNAP** to load **SNAP-0.0.1**.
 
-  3. Under “GFF file” click **or Browse DataStore**, then navigate the CyVerse **sci_data** folder; select **my.all.gff.gz** and click 'Select and Close'.
+  3. Under “GFF file”, click **or Browse DataStore**, then navigate the CyVerse **sci_data** folder; select **my.all.gff.gz** and click 'Select and Close'.
 
      |data_window2|
 
@@ -196,7 +196,7 @@ In reality, annotated genes from MAKER will be further filtered or even manually
 *Summary*
 ~~~~~~~~~
 
-This tutorial covers how to use SciApps for your annotaition work - accessing data in CyVerse Data Store, launching jobs, building workflows, running workflows, visualizing results, importing workflows, and using annotation to interpret GWAS results.
+This tutorial covers how to use SciApps for your annotaition work, including accessing data in CyVerse Data Store, launching jobs, building workflows, running workflows, visualizing results, importing workflows, and using annotation to interpret GWAS results.
 
 
 More help and additional information

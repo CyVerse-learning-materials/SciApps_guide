@@ -98,8 +98,8 @@ This step will show you how to build a two-step workflow with previously complet
 
      |annotation_workflow2|
 
-     .. Note::
-       The connection between **SNAP-0.0.1** and **MAKER-0.0.1**  (via **my.all.hmm**) is recorded through **dragging and dropping**.
+     .. Tip::
+       Click the 'Top Down' button to visualize the workflow vertically.
 
   3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My Workflows' (under the 'Workflow' menu from top navigation panel).
 
@@ -135,6 +135,9 @@ This step will show you how to run a workflow you created or someone shared with
        - 'Blue': Running
        - 'Green': Completed
        - 'Red': Failed
+
+     .. Tip::
+        A running workflow can also be saved then loaded for checking status later on.
 
 ----
 
@@ -185,10 +188,10 @@ Post your question to the user forum:
     :height: 246
 .. |build_workflow3| image:: ./img/sci_apps/build_workflow3.gif
     :width: 660
-    :height: 294
+    :height: 203
 .. |annotation_workflow2| image:: ./img/sci_apps/annotation_workflow2.gif
     :width: 660
-    :height: 320
+    :height: 323
 .. |myworkflows_window| image:: ./img/sci_apps/my_workflow.gif
     :width: 660
     :height: 240

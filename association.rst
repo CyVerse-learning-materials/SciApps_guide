@@ -121,8 +121,7 @@ This step will show you how to visualize the results of EMMAX and PCA. You can c
       .. Note::
         You can increase the 'window size' for listing more nearby genes.
 
-   5. For visualizing **PCA** outputs, click **PCA-0.0.1** in the History panel to expand its outputs. There are two image outputs:  `pcplot <https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html>`_.
-      and `scree plot <http://support.minitab.com/en-us/minitab/17/topic-library/modeling-statistics/multivariate/principal-components-and-factor-analysis/what-is-a-scree-plot/>`_.
+   5. For visualizing **PCA** outputs, click **PCA-0.0.1** in the History panel to expand its outputs. There are two image outputs:  `pcplot <https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html>`_ and `scree plot <http://support.minitab.com/en-us/minitab/17/topic-library/modeling-statistics/multivariate/principal-components-and-factor-analysis/what-is-a-scree-plot/>`_.
 
       |pca_output1| |pca_output2|
       
@@ -225,7 +224,7 @@ Post your question to the user forum:
     :height: 355
 .. |emmax_workflow| image:: ./img/sci_apps/emmax_workflow.gif
     :width: 660
-    :height: 329
+    :height: 256
 .. |association_workflow2| image:: ./img/sci_apps/association_workflow2.gif
     :width: 660
     :height: 402
