@@ -99,7 +99,7 @@ This step will show you how to build a two-step workflow with previously complet
      |annotation_workflow2|
 
      .. Tip::
-       Click the 'Top Down' button to visualize the workflow vertically.
+       Click the 'Top Down' button to draw the workflow diagram vertically.
 
   3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My Workflows' (under the 'Workflow' menu from top navigation panel).
 
