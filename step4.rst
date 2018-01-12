@@ -59,7 +59,7 @@ This step will show you how to use SNAP output with MAKER to do a second around 
   2. Run SNAP as in the last section if you haven't. 
 
      .. Tip::
-       Jobs disappear from the History panel when the browser gets refreshed. To load completed jobs to the History panel, click 'Workflow' then 'My jobs' to select.
+       Jobs disappear from the History panel when the browser gets refreshed. To load completed jobs to the History panel, click 'Workflow' then 'My jobs' to select them.
 
        |myjobs_window|
 
@@ -116,13 +116,22 @@ This step will show you how to run a workflow you created or someone shared with
 
      |myworkflows_window|
 
+     .. Note::
+
+       Four operations are supported for a selected workflow:
+   
+       - 'Load': Display app forms and job histories
+       - 'Visualize': Display workflow diagram and job histories
+       - 'Download': Download the workflow JSON file 
+       - 'Delete': Delete the workflow
+
+     .. Tip::
+       Double click on workflow name or description to make modifications.
+
   2. Alternatively, you can load the workflow by navigating to 'Workflow', 'Load a workflow', then paste this URL: https://data.sciapps.org/misc/my_workflow.json or load a workflow JSON file from your PC.
 
      |load_workflow|
  
-     .. Tip::
-       Double click on workflow name or description to make modifications.
-
   3. Scroll down the main panel, then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real-time analysis status updates.
 
      .. Note::
@@ -182,7 +191,7 @@ Post your question to the user forum:
 .. _Home_Icon: http://learning.cyverse.org/
 .. |myjobs_window| image:: ./img/sci_apps/myjobs_window.gif
     :width: 660
-    :height: 237
+    :height: 232
 .. |build_workflow2| image:: ./img/sci_apps/build_workflow2.gif
     :width: 660
     :height: 246

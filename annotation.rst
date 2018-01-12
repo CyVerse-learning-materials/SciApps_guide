@@ -241,7 +241,7 @@ Post your question to the user forum:
 .. _Home_Icon: http://learning.cyverse.org/
 .. |my_workflow| image:: ./img/sci_apps/my_workflow.gif
     :width: 660
-    :height: 240
+    :height: 208
 .. |load_workflow| image:: ./img/sci_apps/load_workflow.gif
     :width: 600
     :height: 135
