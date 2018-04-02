@@ -18,33 +18,31 @@ for analysis.
 *Browsing/Navigating CyVerse Data Store on SciApps*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  1. Log in into SciApps at `https://www.SciApps.org <https://www.SciApps.org>`_
+  1. Log into CyVerse User portal at https://user.cyverse.org.
 
-     .. Tip::
+  2. By default, you will see 'My SERVICES'. If SciApps is not listed, click on 'AVAILABLE', then 'REQUEST ACCESS'.
 
-       Ensure you have access to SciApps by logging into the `CyVerse User portal <https://user.cyverse.org/>`_
-       You can check if you already have SciApps service by logging into the
-       portal and visiting the 'My Service' page. If SciApps is not listed,
-       click on 'Available' to request access. Requesting access is a
-       one-time operation.
+     |cyverse_user|
 
-       Once enabled, SciApps will create a A **sci_data** folder in your Data Store home folder.
+     .. Note::
 
+       Once requested, SciApps will create the **sci_data** folder in your Data Store home folder. Any data you put in this folder can be used to build workflows. The REQUEST step is one-time operation, and after this, you can log into SciApps directly at https://www.SciApps.org.
 
-  2. Load any App form by clicking on an App name in the left panel. For any
-     step that requires a file in put, click 'or Browse DataStore' to open
-     browse the Data Store.
+  3. If SciApps is listed, click on 'LAUNCH'.
+
+     |sciapps_launch|
+
+  4. Load any App form by clicking on an App name in the left panel. For any steps that require an input, click '**or Browse DataStore**' to open the browsing window.
 
      .. tip::
 
-       You can browse the files in your Data Store SciApps has access to:
+       Click on **CyVerse** to browse the CyVerse Data Store (**sci_data** folder only):
 
        |data_window|
 
        Other tabs include:
 
-       - **public**: Example data used for public workflows
-       - **shared**: CyVerse’s public data hosted in CyVerse Data Store
+       - **exampleData**: Example data used for public workflows
        - **Go up**: Move up one level
        - **Refresh**: Reload current folder
 
@@ -52,26 +50,28 @@ for analysis.
 
 *Accessing Data on SciApps*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  1. Access SciApps at https://www.SciApps.org
+  1. Access SciApps at https://www.SciApps.org.
 
   2. Click on ‘Data’ (from the top navigation bar), you will be directed to the
-     SciApps data page
+     SciApps data page.
 
      .. Note::
-       Only public data (example_data) is available on the data page. Analysis
-       results will also be accessible here with random folder names
-       (hidden for security reasons)
+       Only exampleData (example_data) is available on the data page. 
 
        |data_web|
+
 ----
 
 
 **Fix or improve this documentation:**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide/blob/master/step2.rst>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
+
+  |Home_Icon|_
+  `Learning Center Home <http://learning.cyverse.org/>`_
 
 .. |CyVerse logo| image:: ./img/cyverse_rgb.png
     :width: 500
@@ -86,4 +86,10 @@ for analysis.
     :height: 200
 .. |data_web| image:: ./img/sci_apps/data_web.gif
     :width: 550
-    :height: 276
+    :height: 295
+.. |cyverse_user| image:: ./img/sci_apps/cyverse_user.gif
+    :width: 660
+    :height: 362
+.. |sciapps_launch| image:: ./img/sci_apps/sciapps_launch.gif
+    :width: 550
+    :height: 172

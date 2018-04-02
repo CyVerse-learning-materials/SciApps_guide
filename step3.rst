@@ -4,12 +4,12 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Launching an SciApps Analysis Job
+Launching an Analysis Job
 ----------------------------------
 
 For analyzing data, you can select an App from the left panel of SciApps.
 In this example, to cover the minimum you need to launch an analysis, we will
-use the `SNAP <https://github.com/KorfLab/SNAP>`_ gene finding app to estimate
+use `SNAP <https://github.com/KorfLab/SNAP>`_, a gene finding app, to estimate
 Hidden Markov Model (HMM) parameters with a GFF file output from MAKER, an
 annotation App.
 
@@ -27,9 +27,9 @@ annotation App.
       - Example
     * - Annotated gene models
       - MAKER output in GFF3 format
-      - `maker_out.gff <https://data.sciapps.org/example_data/maker/maker_out.gff>`_
+      - `my.all.gff.gz <https://data.sciapps.org/example_data/maker/my.all.gff.gz>`_
 
-**SciApps App(s):**
+**Apps:**
 
 .. list-table::
     :header-rows: 1
@@ -42,27 +42,25 @@ annotation App.
     * - SNAP
       - 0.0.1
       - Semi-HMM-based Nucleic Acid Parser
-      - `App link <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
-      - `App documentation <http://korflab.ucdavis.edu/software.html>`_
-
+      - `SNAP-0.0.1 <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
+      - `SNAP documentation <http://korflab.ucdavis.edu/software.html>`_
 
 *Example Analysis: HMM parameters estimation with SNAP*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  1. Login to `SciApps <https://www.SciApps.org/>`_
+  1. Login to SciApps at https://www.SciApps.org.
 
-  2. Click this `link to open to SNAP 0.0.1 <https://www.sciapps.org/app_id/SNAP-0.0.1>`_
-     or click **Prediciton** category from the left panel; and select SNAP.
+  2. Click **Prediciton** category (left panel) or search for **SNAP**, then click **SNAP** to load **SNAP-0.0.1**.
 
-  3. Under “GFF file” click **or Browse DataStore**, then navigate the example data
-     (*public > maker > maker_out.gff*); select **maker_out.gff** and click
-     'Select and Close'. to and select
+  3. Under “GFF file” click **or Browse DataStore**, then navigate the exampleData
+     (*example_data > maker*); select **my.all.gff.gz** and click
+     'Select and Close'.
 
      |snap_app|
 
      .. Tip::
        For smaller files (<10 MB), you can click **Choose File** to select from
-       your local computer
+       your local computer.
 
   4. Leave other parameters as default, and then click **Submit Job**. You will
      be asked to confirm; click "Submit". You will be prompted to check the job
@@ -79,25 +77,28 @@ annotation App.
        From left to right, there are three icons next to each job name:
 
        - **Checkbox**: If checked, the analysis will be added to the workflow building page
-       - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below)
+       - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below).
          |agave_status|
-       - **Re-submit**: Relaunch the analysis job with same inputs and parameters
+       - **Re-submit**: Relaunch the analysis job with same inputs and parameters.
 
      .. Note::
        Outputs displayed under job names are defined outputs in Agave app JSON.
        They are the ones that should be used in workflow construction.
        The output folder contains complete outputs from the analysis job and it
-       can be accessed through the Information icon
+       can be accessed through the Information icon.
 
 ----
 
 
 **Fix or improve this documentation:**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide/blob/master/step3.rst>`_
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 
 ----
+
+  |Home_Icon|_
+  `Learning Center Home <http://learning.cyverse.org/>`_
 
 .. |CyVerse logo| image:: ./img/cyverse_rgb.png
     :width: 500

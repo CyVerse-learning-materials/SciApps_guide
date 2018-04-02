@@ -4,12 +4,12 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 SciApps Guide
-==========
+==============
 
 Goal
 ----
 
-Introduce SciApps, a cloud-based platform for building and sharing reproducible bioinformatics workflows across distributed computing and storage systems. This guide will cover accessing CyVerse Data Store, launcning analysis jobs, visualizing results, building, sharing, and running workflows.
+Introduce SciApps, a cloud-based platform for building and sharing reproducible bioinformatics workflows across distributed computing and storage systems. This guide will cover accessing CyVerse Data Store, launching analysis jobs, visualizing results, building, sharing, and running workflows.
 
 ----
 
@@ -21,8 +21,8 @@ Introduce SciApps, a cloud-based platform for building and sharing reproducible 
 	Viewing and Accessing Data <step2.rst>
 	Launching an Analysis Job <step3.rst>
 	Building a Workflow <step4.rst>
-	Running a Workflow <step5.rst>
-
+	The Association Workflow <association.rst>
+	The Annotation Tutorial <annotation.rst>
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
 	you have an additional page called 'First Step' with content located in 'step1.rst'.
@@ -37,7 +37,7 @@ Prerequisites
 Downloads, access, and services
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*In order to complete this tutorial you will need access to the following services/software*
+*In order to complete this tutorial, you will need access to the following services/software*
 
 ..
 	#### comment: delete any row not needed in this table ####
