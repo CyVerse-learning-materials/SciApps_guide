@@ -6,7 +6,7 @@
 
 The Annotation Tutorial
 ---------------------------
-This tutorial is a step-by-step guide for the `Bioinformatics workshop of 2017 Plant Genome & Biotechnology meeting <https://wiki.cyverse.org/wiki/display/Events/2017+11+29+Half-day+workshop+on+bioinformatics+tools+for+Plant+Genomics>`_. It will cover the basic steps of using SciApps for performing annotation.
+This tutorial is a step-by-step guide for using SciApps to perform MAKER based annotation.
 
 
 ----
@@ -214,10 +214,11 @@ Post your question to the user forum:
 
 ----
 
-**More annotation tutorials:**
+**More resources:**
 
 - `GMOD MAKER tutorial <http://gmod.org/wiki/MAKER_Tutorial>`_
 - `MAKER 2.31.9 with CCTOOLS Jetstream Tutorial <https://pods.iplantcollaborative.org/wiki/display/TUT/MAKER+2.31.9+with+CCTOOLS+Jetstream+Tutorial>`_
+- `Bioinformatics workshop of 2017 Plant Genome & Biotechnology meeting <https://wiki.cyverse.org/wiki/display/Events/2017+11+29+Half-day+workshop+on+bioinformatics+tools+for+Plant+Genomics>`_
 
 ----
 
