@@ -33,13 +33,14 @@ for user data management. Besides public and shared data, SciApps can only acces
 
      .. tip::
 
-       Click on **CyVerse** to browse the CyVerse Data Store (**sci_data** folder only):
+       Click on **home** to browse your CyVerse Data Store (**sci_data** folder only):
 
        |data_window|
 
        Other tabs include:
 
-       - **exampleData**: Example data used for public workflows
+       - **example**: Example data used for public workflows
+       - **shared**: Community data shared with everybody
        - **Go up**: Move up one level
        - **Refresh**: Reload current folder
 
@@ -80,8 +81,8 @@ There are several ways to organize your data, including CyVerse DE, CyberDuck, a
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
 .. |data_window| image:: ./img/sci_apps/data_window.gif
-    :width: 500
-    :height: 200
+    :width: 501
+    :height: 223
 .. |data_web| image:: ./img/sci_apps/data_web.gif
     :width: 550
     :height: 295
