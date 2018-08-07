@@ -52,15 +52,11 @@ annotation App.
 
   2. Click **Prediciton** category (left panel) or search for **SNAP**, then click **SNAP** to load **SNAP-0.0.1**.
 
-  3. Under “GFF file” click **or Browse DataStore**, then navigate the exampleData
-     (*example_data > maker*); select **my.all.gff.gz** and click
+  3. Under “GFF file” click **Browse DataStore**, then navigate the example folder
+     (*example > maker*); select **my.all.gff.gz** and click
      'Select and Close'.
 
      |snap_app|
-
-     .. Tip::
-       For smaller files (<10 MB), you can click **Choose File** to select from
-       your local computer.
 
   4. Leave other parameters as default, and then click **Submit Job**. You will
      be asked to confirm; click "Submit". You will be prompted to check the job
@@ -68,24 +64,23 @@ annotation App.
        
      .. Tip::
        In the right panel, each analysis job is designated with a number and an
-       App id (e.g. 1: SNAP-0.0.1). Outputs (e.g. my.all.hmm) are displayed after
+       App id (e.g. 1: SNAP-0.0.1). Outputs (e.g. snap_out.hmm) are displayed after
        clicking the job name and job status is displayed after clicking the (i)
        icon.
        
        |status|
        
-       From left to right, there are three icons next to each job name:
+       From left to right, there are four icons next to each job name:
 
-       - **Checkbox**: If checked, the analysis will be added to the workflow building page
+       - **Checkbox**: If checked, the analysis will be added to the workflow building page.
        - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below).
          |agave_status|
-       - **Re-submit**: Relaunch the analysis job with same inputs and parameters.
+       - **Re-submit**: Relaunch the analysis job with the same inputs and parameters.
+       - **Visualization**: Generate links for Genome Browsers or visualize in a Web Browser.
 
      .. Note::
        Outputs displayed under job names are defined outputs in Agave app JSON.
        They are the ones that should be used in workflow construction.
-       The output folder contains complete outputs from the analysis job and it
-       can be accessed through the Information icon.
 
 ----
 
@@ -109,11 +104,11 @@ annotation App.
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
 .. |snap_app| image:: ./img/sci_apps/snap.gif
-    :width: 550
-    :height: 328
+    :width: 491
+    :height: 401
 .. |status| image:: ./img/sci_apps/status.gif
-    :width: 250
-    :height: 60
+    :width: 232
+    :height: 62
 .. |agave_status| image:: ./img/sci_apps/agave_status.gif
-    :width: 550
-    :height: 322
+    :width: 548
+    :height: 235

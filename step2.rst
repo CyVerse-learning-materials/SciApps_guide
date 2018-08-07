@@ -17,7 +17,7 @@ for user data management. Besides public and shared data, SciApps can only acces
 
   1. Log into CyVerse User portal at https://user.cyverse.org.
 
-  2. By default, you will see 'My SERVICES'. If SciApps is not listed, click on 'AVAILABLE', then 'REQUEST ACCESS'.
+  2. By default, you will see 'My SERVICES'. If SciApps is not listed, click 'AVAILABLE', then 'REQUEST ACCESS'.
 
      |cyverse_user|
 
@@ -25,7 +25,7 @@ for user data management. Besides public and shared data, SciApps can only acces
 
        Once requested, SciApps will create the **sci_data** folder in your Data Store home folder. Any data you put in this folder can be used to build workflows. The REQUEST step is one-time operation, and after this, you can log into SciApps directly at https://www.SciApps.org.
 
-  3. If SciApps is listed, click on 'LAUNCH'.
+  3. If SciApps is listed, click 'LAUNCH'.
 
      |sciapps_launch|
 
@@ -33,16 +33,18 @@ for user data management. Besides public and shared data, SciApps can only acces
 
      .. tip::
 
-       Click on **home** to browse your CyVerse Data Store (**sci_data** folder only):
+       Click **example** to browse example data sets used by public workflows (e.g. example data for MAKER below):
 
        |data_window|
 
        Other tabs include:
 
-       - **example**: Example data used for public workflows
+       - **home**: Your CyVerse Data Store (**sci_data** folder only)
        - **shared**: Community data shared with everybody
        - **Go up**: Move up one level
        - **Refresh**: Reload current folder
+
+  5. Check the checkbox in front the file or folder to use it as input, then close the browsing window.
 
 ----
 
@@ -84,8 +86,8 @@ There are several ways to organize your data, including CyVerse DE, CyberDuck, a
     :width: 501
     :height: 223
 .. |data_web| image:: ./img/sci_apps/data_web.gif
-    :width: 550
-    :height: 295
+    :width: 500
+    :height: 266
 .. |cyverse_user| image:: ./img/sci_apps/cyverse_user.gif
     :width: 660
     :height: 362
