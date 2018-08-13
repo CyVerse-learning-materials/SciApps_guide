@@ -40,7 +40,8 @@ required to access these systems.
         the top navigation bar. Additionally, job histories in the right panel
         will be discarded after closing or refreshing the browser tab. To load
         them back to the History panel, click on 'Workflow', then 'My jobs'
-..
+
+----
 
 *Access SciApps Without Logging In*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

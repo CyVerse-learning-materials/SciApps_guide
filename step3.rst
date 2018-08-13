@@ -76,13 +76,12 @@ annotation App.
        - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below).
          |agave_status|
        - **Relaunch**: Relaunch the analysis job with the same inputs and parameters.
-       - **Visualization**: Generate links for Genome Browsers or visualize in a Web Browser.
+       - **View**: Generate links for Genome Browsers or visualize in a Web Browser.
 
      .. Note::
-       Outputs displayed under job names are defined outputs in Agave app JSON.
-       They are the ones that should be used in workflow construction.
+       Outputs displayed under job names are defined outputs in Agave app JSON. You can drag and drop an URL from them as input of subsequent steps. Then workflows can be constructed with these steps. Note the URL here is pointing to the CyVerse Data Common landing page with metadata displayed there, and it shouldn't be used with Genome Browsers.
 
-  5. Click the **Visualization** icon will bring up the list of outputs. Selecte an output, then you can either get a URL for displaying it in genome (or web) browser, or visualize the output directly.
+  5. Click the **View** icon will bring up the list of outputs. Selecte an output, then you can either get a URL for displaying it in genome (or web) browser, or visualize the output directly.
 
      |visual_window|
 
@@ -94,9 +93,7 @@ annotation App.
      .. Note::
        Anyone with access to a file's URL can access that file. 
 
-       Additionally, if you choose to visualize an output that needs interactivity (e.g. visualizing GWAS output using an Shiny app), it may take a while for SciApps to copy the file from the CyVerse Data Store to the visualization server.    
-       
-       Also, the URL provided in the History panel or workflow diagram is pointing to the CyVerse Data Common landing page with metadata displayed there.
+       Additionally, if you choose to view an output directly that needs interactivity (e.g. visualizing GWAS output using an Shiny app), it may take a while for SciApps to copy the file from the CyVerse Data Store to the visualization server.    
 
 ----
 
@@ -129,8 +126,8 @@ annotation App.
     :width: 548
     :height: 235
 .. |visual_window| image:: ./img/sci_apps/visual_window.gif
-    :width: 568
-    :height: 111
+    :width: 567
+    :height: 108
 .. |visual_window2| image:: ./img/sci_apps/visual_window2.gif
     :width: 588
     :height: 182

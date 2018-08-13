@@ -5,7 +5,7 @@
 
 
 Viewing and Accessing Data
---------------------------
+----------------------------
 
 SciApps uses `CyVerse Data Store <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/>`_
 for user data management. Besides public and shared data, SciApps can only access data placed in your **sci_data** folder. Following steps show how this folder can be created.
@@ -57,7 +57,7 @@ There are several ways to organize your data, including CyVerse DE, CyberDuck, a
 
   1. Access CyVerse DE at https://de.cyverse.org if you want to use a GUI to `upload or download small data <https://pods.iplantcollaborative.org/wiki/display/DEmanual/Uploading+and+Importing+Data+Items+Within+the+DE>`_. You could also use it to organize or share your data
 
-  2. For bulk data transfer with CyberDuck, here is the `documentation <https://pods.iplantcollaborative.org/wiki/display/DS/Using+Cyberduck+for+Uploading+and+Downloading+to+the+Data+Store>`_ to get started
+  2. For bulk data transfer with CyberDuck, here is the `information <https://pods.iplantcollaborative.org/wiki/display/DS/Using+Cyberduck+for+Uploading+and+Downloading+to+the+Data+Store>`_ to get started
 
   3. For command line users, here is the `documentation <https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands>`_ for using iCommands
 
