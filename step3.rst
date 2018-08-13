@@ -129,8 +129,8 @@ annotation App.
     :width: 548
     :height: 235
 .. |visual_window| image:: ./img/sci_apps/visual_window.gif
-    :width: 567
-    :height: 110
+    :width: 568
+    :height: 111
 .. |visual_window2| image:: ./img/sci_apps/visual_window2.gif
     :width: 588
     :height: 182
