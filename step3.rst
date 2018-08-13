@@ -79,7 +79,9 @@ annotation App.
        - **View**: Generate links for Genome Browsers or visualize in a Web Browser.
 
      .. Note::
-       Outputs displayed under job names are defined outputs in Agave app JSON. You can drag and drop an URL from them as input of subsequent steps. Then workflows can be constructed with these steps. Note the URL here is pointing to the CyVerse Data Common landing page with metadata displayed there, and it shouldn't be used with Genome Browsers.
+       Outputs displayed under job names are defined outputs in Agave app JSON. You can drag and drop an URL from them as input of subsequent steps. Then workflows can be constructed with these steps. 
+
+       The URL used  here is pointing to the CyVerse Data Common landing page with metadata displayed there, and it shouldn't be used with Genome Browsers.
 
   5. Click the **View** icon will bring up the list of outputs. Selecte an output, then you can either get a URL for displaying it in genome (or web) browser, or visualize the output directly.
 
