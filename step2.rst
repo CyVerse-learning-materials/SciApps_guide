@@ -83,8 +83,8 @@ There are several ways to organize your data, including CyVerse DE, CyberDuck, a
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
 .. |data_window| image:: ./img/sci_apps/data_window.gif
-    :width: 500
-    :height: 266
+    :width: 582
+    :height: 264
 .. |cyverse_user| image:: ./img/sci_apps/cyverse_user.gif
     :width: 660
     :height: 362
