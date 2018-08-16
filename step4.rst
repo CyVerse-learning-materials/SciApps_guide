@@ -21,13 +21,13 @@ A workflow is a series of Apps chained together to run in sequence as a batch op
       - Example
     * - Assembled genome
       - A scaled-down genome that is comprised of the first 300kb of three chromosomes of rice
-      - `test_genome.fasta <https://data.sciapps.org/example_data/maker/test_genome.fasta>`_
+      - `test_genome.fasta <http://datacommons.cyverse.org/browse/iplant/home/sciapps/example/maker/test_genome.fasta>`_
     * - Annotated gene models
       - MAKER output in GFF3 format (gzipped)
-      - `my.all.gff.gz <https://data.sciapps.org/example_data/maker/my.all.gff.gz>`_
+      - `maker_out.gff.gz <http://datacommons.cyverse.org/browse/iplant/home/sciapps/example/maker/maker_out.gff.gz>`_
     * - SNAP HMM estimation
       - HMM parameters estimated with SNAP
-      - `my.all.hmm <https://data.sciapps.org/results/job-6189497920853643751-242ac113-0001-007-job-for-snap-0-0-1/my.all.hmm>`_
+      - `snap_out.hmm <http://datacommons.cyverse.org/browse/iplant/home/lwang/sci_data/results/SNAP-0.0.1_d603d196-8999-4866-8c49-000b1f226454/snap_out.hmm>`_
 
 **Apps:**
 
@@ -190,8 +190,8 @@ Post your question to the user forum:
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
 .. |myjobs_window| image:: ./img/sci_apps/myjobs_window.gif
-    :width: 660
-    :height: 232
+    :width: 627
+    :height: 220
 .. |build_workflow2| image:: ./img/sci_apps/build_workflow2.gif
     :width: 660
     :height: 246

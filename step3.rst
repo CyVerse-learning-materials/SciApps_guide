@@ -27,7 +27,7 @@ annotation App.
       - Example
     * - Annotated gene models
       - MAKER output in GFF3 format
-      - `my.all.gff.gz <https://data.sciapps.org/example_data/maker/my.all.gff.gz>`_
+      - `maker_out.gff.gz <http://datacommons.cyverse.org/browse/iplant/home/sciapps/example/maker/maker_out.gff.gz>`_
 
 **Apps:**
 
@@ -53,7 +53,7 @@ annotation App.
   2. Click **Prediciton** category (left panel) or search for **SNAP**, then click **SNAP** to load **SNAP-0.0.1**.
 
   3. Under “GFF file” click **Browse DataStore**, then navigate the example folder
-     (*example > maker*); select **my.all.gff.gz** and click
+     (*example > maker*); select **maker_out.gff.gz** and click
      'Select and Close'.
 
      |snap_app|
@@ -85,17 +85,17 @@ annotation App.
 
   5. Click the **View** icon will bring up the list of outputs. Selecte an output, then you can either get a URL for displaying it in genome (or web) browser, or visualize the output directly.
 
-     |visual_window|
-
      .. Tip::
+       The **View** button is disabled before the output is ready for visualization.
+
+       |visual_window|
+
        For getting an URL, a dialog window will be opened with the URL embedded. Click 'Copy to clipboard', then hit ctrl-v or cmd-v to paste the URL elsewhere. 
 
        |visual_window2|
 
      .. Note::
        Anyone with access to a file's URL can access that file. 
-
-       Additionally, if you choose to view an output directly that needs interactivity (e.g. visualizing GWAS output using an Shiny app), it may take a while for SciApps to copy the file from the CyVerse Data Store to the visualization server.    
 
 ----
 
