@@ -76,17 +76,19 @@ annotation App.
        - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below).
          |agave_status|
        - **Relaunch**: Relaunch the analysis job with the same inputs and parameters.
-       - **View**: Generate links for Genome Browsers or visualize in a Web Browser.
+       - **Visualization**: Generate links for visualizing in a Genome Browser or Web Browser.
 
      .. Note::
        Outputs displayed under job names are defined outputs in Agave app JSON. You can drag and drop an URL from them as input of subsequent steps. Then workflows can be constructed with these steps. 
 
-       The URL used  here is pointing to the CyVerse Data Common landing page with metadata displayed there, and it shouldn't be used with Genome Browsers.
+       Click the output URL to check the output with associated metadata. The output URL shouldn't be used with Genome Browsers.
 
-  5. Click the **View** icon will bring up the list of outputs. Selecte an output, then you can either get a URL for displaying it in genome (or web) browser, or visualize the output directly.
+       Both the **Checkbox** and the **Visualization** icon are disabled before the job is completed.
+
+  5. Click the **Visualization** icon to display the list of outputs. Selecte an output, then you can either get a URL for visualizing it in a Genome (or Web) Browser, or download the output directly.
 
      .. Tip::
-       The **View** button is disabled before the output is ready for visualization.
+       Click the **View** button for direct visualization.
 
        |visual_window|
 
@@ -119,8 +121,8 @@ annotation App.
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
 .. |snap_app| image:: ./img/sci_apps/snap.gif
-    :width: 491
-    :height: 401
+    :width: 446
+    :height: 325
 .. |status| image:: ./img/sci_apps/status.gif
     :width: 232
     :height: 62

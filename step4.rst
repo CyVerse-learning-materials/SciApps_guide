@@ -59,33 +59,32 @@ This step will show you how to use SNAP output with MAKER to do a second around 
   2. Run SNAP as in the last section if you haven't. 
 
      .. Tip::
-       Jobs disappear from the History panel when the browser gets refreshed. To load completed jobs to the History panel, click 'Workflow' then 'My jobs' to select them.
+       Jobs will disappear from the History panel when the browser gets refreshed. To load jobs back to the History panel, click 'Workflow' then 'My jobs' to select them.
 
        |myjobs_window|
 
-  3. Click **Annotation** category (left panel) or search for **MAKER**, then click **MAKER** to load **MAKER-0.0.1**.
+  3. Click **Annotation** category (left panel) or search for **MAKER**, then click **MAKER-2.32** to load the app form.
+
+  4. Click **SNAP-0.0.1** in the History panel to expand its outputs, then drag and drop **snap_out.hmm** into the **SNAP HMM file** field.
 
      |build_workflow2|
 
-  4. Under “Genome sequence file” click **or Browse DataStore**, then navigate the exampleData (*example_data > maker*); select **test_genome.fasta** and click 'Select and Close'.
+  5. Under “Genome sequence file” click **Browse DataStore**, then navigate the example (*sciapps > example > maker*); select **test_genome.fasta** and click 'Select and Close'.
 
-  5. Click **SNAP-0.0.1** in the History panel to expand its outputs, then
-     drag and drop **my.all.hmm** into the **SNAP HMM file** field.
-
-  6. Under “Maker annotations” click **or Browse DataStore**, then navigate the exampleData (*example_data > maker*); select **my.all.gff.gz** and click 'Select and Close'.
+  6. Under “Maker annotations” click **Browse DataStore**, then navigate the example data (*sciapps > example > maker*); select **maker_out.gff.gz** and click 'Select and Close'.
 
   7. Leave others as defaults, then click the "Submit Job" button.
 
-  8. Once COMPLETED, click **MAKER-0.0.1** in the History panel to expand its outputs, then click **maker_output.jbrowse** to visualize annotation results.
+  8. Once COMPLETED, click **MAKER-2.32** in the History panel to expand its outputs, click the 'Visualization' icon, then select **maker_out.view.tgz** to visualize the annotation results.
 
      .. Note::
-       You will get an email notification if selected 'Yes' before 'Submit Job', or you can click on the 'i' icon to check the analysis status. For manual annotation of the MAKER results with Apollo, go to http://data.maizecode.org/apollo with username: demo@demo.com, and password: demo.         
+       For new results, it may take a while for visualization to be ready since the results need to be copied from CyVerse Data Store to the SciApps visualization server.         
 
 ----
 
 *Step 2: Creating a Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to build a two-step workflow with previously completed MAKER and SNAP jobs.
+This step describes how to build a two-step workflow with previously completed MAKER and SNAP jobs.
 
   1. Check the checkboxes for step 1 (SNAP), and step 2 (MAKER) in the History panel, then click the ‘build a workflow’ link to load the Workflow building page.
 
@@ -94,23 +93,23 @@ This step will show you how to build a two-step workflow with previously complet
      .. Tip::
         History panel Checkboxes and the workflow building page are interactive. Use the 'Select All' or 'Reset' button to simplify the selection process.
 
-  2. Modify **Workflow Name** and **Workflow Description**, then click the ‘Build Workflow’ button to visualize the workflow.
+  2. Click the ‘Build Workflow’ button to build a workflow with selected jobs. Once built, a workflow diagram will be open for visual inspection.
 
      |annotation_workflow2|
 
      .. Tip::
        Click the 'Top Down' button to draw the workflow diagram vertically.
 
-  3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My Workflows' (under the 'Workflow' menu from top navigation panel).
+  3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My workflows' (under the 'Workflow' menu from top navigation panel).
 
      .. Tip::
-       You can download the workflow from 'My workflows' as a JSON file, which can be passed to others for **sharing** the entire analysis.
+       While saving a workflow, you can rename it and/or add a short description.
 
 ----
 
 *Step 3: Running a Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to run a workflow you created or someone shared with you.
+This step will show you how to run a workflow.
 
   1. Navigate to ‘Workflow’, then ‘My workflows’, to load the workflow you created and saved (in **Step 2**).
 
@@ -122,16 +121,14 @@ This step will show you how to run a workflow you created or someone shared with
    
        - 'Load': Display app forms and job histories
        - 'Visualize': Display workflow diagram and job histories
-       - 'Download': Download the workflow JSON file 
+       - 'Share': Get a direct link to the workflow for sharing 
        - 'Delete': Delete the workflow
 
      .. Tip::
        Double click on workflow name or description to make modifications.
 
-  2. Alternatively, you can load the workflow by navigating to 'Workflow', 'Load a workflow', then paste this URL: https://data.sciapps.org/misc/my_workflow.json or load a workflow JSON file from your PC.
+  2. Alternatively, you can load the app forms and job histories directly if you have the direct link for a workflow. Scroll down the app forms in the main panel to either submit a new run or view the workflow diagram.
 
-     |load_workflow|
- 
   3. Scroll down the main panel, then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real-time analysis status updates.
 
      .. Note::
@@ -193,20 +190,17 @@ Post your question to the user forum:
     :width: 627
     :height: 220
 .. |build_workflow2| image:: ./img/sci_apps/build_workflow2.gif
-    :width: 660
-    :height: 246
+    :width: 661
+    :height: 311
 .. |build_workflow3| image:: ./img/sci_apps/build_workflow3.gif
     :width: 660
-    :height: 203
+    :height: 198
 .. |annotation_workflow2| image:: ./img/sci_apps/annotation_workflow2.gif
-    :width: 660
-    :height: 323
+    :width: 656
+    :height: 292
 .. |myworkflows_window| image:: ./img/sci_apps/my_workflow.gif
-    :width: 660
-    :height: 240
-.. |load_workflow| image:: ./img/sci_apps/load_workflow.gif
-    :width: 600
-    :height: 135
+    :width: 656
+    :height: 228
 .. |running_workflow| image:: ./img/sci_apps/running_workflow2.gif
-    :width: 660
-    :height: 199
+    :width: 617
+    :height: 196
