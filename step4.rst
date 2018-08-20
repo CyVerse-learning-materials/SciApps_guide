@@ -143,7 +143,7 @@ This step will show you how to run a workflow.
        - 'Red': Failed
 
      .. Tip::
-        A running workflow can also be saved then loaded for checking status later on.
+        A running workflow can also be saved then selected (in 'My workflows') to visualize running status later on.
 
 ----
 
