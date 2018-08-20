@@ -121,7 +121,8 @@ This step will show you how to run a workflow.
    
        - 'Load': Display app forms and job histories
        - 'Visualize': Display workflow diagram and job histories
-       - 'Share': Get a direct link to the workflow for sharing 
+       - 'Share': Get a direct link to the workflow for sharing
+	 |workflow_URL| 
        - 'Delete': Delete the workflow
 
      .. Tip::
@@ -143,7 +144,7 @@ This step will show you how to run a workflow.
        - 'Red': Failed
 
      .. Tip::
-        A running workflow can also be saved then selected (in 'My workflows') to visualize running status later on.
+        A running workflow can also be saved then selected (in 'My workflows') to visualize its running status later on.
 
 ----
 
@@ -201,6 +202,9 @@ Post your question to the user forum:
 .. |myworkflows_window| image:: ./img/sci_apps/my_workflow.gif
     :width: 656
     :height: 228
+.. |workflow_URL| image:: ./img/sci_apps/workflow_URL.gif
+    :width: 582
+    :height: 182
 .. |running_workflow| image:: ./img/sci_apps/running_workflow2.gif
     :width: 617
     :height: 196
