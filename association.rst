@@ -6,7 +6,7 @@
 
 The Association Workflow
 ---------------------------------
-A genome-wide association study (or GWAS) is an examination of a genome-wide set of genetic variants in a population of individuals aimed at determining whether any variant is associated with a trait. In this section, we will walk through the Association workflow available on the 'Public workflows' page. The workflow contains following operations in order: intersecting marker data with trait data, imputing missing markers, estimating population structure with PCA, and performing mixed-model based analyses with three different tools (EMMAX, TASSEL, and MLMM). The example data used here are a subset of the published data (Morris, G., et al. `PNAS 110.2 (2013): 453-458 <http://www.pnas.org/content/110/2/453.long>`_).
+A genome-wide association study (or GWAS) is an examination of a genome-wide set of genetic variants in a population of individuals aimed at determining whether any variant is associated with a trait. In this section, we will walk through the Association workflow available on the 'Public workflows' page. The workflow contains following operations in order: intersecting marker data with trait data, imputing missing markers, estimating population structure with PCA, and performing mixed-model based analyses with two different tools (EMMAX and TASSEL MLM). The example data used here are a subset of the published data (Morris, G., et al. `PNAS 110.2 (2013): 453-458 <http://www.pnas.org/content/110/2/453.long>`_).
 
 We will start by loading the workflow, visualizing results, creating a new workflow with EMMAX method only, and then add additional analyses to estimate population structure and perform an association analysis.  
 
@@ -21,12 +21,12 @@ We will start by loading the workflow, visualizing results, creating a new workf
     * - Input
       - Description
       - Example
-    * - Marker file (Sorghum bicolor v2 chromosome 9)
+    * - Marker file (Sorghum bicolor v3 chromosome 9)
       - Marker data in TASSEL Hapmap format
-      - `myStudy_filt.c9.hmp.v2.txt <https://data.sciapps.org/example_data/gwas_raw/myStudy_filt.c9.hmp.v2.txt>`_
+      - `marker.v3.txt.gz <http://datacommons.cyverse.org/browse/iplant/home/sciapps/example/gwas/marker.v3.txt.gz>`_
     * - Trait file
       - Trait data in TASSEL trait format
-      - `trait.txt <https://data.sciapps.org/example_data/gwas_raw/trait.txt>`_
+      - `trait.txt <http://datacommons.cyverse.org/browse/iplant/home/sciapps/example/gwas/trait.txt>`_
 
 **Apps:**
 
@@ -39,44 +39,44 @@ We will start by loading the workflow, visualizing results, creating a new workf
       - App link
       - Notes/other links
     * - MergeG2P
-      - 0.0.2
+      - 0.0.3
       - Intersect marker data with trait data
-      - `MergeG2P-0.0.2 <https://www.sciapps.org/app_id/MergeG2P-0.0.2>`_
+      - `MergeG2P-0.0.3 <https://www.sciapps.org/app_id/MergeG2P-0.0.3>`_
       -
     * - NPUTE
-      - 0.0.1
+      - 0.0.3
       - Imputes missing markers via voting from K-nearest-neighbors (KNN)
-      - `NPUTE-0.0.1 <https://www.sciapps.org/app_id/NPUTE-0.0.1>`_
+      - `NPUTE-0.0.3 <https://www.sciapps.org/app_id/NPUTE-0.0.3>`_
       - `NPUTE documentation <http://compgen.unc.edu/NPUTE_README.html>`_
-    * - NumericalTransform-TASSEL
-      - 4.3.15
+    * - NumericalTransform
+      - 0.0.3
       - Numerical Transform of marker data using TASSEL and PLINK
-      - `NumericalTransform-TASSEL-4.3.15 <https://www.sciapps.org/app_id/NumericalTransform-TASSEL-4.3.15>`_
+      - `NumericalTransform-0.0.3 <https://www.sciapps.org/app_id/NumericalTransform-0.0.3>`_
       -
-    * - MLM-TASSEL
-      - 5.1.23
+    * - MLM
+      - 0.0.3
       - Mixed Linear Model analysis using TASSEL
-      - `MLM-TASSEL-5.1.23 <https://www.sciapps.org/app_id/MLM-TASSEL-5.1.23>`_
+      - `MLM-0.0.3 <https://www.sciapps.org/app_id/MLM-0.0.3>`_
       - `TASSEL documentation <http://www.maizegenetics.net/>`_
     * - EMMAX
-      - 0.0.2
+      - 0.0.4
       - Association mapping with consideration of sample structure
-      - `EMMAX-0.0.2 <https://www.sciapps.org/app_id/EMMAX-0.0.2>`_
+      - `EMMAX-0.0.4 <https://www.sciapps.org/app_id/EMMAX-0.0.4>`_
       - `EMMAX documentation <http://genetics.cs.ucla.edu/emmax/>`_
     * - MLMM
-      - 0.0.2
+      - 0.0.3
       - An efficient multi-locus mixed-model approach for GWAS
-      - `MLMM-0.0.2 <https://www.sciapps.org/app_id/MLMM-0.0.2>`_
+      - `MLMM-0.0.3 <https://www.sciapps.org/app_id/MLMM-0.0.3>`_
       - `MLMM documentation <https://cynin.gmi.oeaw.ac.at/home/resources/mlmm>`_
     * - PCA
-      - 0.0.1
+      - 0.0.3
       - Principal Component Analysis
-      - `PCA-0.0.1 <https://www.sciapps.org/app_id/PCA-0.0.1>`_
+      - `PCA-0.0.3 <https://www.sciapps.org/app_id/PCA-0.0.3>`_
       - `PCA documentation <https://stat.ethz.ch/R-manual/R-patched/library/stats/html/prcomp.html>`_
-    * - CloudSTRUCTURE
-      - 2.3.4
+    * - STRUCTURE
+      - 2.3.4.1
       - Parallelized STRUCTURE software for estimating population structures
-      - `CloudSTRUCTURE-2.3.4 <https://www.sciapps.org/app_id/CloudSTRUCTURE-2.3.4>`_
+      - `STRUCTURE-2.3.4.1 <https://www.sciapps.org/app_id/STRUCTURE-2.3.4.1>`_
       - `STRUCTURE documentation <http://pritch.bsd.uchicago.edu/structure.html>`_
 
 *Step 1: Importing the Workflow*
@@ -94,7 +94,7 @@ This step will show you how to import the Association workflow into your own wor
      |association_workflow|
 
      .. Note::
-       To view the workflow diagram, scroll down to the bottom of the main panel and click the 'Show Diagram' button.
+       Click the output node of the workflow diagram, you will be directed to the output folder. To check specific output, click the output from the History panel.
  
 ----
 
@@ -102,7 +102,7 @@ This step will show you how to import the Association workflow into your own wor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will show you how to visualize the results of EMMAX and PCA. You can check other results with the similar operations.
 
-   1. Once the workflow is loaded, click **EMMAX-0.0.2** in the History panel to expand its outputs.
+   1. Once the workflow is loaded, click **EMMAX-0.0.4** in the History panel to expand its outputs.
     
    2. Click **manhattan.plot** from the list of outputs, you will be directed to the `Manhattan plot <https://en.wikipedia.org/wiki/Manhattan_plot>`_ of the results. You can also check Q-Q plot and click the Manhattan plot to check nearby genes around the clicked position.
 
@@ -121,49 +121,53 @@ This step will show you how to visualize the results of EMMAX and PCA. You can c
       .. Note::
         You can increase the 'window size' for listing more nearby genes.
 
-   5. For visualizing **PCA** outputs, click **PCA-0.0.1** in the History panel to expand its outputs. There are two image outputs:  `pcplot <https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html>`_ and `scree plot <http://support.minitab.com/en-us/minitab/17/topic-library/modeling-statistics/multivariate/principal-components-and-factor-analysis/what-is-a-scree-plot/>`_.
+   5. For visualizing **PCA** outputs, click **PCA-0.0.3** in the History panel to expand its outputs. There are two image outputs:  `pcplot <https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html>`_ and `scree plot <http://support.minitab.com/en-us/minitab/17/topic-library/modeling-statistics/multivariate/principal-components-and-factor-analysis/what-is-a-scree-plot/>`_.
 
       |pca_output1| |pca_output2|
       
 *Step 3: Creating a New Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will demo how to build a workflow from the loaded history. Assuming we just want to use EMMAX for association analysis, based on the workflow diagram above, we will also need MergeG2P, NPUTE, and NumericalTransform-TASSEL if given new marker data and/or new trait data.
+This step will demo how to build a workflow from the loaded history. Assuming we just want to use EMMAX for association analysis, based on the workflow diagram above, we will also need MergeG2P, NPUTE, and NumericalTransform if given new marker data and/or new trait data.
 
-   1. Check the checkboxes for step 1 (MergeG2P), 2 (NPUTE), 3 (NumericalTransform-TASSEL), and 5 (EMMAX) in the History panel, then click the 'build a workflow' link to load the Workflow building page.
+   1. Check the checkboxes for step 1 (MergeG2P), 2 (NPUTE), 5 (NumericalTransform), and 6 (EMMAX) in the History panel, then click the 'build a workflow' link to load the Workflow building page.
 
       |build_workflow|
 
       .. Tip::
         History panel checkboxes and the workflow building page are interactive. Use the 'Select All' or 'Reset' button to simplify the selection step.
 
-   2. Modify **Workflow Name** and **Workflow Description**, then click the 'Build Workflow' button to visualize the workflow.
+   2. Click the 'Build Workflow' button to visualize the workflow diagram.
 
       .. Tip::
-        All nodes of the diagram are interactive. Mouse over for hints for full name, documentation, etc.
+        All nodes of the diagram are interactive. Mouse over for hints, full name, documentation, etc. Be sure to modify **Workflow Name** and **Workflow Description** while saving it in the next step.
+
         |emmax_workflow|
 
-   3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My Workflows' (under the 'Workflow' menu from top navigation panel).
+   3. On the 'Workflow Diagram', you can also save the workflow. Your saved workflows will appear in 'My Workflows' (under the 'Workflow' menu from top navigation panel).
 
       .. Tip::
-        From 'My workflow', You can load the new workflow to run or download the workflow as a JSON file, which can be passed to others for **sharing** the entire analysis.
+        From 'My workflow', You can **load** the new workflow to run or **share** the workflow with a direct URL, which can be passed to others for **sharing** the entire analysis.
 
 
 ----
 
 *Step 4: Adding New Analyses to the Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to add new analysis to the workflow built above. We will use CloudStructure instead of PCA to estimate population structure, then pass the estimation to MLM-TASSEL for performing association analysis.
+This step will show you how to add new analysis to the workflow built above. We will use **STRUCTURE** instead of **PCA** to estimate population structure, then pass the estimation to MLM for performing association analysis.
 
-  1. Click **Clustering** category (left panel) or search for **structure**, then click **CloudSTRUCUTRE** to load **CloudSTRUCTURE-2.3.4**.
+  1. Click **Clustering** category (left panel) or search for **structure**, then click **STRUCUTRE-2.3.4.1** to load **STRUCTURE-2.3.4.1**.
 
-  2. Click **NumericalTransform-TASSEL-4.3.15** in the History panel to expand its outputs, then drag and drop **nt.txt** into the **Select marker file** field.
+  2. Click **NumericalTransform-0.0.3** in the History panel to expand its outputs, then drag and drop **nt1_marker.txt.gz** into the **Select marker file** field.
 
-  3. Enter **12559** for 'number of loci' and **310** for 'number of individuals, leave others as defaults, then click the "Submit Job" button. Once completed, click to expand its outputs. 
+     .. Warning::
+       If the input field is not empty, be sure to clear it before dragging and dropping new input there.
+ 
+  3. Enter **12063** for 'number of loci' and **310** for 'number of individuals, leave others as defaults, then click the "Submit Job" button. Once completed, click to expand its outputs. 
       
      .. Note::
-       These numbers are in the `nt.txt.log <https://data.sciapps.org/results/job-5681552548147892711-242ac113-0001-007-job-for-numericaltransform-tassel-4-3-15/nt.txt.log>`_ file from the **NumericalTransform-TASSEL-4.3.15** job.   
+       These numbers are in the `nt5.log <http://datacommons.cyverse.org/browse/iplant/home/lwang/sci_data/results/NumericalTransform-0.0.3_8f2cbb62-b136-4caf-89c6-3e33c079e682/nt5.log>`_ file from the **NumericalTransform-0.0.3** job.   
 
-  4. Click **Mapping** category, then **MLM-TASSEL** to load **MLM-TASSEL-5.1.23**. Drag and drop **m_trait.txt** (MergeG2P-0.0.2) to **Input Trait Data**, **imputed.txt** (NPUTE-0.0.1) to **Input Marker Data**, and **s3_f** (CloudSTRUCTURE-2.3.4) to **Input Structure Data**.
+  4. Click **Mapping** category, then **MLM-0.0.3** to the App form. Drag and drop **mt1_trait.txt** (MergeG2P-0.0.3) to **Input Trait Data**, **npt_mm_marker.v3.txt.gz** (NPUTE-0.0.3) to **Input Marker Data**, and **s3_f** (STRUCTURE-2.3.4.1) to **Input Structure Data**.
 
      |association_workflow2|
 
@@ -171,7 +175,10 @@ This step will show you how to add new analysis to the workflow built above. We 
 
      |association_workflow3|
 
-  6. As in **Step 2**, you can visualize the **Manhattan plot** of MLM-TASSEL outputs and compare it with that of EMMAX or MLM-TASSEL (when PCA is used for estimating population structure).
+     .. Tip::
+       As in **Step 2**, you can visualize the **Manhattan plot** of MLM outputs and compare it with that of EMMAX or MLM (when PCA is used for estimating population structure).
+
+  6. Similarly, **MLMM-0.0.3** can be used for multi-locus mixed model testing with loading the **MLMM-0.0.3** app form, dragging and dropping **mt2_trait.txt** (MergeG2P-0.0.3) to **Input Trait Data**, and **nt2mlmm.txt.gz** (NumericalTransform-0.0.3) to **Input Marker Data**.
 
 ----
 
@@ -217,20 +224,20 @@ Post your question to the user forum:
     :width: 660
     :height: 223
 .. |association_workflow| image:: ./img/sci_apps/association_workflow0.gif
-    :width: 660
-    :height: 458
+    :width: 651
+    :height: 463
 .. |build_workflow| image:: ./img/sci_apps/build_workflow.gif
-    :width: 660
-    :height: 355
+    :width: 651
+    :height: 233
 .. |emmax_workflow| image:: ./img/sci_apps/emmax_workflow.gif
-    :width: 660
-    :height: 256
+    :width: 651
+    :height: 292
 .. |association_workflow2| image:: ./img/sci_apps/association_workflow2.gif
-    :width: 660
-    :height: 402
+    :width: 651
+    :height: 374
 .. |association_workflow3| image:: ./img/sci_apps/association_workflow3.gif
-    :width: 660
-    :height: 293
+    :width: 651
+    :height: 375
 .. |manhattan_plot| image:: ./img/sci_apps/manhattan_plot.gif
     :width: 660
     :height: 355

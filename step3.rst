@@ -127,8 +127,8 @@ annotation App.
     :width: 232
     :height: 62
 .. |agave_status| image:: ./img/sci_apps/agave_status.gif
-    :width: 548
-    :height: 235
+    :width: 588
+    :height: 294
 .. |visual_window| image:: ./img/sci_apps/visual_window.gif
     :width: 567
     :height: 108

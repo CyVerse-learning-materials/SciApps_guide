@@ -21,10 +21,10 @@ This tutorial is a step-by-step guide for using SciApps to perform MAKER based a
       - Example
     * - Assembled genome
       - A scaled-down genome that is comprised of the first 300kb of three chromosomes of rice
-      - `test_genome.fasta <https://data.sciapps.org/example_data/maker/test_genome.fasta>`_
+      - `test_genome.fasta <http://datacommons.cyverse.org/browse/iplant/home/sciapps/example/maker/test_genome.fasta>`_
     * - Annotated gene models
       - MAKER output in GFF3 format (gzipped)
-      - `my.all.gff.gz <https://data.sciapps.org/example_data/maker/my.all.gff.gz>`_
+      - `my.all.gff.gz <http://datacommons.cyverse.org/browse/iplant/home/sciapps/example/maker/my.all.gff.gz>`_
 
 **Apps:**
 
@@ -78,7 +78,7 @@ This step will demo how to upload data to the sci_data folder for accessing from
       .. Note::
         This may take a few minutes. You can check the status by clicking the 'Bell' on the top corner of DE. Once importing completed, 'Refresh' the window to see the file. This is a GFF3 formatted file from MAKER.
   
-   3. Alternatively, download the file and upload it using 'Simple Upload from Desktop'.
+   3. Alternatively, use `Cyberduck <https://pods.iplantcollaborative.org/wiki/display/DS/Using+Cyberduck+for+Uploading+and+Downloading+to+the+Data+Store>`_ or `iCommands <https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands>`_ for bulk data transfer to the sci_data folder.
 
 
 *Step 3: HMM parameters estimation with SNAP*
@@ -152,12 +152,7 @@ This step will show you how to run a workflow you created or someone shared with
 
      |myworkflows_window|
 
-  2. Alternatively, you can load the workflow by navigating to 'Workflow', 'Load a workflow', then paste this URL: https://data.sciapps.org/misc/my_workflow.json or load a workflow JSON file from your PC.
-
-     |load_workflow|
- 
-     .. Tip::
-       Before loading a workflow, you can refresh the browser window to clear the History panel.
+  2. Alternatively, you can load the app forms and job histories directly if you have the direct link for a workflow. Scroll down the app forms in the main panel to either submit a new run or view the workflow diagram.
 
   3. Scroll down the main panel, then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real-time analysis status updates.
 
@@ -176,7 +171,7 @@ This step shows how we can use Gramene annotation data to examine GWAS outputs o
      .. Note::
        To view the workflow diagram, scroll down to the bottom of the main panel and click the 'Show Diagram' button.
  
-   4. Once the workflow is loaded, click **EMMAX-0.0.2** in the History panel to expand its outputs.
+   4. Once the workflow is loaded, click **EMMAX-0.0.4** in the History panel to expand its outputs.
     
    5. Click **manhattan.plot** from the list of outputs, you will be directed to the `Manhattan plot <https://en.wikipedia.org/wiki/Manhattan_plot>`_ of the results. Click on the Manhattan plot to check nearby annotated genes around the clicked position.
 
@@ -277,20 +272,20 @@ Post your question to the user forum:
     :width: 660
     :height: 362
 .. |build_workflow2| image:: ./img/sci_apps/build_workflow2.gif
-    :width: 660
-    :height: 246
+    :width: 661
+    :height: 311
 .. |build_workflow3| image:: ./img/sci_apps/build_workflow3.gif
     :width: 660
-    :height: 294
+    :height: 198
 .. |annotation_workflow2| image:: ./img/sci_apps/annotation_workflow2.gif
-    :width: 660
-    :height: 320
+    :width: 656
+    :height: 292
 .. |myworkflows_window| image:: ./img/sci_apps/my_workflow.gif
-    :width: 660
-    :height: 222
+    :width: 656
+    :height: 228
 .. |public_workflows| image:: ./img/sci_apps/public_workflows.gif
     :width: 660
     :height: 223
 .. |association_workflow| image:: ./img/sci_apps/association_workflow0.gif
-    :width: 660
-    :height: 458
+    :width: 651
+    :height: 533
