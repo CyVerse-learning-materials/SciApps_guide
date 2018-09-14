@@ -21,10 +21,10 @@ This tutorial is a step-by-step guide for using SciApps to perform MAKER based a
       - Example
     * - Assembled genome
       - A scaled-down genome that is comprised of the first 300kb of three chromosomes of rice
-      - `test_genome.fasta <http://datacommons.cyverse.org/browse/iplant/home/sciapps/example/maker/test_genome.fasta>`_
+      - `test_genome.fasta.gz <http://datacommons.cyverse.org/browse/iplant/home/sciapps/example/maker/test_genome.fasta.gz>`_
     * - Annotated gene models
-      - MAKER output in GFF3 format (gzipped)
-      - `my.all.gff.gz <http://datacommons.cyverse.org/browse/iplant/home/sciapps/example/maker/my.all.gff.gz>`_
+      - MAKER output in GFF3 format
+      - `maker_out.gff.gz <http://datacommons.cyverse.org/browse/iplant/home/sciapps/example/maker/my.all.gff.gz>`_
 
 **Apps:**
 
@@ -37,9 +37,9 @@ This tutorial is a step-by-step guide for using SciApps to perform MAKER based a
       - App link
       - Notes/other links
     * - MAKER
-      - 0.0.1
+      - 2.32
       - A portable and easily configurable genome annotation pipeline
-      - `MAKER-0.0.1 <https://www.sciapps.org/app_id/MAKER-0.0.1>`_
+      - `MAKER-2.32 <https://www.sciapps.org/app_id/MAKER-2.32>`_
       - `MAKER documentation <http://www.yandell-lab.org/software/maker.html/>`_
     * - SNAP
       - 0.0.1
@@ -49,7 +49,7 @@ This tutorial is a step-by-step guide for using SciApps to perform MAKER based a
 
 *Step 1: Requiring access to SciApps*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This is one-time operation. Please login to `SciApps <https://www.SciApps.org/>`_ directly if you have completed this step once.
+This is one-time operation. Please login to `SciApps <https://www.SciApps.org/>`_ directly if you have completed this step before.
 
   1. Log into CyVerse User portal at https://user.cyverse.org.
 
@@ -76,7 +76,7 @@ This step will demo how to upload data to the sci_data folder for accessing from
       |url_window|
 
       .. Note::
-        This may take a few minutes. You can check the status by clicking the 'Bell' on the top corner of DE. Once importing completed, 'Refresh' the window to see the file. This is a GFF3 formatted file from MAKER.
+        This may take a few minutes. You can check the status by clicking the 'Bell' on the top right corner of DE. Once importing completed, 'Refresh' the window to see the file. This is a GFF3 formatted file from MAKER.
   
    3. Alternatively, use `Cyberduck <https://pods.iplantcollaborative.org/wiki/display/DS/Using+Cyberduck+for+Uploading+and+Downloading+to+the+Data+Store>`_ or `iCommands <https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands>`_ for bulk data transfer to the sci_data folder.
 
@@ -88,40 +88,40 @@ This step will demo how to upload data to the sci_data folder for accessing from
 
   2. Click **Prediciton** category (left panel) or search for **SNAP**, then click **SNAP** to load **SNAP-0.0.1**.
 
-  3. Under “GFF file”, click **or Browse DataStore**, then navigate the CyVerse **sci_data** folder; select **my.all.gff.gz** and click 'Select and Close'.
+  3. Under “GFF file”, click **Browse DataStore**, then navigate to the **maker** folder (example > maker); select **maker_out.gff.gz** and click 'Select and Close'.
 
      |data_window2|
 
      .. Tip::
-       Click 'Refresh' if you can not see the file under 'sci_data'. 
+       Click 'Refresh' if you can not see any newly uploaded files. 
 
   4. Leave other parameters as default, and click **Submit Job**. You will be asked to confirm; click "Submit". You will be prompted to check the job status in the right panel.
        
-     .. Tip::
-       If you choose 'Yes' for Email Notification, an email will be sent once your analysis is completed.
 
 *Step 4: Running MAKER with SNAP output*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to use SNAP output with MAKER to do a second around annotation.
+This step will demo how to use SNAP output with MAKER to do a second around annotation.
 
-  1. Click **Annotation** category (left panel) or search for **MAKER**, then click **MAKER** to load **MAKER-0.0.1**.
+  1. Click **Annotation** category (left panel) or search for **MAKER**, then click to load **MAKER-2.32**.
+
+  2. Under “Genome sequence file” click **Browse DataStore**, then navigate to the **maker** folder  (example > maker); select **test_genome.fasta.gz** and click 'Select and Close'.
+
+  3. Click **SNAP-0.0.1** in the History panel to expand its outputs, then
+     drag and drop **snap_out.hmm** into the **SNAP HMM file** field.
 
      |build_workflow2|
 
-  2. Under “Genome sequence file” click **or Browse DataStore**, then navigate the exampleData (*example_data > maker*); select **test_genome.fasta** and click 'Select and Close'.
-
-  3. Click **SNAP-0.0.1** in the History panel to expand its outputs, then
-     drag and drop **my.all.hmm** into the **SNAP HMM file** field.
-
-  4. Under “Maker annotations” click **or Browse DataStore**, then navigate the CyVerse (*sci_data*); select **my.all.gff.gz** and click 'Select and Close'.
+  4. Under “Maker annotations” click **Browse DataStore**, then navigate to the **maker** folder  (example > maker); select **maker_out.gff.gz** and click 'Select and Close'.
 
   5. Leave others as defaults, then click the "Submit Job" button.
 
-  6. Once COMPLETED, click **MAKER-0.0.1** in the History panel to expand its outputs, then click **maker_output.jbrowse** to visualize annotation results.
+  6. Once COMPLETED, click the **Visualization** icon for **MAKER-2.32** in the History panel to bring up its outputs. Select **jbrowse_out.view.tgz** from the list of outputs, then click **Visualize**, you will be directed to a genome browser to visualize your annotation results.
+
+     |jbrowse_out|
 
 *Step 5: Creating a Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to build a two-step workflow with previously completed MAKER and SNAP jobs.
+This step will demo how to build a two-step workflow with previously completed MAKER and SNAP jobs.
 
   1. Check the checkboxes for step 1 (SNAP), and step 2 (MAKER) in the History panel, then click the ‘build a workflow’ link to load the Workflow building page.
 
@@ -135,63 +135,39 @@ This step will show you how to build a two-step workflow with previously complet
      |annotation_workflow2|
 
      .. Note::
-       The connection between **SNAP-0.0.1** and **MAKER-0.0.1**  (via **my.all.hmm**) is recorded through **dragging and dropping**.
+       The connection between **SNAP-0.0.1** and **MAKER-2.32**  (via **my.all.hmm**) is recorded through **dragging and dropping**, which feeds the output of **SNAP** as an input for **MAKER**.
 
-  3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My Workflows' (under the 'Workflow' menu from top navigation panel).
+  3. On the 'Workflow Diagram', you can save the workflow. Your saved workflows will appear in 'My workflows' (under the 'Workflow' menu from top navigation panel).
 
-     .. Tip::
-       You can download the workflow from 'My workflows' as a JSON file, which can be passed to others for **sharing** the entire analysis.
+     .. Note::
+       You can select the workfrom from 'My workflows' and click **share** to get a direct link, which can be passed to others for **sharing** the entire analysis.
+       |workflow_URL|
 
 ----
 
 *Step 6: Running a Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to run a workflow you created or someone shared with you.
+This step will demo how to run a workflow you created or someone shared with you.
 
   1. Navigate to ‘Workflow’, then ‘My workflows’, to load the workflow you created and saved (in **Step 2**).
 
      |myworkflows_window|
 
-  2. Alternatively, you can load the app forms and job histories directly if you have the direct link for a workflow. Scroll down the app forms in the main panel to either submit a new run or view the workflow diagram.
-
-  3. Scroll down the main panel, then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real-time analysis status updates.
-
-*Step 7: Using Annotation with GWAS*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step shows how we can use Gramene annotation data to examine GWAS outputs on SciApps. 
-
-  1. Click 'Workflow' (from the top navigation bar), then 'Public workflows' to load the public workflow page in the main panel.
-
-     |public_workflows|
-
-  2. Check the 'Association' workflow, then click "Load". The App forms are loaded in the main panel, and analysis histories are loaded in the right panel.
-
-     |association_workflow|
-
      .. Note::
-       To view the workflow diagram, scroll down to the bottom of the main panel and click the 'Show Diagram' button.
- 
-   4. Once the workflow is loaded, click **EMMAX-0.0.4** in the History panel to expand its outputs.
-    
-   5. Click **manhattan.plot** from the list of outputs, you will be directed to the `Manhattan plot <https://en.wikipedia.org/wiki/Manhattan_plot>`_ of the results. Click on the Manhattan plot to check nearby annotated genes around the clicked position.
+       Alternatively, you can load the app forms and job histories directly if you have the direct link for a workflow. Scroll down the app forms in the main panel to either submit a new run or view the workflow diagram.
 
-      |manhattan_plot|
-
-      .. Note::
-        The example here is using Sorghum chromosome 9 only. For your own data, use the options on the left side to check a specific chromosome or all chromosomes of your specific genome. 
-
-   6. Try to search **229800** near the most significant loci (associated with plant height) to locate a dwarf gene, dw1 (SORBI_009G229800). The search box is above the table.
+  2. Scroll down the main panel, then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real-time analysis status updates.
 
 ----
 
-*Step 8: Using Apollo for Community Annotation*
+*Step 7: Using Apollo for Community Annotation*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In reality, annotated genes from MAKER will be further filtered or even manually annotated before being released (for example, by Gramene/Plant Ensembl). For manual annotation of the MAKER results with Apollo, we set up a demo at http://data.maizecode.org/apollo. You can login with username: demo@demo.com, and password: demo.
 
 *Summary*
 ~~~~~~~~~
 
-This tutorial covers how to use SciApps for your annotaition work, including accessing data in CyVerse Data Store, launching jobs, building workflows, running workflows, visualizing results, importing workflows, and using annotation to interpret GWAS results.
+This tutorial covers how to use SciApps for your annotaition work, including accessing data in CyVerse Data Store, launching jobs, building workflows, running workflows, visualizing results, and importing workflows to re-run.
 
 
 More help and additional information
@@ -261,7 +237,7 @@ Post your question to the user forum:
     :height: 431
 .. |data_window2| image:: ./img/sci_apps/data_window2.gif
     :width: 660
-    :height: 317
+    :height: 329
 .. |status| image:: ./img/sci_apps/status.gif
     :width: 250
     :height: 60
@@ -289,3 +265,9 @@ Post your question to the user forum:
 .. |association_workflow| image:: ./img/sci_apps/association_workflow0.gif
     :width: 651
     :height: 533
+.. |jbrowse_out| image:: ./img/sci_apps/jbrowse_out.gif
+    :width: 660
+    :height: 325
+.. |workflow_URL| image:: ./img/sci_apps/workflow_URL.gif
+    :width: 582
+    :height: 182
