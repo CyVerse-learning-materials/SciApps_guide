@@ -8,7 +8,7 @@ The Association Workflow
 ---------------------------------
 A genome-wide association study (or GWAS) is an examination of a genome-wide set of genetic variants in a population of individuals aimed at determining whether any variant is associated with a trait. In this section, we will walk through the Association workflow available on the 'Public workflows' page. The workflow contains following operations in order: intersecting marker data with trait data, imputing missing markers, estimating population structure with PCA, and performing mixed-model based analyses with two different tools (EMMAX and TASSEL MLM). The example data used here are a subset of the published data (Morris, G., et al. `PNAS 110.2 (2013): 453-458 <http://www.pnas.org/content/110/2/453.long>`_).
 
-We will start by loading the workflow, visualizing results, creating a new workflow with EMMAX method only, and then add additional analyses to estimate population structure and perform an association analysis.  
+We will start by loading the workflow, visualizing results, creating a new workflow with the EMMAX method, and then add additional analyses to estimate population structure and perform an association analysis.  
 
 ----
 
@@ -81,7 +81,7 @@ We will start by loading the workflow, visualizing results, creating a new workf
 
 *Step 1: Importing the Workflow*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to import the Association workflow into your own workspace.
+This step will demonstrate how to import the Association workflow into your own workspace.
 
   1. Log into SciApps at https://www.SciApps.org.
 
@@ -94,34 +94,37 @@ This step will show you how to import the Association workflow into your own wor
      |association_workflow|
 
      .. Note::
-       Click the output node of the workflow diagram, you will be directed to the output folder. To check specific output, click the output from the History panel.
+       Click the output node of the workflow diagram, you will be directed to the output folder. To check a specific output, click the output name from the History panel.
  
 ----
 
 *Step 2: Visualizing the Results*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will show you how to visualize the results of EMMAX and PCA. You can check other results with the similar operations.
+This step will walk through how to visualize the results of EMMAX and PCA. You can check other results with the similar operations.
 
-   1. Once the workflow is loaded, click **EMMAX-0.0.4** in the History panel to expand its outputs.
+   1. Once the workflow is loaded, in the History panel, click the **Visualization** icon for **EMMAX-0.0.4** to bring up its outputs.
     
-   2. Click **manhattan.plot** from the list of outputs, you will be directed to the `Manhattan plot <https://en.wikipedia.org/wiki/Manhattan_plot>`_ of the results. You can also check Q-Q plot and click the Manhattan plot to check nearby genes around the clicked position.
+   2. Select **manhattan_plot.view.tgz** from the list of outputs, then click **Visualizae**, you will be directed to the `Manhattan plot <https://en.wikipedia.org/wiki/Manhattan_plot>`_ of the results. You can also check Q-Q plot and click the Manhattan plot to check nearby genes around the clicked position.
 
       |manhattan_plot|
+
+      .. Warning::
+        The manhattan plot will be displayed in a new window, so please check if pop-ups from SciApps are blocked by your web browser.
 
       .. Note::
         The example here is using chromosome 9 only. And the Manhattan plot is pre-configured to display the chromosome 9 of sorghum (BTx623). For your own data, use the options on the left side to select a specific chromosome or all chromosomes of your genome.
 
-   3. Use the options on the left side for P-values adjustments, specifying species, chromosome, neighbouring window size, and display Q-Q plot.
-
-      .. Tip::
-        Both Manhattan plot and Q-Q plot are interactive with all of the options.
-
-   4. Try to search **229800** near the most significant loci to locate a dwarf gene, dw1 (SORBI_009G229800). The search box is above the table.
+   3. Use the options on the left panel for P-values adjustments, specifying species, chromosome, neighbouring window size, and display Q-Q plot.
 
       .. Note::
-        You can increase the 'window size' for listing more nearby genes.
+        Both Manhattan plot and Q-Q plot are interactive with all of the options.
 
-   5. For visualizing **PCA** outputs, click **PCA-0.0.3** in the History panel to expand its outputs. There are two image outputs:  `pcplot <https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html>`_ and `scree plot <http://support.minitab.com/en-us/minitab/17/topic-library/modeling-statistics/multivariate/principal-components-and-factor-analysis/what-is-a-scree-plot/>`_.
+   4. Click on the most significant SNP to bring up the table of nearby genes. Then type **229800** in the search box (above the table) to locate a dwarf gene, dw1 (SORBI_009G229800).
+
+      .. Tip::
+        From the left panel, you can increase the 'window size' to list more nearby genes.
+
+   5. For visualizing **PCA** outputs, click the **Visualization** icon for **PCA-0.0.3** to bring up its outputs. Select the image file from the list of outputs, then click **Visualizae** to open the image in a web browser. There are two image outputs:  `pcplot <https://cran.r-project.org/web/packages/ggfortify/vignettes/plot_pca.html>`_ and `scree plot <http://support.minitab.com/en-us/minitab/17/topic-library/modeling-statistics/multivariate/principal-components-and-factor-analysis/what-is-a-scree-plot/>`_.
 
       |pca_output1| |pca_output2|
       

@@ -75,10 +75,12 @@ This step will show you how to use SNAP output with MAKER to do a second around 
 
   7. Leave others as defaults, then click the "Submit Job" button.
 
-  8. Once COMPLETED, click **MAKER-2.32** in the History panel to expand its outputs, click the 'Visualization' icon, then select **maker_out.view.tgz** to visualize the annotation results.
+  8. Once COMPLETED, click the 'Visualization' icon (next to the **MAKER-2.32** job in the History panel), select **jbrowse_out.view.tgz** and then click 'Visualize' to visualize the annotation results in a genome browser.
+
+     |jbrowse_out|
 
      .. Note::
-       For new results, it may take a while for visualization to be ready since the results need to be copied from CyVerse Data Store to the SciApps visualization server.         
+       Select the tracks in the left panel to visualize. For new analysis, it may take a while for visualization to be ready since the results need to be copied from CyVerse Data Store to the SciApps visualization server.         
 
 ----
 
@@ -208,3 +210,6 @@ Post your question to the user forum:
 .. |running_workflow| image:: ./img/sci_apps/running_workflow2.gif
     :width: 617
     :height: 196
+.. |jbrowse_out| image:: ./img/sci_apps/jbrowse_out.gif
+    :width: 660
+    :height: 325

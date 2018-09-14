@@ -78,6 +78,9 @@ annotation App.
        - **Relaunch**: Relaunch the analysis job with the same inputs and parameters.
        - **Visualization**: Generate links for visualizing in a Genome Browser or Web Browser.
 
+     .. Tip::
+       If a job is failed, you can try to debug it with the .err file and .out file in the output folder.
+
      .. Note::
        Outputs displayed under job names are defined outputs in Agave app JSON. You can drag and drop an URL from them as input of subsequent steps. Then workflows can be constructed with these steps. 
 
