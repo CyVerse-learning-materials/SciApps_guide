@@ -16,7 +16,7 @@ Introduce SciApps, a cloud-based platform for building and sharing reproducible 
 .. toctree::
 	:maxdepth: 2
 
-	Tutorial home <self>
+	Platform guide home <self>
 	SciApps Basics and Logging In <step1.rst>
 	Viewing and Accessing Data <step2.rst>
 	Launching an Analysis Job <step3.rst>

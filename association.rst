@@ -4,7 +4,7 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-The Association Workflow
+The Association Tutorial
 ---------------------------------
 A genome-wide association study (or GWAS) is an examination of a genome-wide set of genetic variants in a population of individuals aimed at determining whether any variant is associated with a trait. In this section, we will walk through the Association workflow available on the 'Public workflows' page. The workflow contains following operations in order: intersecting marker data with trait data, imputing missing markers, estimating population structure with PCA, and performing mixed-model based analyses with two different tools (EMMAX and TASSEL MLM). The example data used here are a subset of the published data (Morris, G., et al. `PNAS 110.2 (2013): 453-458 <http://www.pnas.org/content/110/2/453.long>`_).
 
