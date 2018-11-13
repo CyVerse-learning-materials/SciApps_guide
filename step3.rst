@@ -91,7 +91,7 @@ annotation App.
   5. Click the **Visualization** icon to display the list of outputs. Selecte an output, then you can either get a URL for visualizing it in a Genome (or Web) Browser, or download the output directly.
 
      .. Tip::
-       Click the **View** button for direct visualization.
+       Click the **Visualize** button for direct visualization.
 
        |visual_window|
 
@@ -134,7 +134,7 @@ annotation App.
     :height: 294
 .. |visual_window| image:: ./img/sci_apps/visual_window.gif
     :width: 567
-    :height: 108
+    :height: 114
 .. |visual_window2| image:: ./img/sci_apps/visual_window2.gif
     :width: 588
     :height: 182

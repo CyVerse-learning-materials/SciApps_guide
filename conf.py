@@ -15,6 +15,7 @@ author = 'CyVerse'
 version = '1.0'
 release = '1.0'
 
+html_static_path = []
 epub_title = project
 epub_author = author
 epub_publisher = author
