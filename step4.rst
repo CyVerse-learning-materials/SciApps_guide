@@ -119,12 +119,13 @@ This step will show you how to run a workflow.
 
      .. Note::
 
-       Four operations are supported for a selected workflow:
+       Five operations are supported for a selected workflow:
    
-       - 'Load': Display app forms and job histories
-       - 'Visualize': Display workflow diagram and job histories
+       - 'Load': Display app forms (main panel) and load job histories (right panel)
+       - 'Visualize': Display workflow diagram and load job histories
        - 'Share': Get a direct link to the workflow for sharing
-	 |workflow_URL| 
+	 |workflow_URL|
+       - 'Download': Download the workflow JSON file 
        - 'Delete': Delete the workflow
 
      .. Tip::
@@ -191,7 +192,7 @@ Post your question to the user forum:
 .. _Home_Icon: http://learning.cyverse.org/
 .. |myjobs_window| image:: ./img/sci_apps/myjobs_window.gif
     :width: 627
-    :height: 220
+    :height: 245
 .. |build_workflow2| image:: ./img/sci_apps/build_workflow2.gif
     :width: 661
     :height: 311
@@ -200,10 +201,10 @@ Post your question to the user forum:
     :height: 198
 .. |annotation_workflow2| image:: ./img/sci_apps/annotation_workflow2.gif
     :width: 656
-    :height: 292
+    :height: 208
 .. |myworkflows_window| image:: ./img/sci_apps/my_workflow.gif
     :width: 656
-    :height: 228
+    :height: 170
 .. |workflow_URL| image:: ./img/sci_apps/workflow_URL.gif
     :width: 582
     :height: 182
