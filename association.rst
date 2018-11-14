@@ -91,6 +91,8 @@ This step will demonstrate how to import the Association workflow into your own 
 
   3. Check the 'Association' workflow, then click "Load". The App forms are loaded in the main panel, and analysis histories are loaded in the right panel.
 
+  4. Alternatively, click 'Visualize' to display the workflow diagram. Analysis histories will also be loaded in the right panel.
+ 
      |association_workflow|
 
      .. Note::
@@ -225,7 +227,7 @@ Post your question to the user forum:
 .. _Home_Icon: http://learning.cyverse.org/
 .. |public_workflows| image:: ./img/sci_apps/public_workflows.gif
     :width: 660
-    :height: 223
+    :height: 205
 .. |association_workflow| image:: ./img/sci_apps/association_workflow0.gif
     :width: 651
     :height: 463
