@@ -154,7 +154,7 @@ This step will demo how to run a workflow you created or someone shared with you
      |myworkflows_window|
 
      .. Note::
-       Alternatively, you can load the app forms and job histories directly if you have the direct link for a workflow. Scroll down the app forms in the main panel to either submit a new run or view the workflow diagram.
+       Alternatively, you can load the app forms and job histories directly if you have the direct link for a workflow.
 
   2. Scroll down the main panel, then click **Submit Workflow**. You will be asked to confirm and prompted to check the job status in the right panel. Then a live workflow diagram will be displayed with real-time analysis status updates.
 
