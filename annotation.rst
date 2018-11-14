@@ -255,10 +255,10 @@ Post your question to the user forum:
     :height: 198
 .. |annotation_workflow2| image:: ./img/sci_apps/annotation_workflow2.gif
     :width: 656
-    :height: 292
+    :height: 208
 .. |myworkflows_window| image:: ./img/sci_apps/my_workflow.gif
     :width: 656
-    :height: 228
+    :height: 170
 .. |public_workflows| image:: ./img/sci_apps/public_workflows.gif
     :width: 660
     :height: 223
