@@ -213,7 +213,7 @@ Post your question to the user forum:
 .. _Home_Icon: http://learning.cyverse.org/
 .. |my_workflow| image:: ./img/sci_apps/my_workflow.gif
     :width: 660
-    :height: 208
+    :height: 168
 .. |load_workflow| image:: ./img/sci_apps/load_workflow.gif
     :width: 600
     :height: 135
@@ -249,7 +249,7 @@ Post your question to the user forum:
     :height: 362
 .. |build_workflow2| image:: ./img/sci_apps/build_workflow2.gif
     :width: 661
-    :height: 311
+    :height: 310
 .. |build_workflow3| image:: ./img/sci_apps/build_workflow3.gif
     :width: 660
     :height: 198

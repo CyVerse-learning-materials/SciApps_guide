@@ -134,7 +134,7 @@ This step will walk through how to visualize the results of EMMAX and PCA. You c
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will demo how to build a workflow from the loaded history. Assuming we just want to use EMMAX for association analysis, based on the workflow diagram above, we will also need MergeG2P, NPUTE, and NumericalTransform if given new marker data and/or new trait data.
 
-   1. Check the checkboxes for step 1 (MergeG2P), 2 (NPUTE), 5 (NumericalTransform), and 6 (EMMAX) in the History panel, then click the 'build a workflow' link to load the Workflow building page.
+   1. Check the checkboxes for step 1 (MergeG2P), 2 (NPUTE), 3 (NumericalTransform), and 5 (EMMAX) in the History panel, then click the 'build a workflow' link to load the Workflow building page.
 
       |build_workflow|
 
@@ -190,7 +190,7 @@ This step will show you how to add new analysis to the workflow built above. We 
 *Summary*
 ~~~~~~~~~
 
-As shown in this section, various customized Association workflows can be constructed on SciApps. The interactive Manhattan plot also provides an easy way to examine nearby gene annotations around significant loci. 
+As shown in this section, various customized Association workflows can be constructed on SciApps. The interactive Manhattan plot provides an easy way to examine nearby genes annotated around significant loci. 
 
 More help and additional information
 `````````````````````````````````````
@@ -227,22 +227,22 @@ Post your question to the user forum:
 .. _Home_Icon: http://learning.cyverse.org/
 .. |public_workflows| image:: ./img/sci_apps/public_workflows.gif
     :width: 660
-    :height: 205
+    :height: 232
 .. |association_workflow| image:: ./img/sci_apps/association_workflow0.gif
     :width: 651
     :height: 463
 .. |build_workflow| image:: ./img/sci_apps/build_workflow.gif
     :width: 651
-    :height: 233
+    :height: 226
 .. |emmax_workflow| image:: ./img/sci_apps/emmax_workflow.gif
     :width: 651
     :height: 292
 .. |association_workflow2| image:: ./img/sci_apps/association_workflow2.gif
-    :width: 651
-    :height: 374
+    :width: 650
+    :height: 329
 .. |association_workflow3| image:: ./img/sci_apps/association_workflow3.gif
-    :width: 651
-    :height: 375
+    :width: 650
+    :height: 376
 .. |manhattan_plot| image:: ./img/sci_apps/manhattan_plot.gif
     :width: 660
     :height: 355
