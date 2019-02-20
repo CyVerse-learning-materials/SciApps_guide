@@ -88,7 +88,7 @@ annotation App.
 
        Both the **Checkbox** and the **Visualization** icon are disabled before the job is completed.
 
-  5. Click the **Visualization** icon to display the list of outputs. Selecte an output, then you can either get a URL for visualizing it in a Genome (or Web) Browser, or download the output directly.
+  5. Click the **Visualization** icon to display the list of outputs. Select an output, then you can either get a URL for visualizing it in a Genome (or Web) Browser, or download the output directly.
 
      .. Tip::
        Click the **Visualize** button for direct visualization.
