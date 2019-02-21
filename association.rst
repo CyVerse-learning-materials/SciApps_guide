@@ -92,7 +92,7 @@ This step will demonstrate how to import the Association workflow into your own 
   3. Check the 'Association' workflow, then click "Relaunch". The App forms will be loaded in the main panel, and analysis histories are loaded in the right panel.
 
      .. Note::
-       Click 'Load' will just load histories into the right panel, which is useful for checking results of multiple workflows.
+       To load analysis histories to the right panel while keeping the workflow list in the main panel, click 'Load'. This is useful for checking results of multiple workflows, or building a new workflow from more than one workflows.
  
   4. Alternatively, click 'Visualize' to display the workflow diagram. Analysis histories will also be loaded in the right panel.
  
