@@ -121,9 +121,9 @@ This step will show you how to run a workflow.
 
        Five operations are supported for a selected workflow:
    
-       - 'Relaunch': Display app forms (main panel) and load job histories (right panel)
-       - 'Visualize': Display workflow diagram and load job histories to right panel
-       - 'Load': Load job histories to right panel
+       - 'Relaunch': Display filled app forms in the main panel
+       - 'Visualize': Display workflow diagram and load job histories to the right panel
+       - 'Load': Load job histories to the right panel
        - 'Share': Get a direct link to the workflow for sharing
 	 |workflow_URL|
        - 'Delete': Delete the workflow
