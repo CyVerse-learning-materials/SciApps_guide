@@ -127,7 +127,7 @@ This step will filter the called SNPs and annotate them with SnpEff.
 
   3. Leave others as defaults, then click the "Submit Job" button.
 
-  4. Once COMPLETED, click the **Visualization** 'eye' icon for **ems_filter-1.2** in the History panel to bring up its outputs. Select **vaf_plot.view.tgz** from the list of outputs, then click **Visualize**, you will be directed to a visualization interface built with `Shiny <https://shiny.rstudio.com/>`_. The vaf plot displays the allele frequency at each loci. The non_synonymous SNPs are marked as red circles in the plot, and displayed in the table with the associated gene ids and other information.
+  4. Once COMPLETED, click the **Visualization** 'eye' icon for **ems_filter-1.2** in the History panel to bring up its outputs. Select **vaf_plot.view.tgz** from the list of outputs, then click **Visualize**, you will be directed to a visualization interface built with `Shiny <https://shiny.rstudio.com/>`_. The vaf plot displays the allele frequency at each locus. The non_synonymous SNPs are marked as red circles in the plot and displayed in the table with the associated gene ids and other information.
 
      |ems_view|
 
@@ -135,10 +135,10 @@ This step will filter the called SNPs and annotate them with SnpEff.
         The Variant Allele Frequency (vaf) plot will be displayed in a new window, so please check if pop-ups from SciApps are blocked by your web browser.
 
      .. Note::
-        The example here is using chromosome 2 only. And the vaf plot is pre-configured to display chromosome 2 of sorghum bicolor (BTx623). For your own data, check the list of genes below the plot and use the options on the left side to select a specific chromosome if there are SNPs detected on them.
+        The example here is using chromosome 2 only. And the vaf plot is pre-configured to display chromosome 2 of sorghum bicolor (BTx623). For your data, check the list of genes below the plot and use the options on the left side to select a specific chromosome if there are SNPs detected on them.
 
      .. Tip::
-        You can use the sliding bar to change the smoothness of the fitted curve. Click near the non_synonymous SNP will filter the table with nearby genes only. To reload all genes, simply refresh the page.
+        You can use the slider bar to change the smoothness of the fitted curve. Click near the non_synonymous SNP will filter the table with nearby genes only. To reload all genes, simply refresh the page.
      
   5. The candidate SNP at 2:41903129 is detected because we set the minimum allele frequency (maf) as no smaller than 0.9 in Step 4 (2). The SNP won't be detected if maf is set as 1, which increases the chance of missing the true candidate genes if there is sequencing or phenotyping error in the data. 
 
@@ -159,7 +159,7 @@ There are 7 candidate SNPs (falls on 6 candidate genes) identified in the last s
 
   3. Under "Specify the species (-d)", choose **Sorghum bicolor (Sorbi3)**.
 
-  4. Leave other parameters as default, and click **Submit Job**. Once done, click the SIFT4G-0.0.1 job in the History panel to expand the outputs, then click to open **sift_out.txt**. As shown below, only two out of the six SNPs are predicted to be deterious. 
+  4. Leave other parameters as default, and click **Submit Job**. Once done, click the SIFT4G-0.0.1 job in the History panel to expand the outputs, then click to open **sift_out.txt**. As shown below, only two out of the six SNPs are predicted to be deleterious. 
 
      |sift_out|
 
