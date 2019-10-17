@@ -114,7 +114,7 @@ This step will take less than 15 minutes with the example data. A compressed vcf
   5. Leave other parameters as default, and click **Submit Job**. You will be asked to confirm; click "Submit". You will be prompted to check the job status in the right panel. Once COMPLETED, move on to the next step.
        
 
-*Step 4: Filtering and annotating with ems_filter (and SnpEff)*
+*Step 4: Filtering SNPs with ems_filter*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This step will filter the called SNPs and annotate them with SnpEff.
 
