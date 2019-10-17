@@ -23,6 +23,7 @@ Introduce SciApps, a cloud-based platform for building and sharing reproducible 
 	Building a Workflow <step4.rst>
         The Annotation Tutorial <annotation.rst>
 	The Association Tutorial <association.rst>
+	The BSA Tutorial <bsa.rst>
 	
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
