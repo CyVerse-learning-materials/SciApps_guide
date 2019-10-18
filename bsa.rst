@@ -121,7 +121,7 @@ This step will filter the called SNPs and annotate them with SnpEff.
   1. Click **Variant analysis** category (left panel) to find or search for **ems_filter**, then click to load **ems_filter-1.2**.
 
   2. Click **bcftools_call_cshl-1.2** in the History panel to expand its outputs, then
-     drag and drop **flt_bw2_ms9_chr2_1.vcf.gz** into the **Select the gzipped VCF file to be filtered:** field.
+     drag and drop **flt_bw2_ms9_chr2_1.vcf.gz** into the **Select the gzipped VCF file to be filtered** field.
 
      |ems_filter|
 
