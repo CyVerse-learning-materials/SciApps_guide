@@ -6,7 +6,7 @@
 
 The Bulked Segregant Analysis Tutorial
 ---------------------------
-This tutorial is a step-by-step guide for using SciApps to perform Bulked segregant analysis. The example data used here is from studying the sorghum Ms9 gene, located in chromosome 2, which encodes a PHD-finger transcription factor critical for pollen development (`reference <https://dl.sciencesocieties.org/publications/tpg/articles/0/0/190020>`_). The ms9 mutant plants (right in the image) are crossed by the WT BTx623 pollen (left) to generate the F1 seeds. The F1 plants produced F2 seeds through self-fertilization. Leaf tissues from 20 confirmed F2 mutants are pooled, quality-checked, and subjected to 150-bp paired-end sequencing on an illumina X-10 instrument. 
+This tutorial is a step-by-step guide for using SciApps to perform Bulked segregant analysis. The example data used here is from studying the sorghum Ms9 gene, located in chromosome 2, which encodes a PHD-finger transcription factor critical for pollen development (`reference <https://dl.sciencesocieties.org/publications/tpg/articles/0/0/190020>`_). The ms9 mutant plants (right in the image) are crossed by the WT BTx623 pollen (left) to generate the F1 seeds. The F1 plants produced F2 seeds through self-fertilization. Leaf tissues from 20 confirmed F2 mutants are pooled, quality-checked, and subjected to 150-bp paired-end sequencing on an Illumina X-10 instrument. 
  
     |sorghum_ms9|
 
@@ -140,7 +140,7 @@ This step will filter the called SNPs and annotate them with SnpEff.
      .. Tip::
         You can use the slider bar to change the smoothness of the fitted curve. Click near the non_synonymous SNP will filter the table with nearby genes only. To reload all genes, simply refresh the page.
      
-  5. The candidate SNP at 2:41903129 is detected because we set the minimum allele frequency (maf) as no smaller than 0.9 in Step 4 (2). The SNP won't be detected if maf is set as 1, which increases the chance of missing the true candidate genes if there is sequencing or phenotyping error in the data. 
+  5. The candidate SNP at 2:41903129 is detected because we set the minimum allele frequency (maf) as no smaller than 0.9 in Step 4 (2). The SNP won't be detected if maf is set as 1, which increases the chance of missing the true candidate genes if there is sequencing, alignment, or phenotyping error in the data. 
 
      .. Note::
         The vaf plot shows that the candidate SNP at 2:41903129 might be a false positive since it is not located on a 'peak', which represents a mutant segment of the chromosome when crossover the mutant line with BTx623. However, when the smoothing parameter is set as 0.1, a small peak can be detected right under the SNP.
