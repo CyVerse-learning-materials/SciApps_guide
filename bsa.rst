@@ -147,7 +147,7 @@ This step will filter the called SNPs and annotate them with SnpEff.
 
 
      .. Note::
-        Check the `vcf plot <https://data.sciapps.org/shiny/vaf-plot/?inp_file=vi/ems_filter-1.2_b5998c1d-66d6-4c4d-9b78-064220d639b6/vaf_plot>`_ of the full dataset, with all chromosomes and no downsampling.
+        Check the `vaf plot <https://data.sciapps.org/shiny/vaf-plot/?inp_file=vi/ems_filter-1.2_b5998c1d-66d6-4c4d-9b78-064220d639b6/vaf_plot>`_ of the full dataset, with all chromosomes and no downsampling.
   
 *Step 5: Filtering candidate genes with SIFT*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
