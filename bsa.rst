@@ -90,6 +90,9 @@ This step will demo how to upload data to the sci_data folder for accessing from
 
       .. Note::
         This may take a few minutes. You can check the status by clicking the 'Bell' on the top right corner of DE. Once importing completed, 'Refresh' the window to see the file. This is an alignment file in bam format from aligning the raw reads to Sorghum v3 assembly.
+        
+      .. Warning::
+         If you are using the Chrome web browser and have grammarly turned on, the 'Import from URL' button will not be activated after pasting the URL. You can turn off grammarly for the page and reload the import form or switch to a different web browser.
   
    3. Alternatively, use `Cyberduck <https://pods.iplantcollaborative.org/wiki/display/DS/Using+Cyberduck+for+Uploading+and+Downloading+to+the+Data+Store>`_ or `iCommands <https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands>`_ for bulk data transfer to the sci_data folder.
 
@@ -132,7 +135,7 @@ This step will filter the called SNPs and annotate them with SnpEff.
      |ems_view|
 
      .. Warning::
-        The Variant Allele Frequency (vaf) plot will be displayed in a new window, so please check if pop-ups from SciApps are blocked by your web browser.
+        The Variant Allele Frequency (vaf) plot will be displayed in a new window, so please check if pop-ups from SciApps are blocked by your web browser. If the plot is not loading, you might need to update the flash player for your web browser.
 
      .. Note::
         The example here is using chromosome 2 only. And the vaf plot is pre-configured to display chromosome 2 of sorghum bicolor (BTx623). For your data, check the list of genes below the plot and use the options on the left side to select a specific chromosome if there are SNPs detected on them.
