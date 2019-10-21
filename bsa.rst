@@ -127,7 +127,7 @@ This step will filter the called SNPs and annotate them with SnpEff.
 
   3. Leave others as defaults, then click the "Submit Job" button.
 
-  4. Once COMPLETED, click the **Visualization** 'eye' icon for **ems_filter-1.2** in the History panel to bring up its outputs. Select **vaf_plot.view.tgz** from the list of outputs, then click **Visualize**, you will be directed to a visualization interface built with `Shiny <https://shiny.rstudio.com/>`_. The vaf plot displays the allele frequency at each locus. The non_synonymous SNPs are marked as red circles in the plot and displayed in the table with the associated gene ids and other information.
+  4. Once COMPLETED, click the **Visualization** 'eye' icon for **ems_filter-1.2** in the History panel to bring up its outputs. Select **vaf_plot.view.tgz** from the list of outputs, then click **Visualize**, you will be directed to a visualization interface built with `Shiny <https://shiny.rstudio.com/>`_. The vaf plot displays the allele frequency at each locus. The nonsynonymous SNPs are marked as red circles in the plot and displayed in the table with the associated gene ids and other information.
 
      |ems_view|
 
@@ -138,12 +138,12 @@ This step will filter the called SNPs and annotate them with SnpEff.
         The example here is using chromosome 2 only. And the vaf plot is pre-configured to display chromosome 2 of sorghum bicolor (BTx623). For your data, check the list of genes below the plot and use the options on the left side to select a specific chromosome if there are SNPs detected on them.
 
      .. Tip::
-        You can use the slider bar to change the smoothness of the fitted curve. Click near the non_synonymous SNP will filter the table with nearby genes only. To reload all genes, simply refresh the page.
+        You can use the slider bar to change the smoothness of the fitted curve. Click near a red circle (nonsynonymous SNP) will add a new column 'selected_' to the end of the table and set the SNP as 'true'. To reload all SNPs, simply refresh the page.
      
   5. The candidate SNP at 2:41903129 is detected because we set the minimum allele frequency (maf) as no smaller than 0.9 in Step 4 (2). The SNP won't be detected if maf is set as 1, which increases the chance of missing the true candidate genes if there is sequencing, alignment, or phenotyping error in the data. 
 
      .. Note::
-        The vaf plot shows that the candidate SNP at 2:41903129 might be a false positive since it is not located on a 'peak', which represents a mutant segment of the chromosome when crossover the mutant line with BTx623. However, when the smoothing parameter is set as 0.1, a small peak can be detected right under the SNP.
+        The vaf plot shows that the candidate SNP at 2:41903129 might be a false positive since it is not located on a 'peak', which represents a mutant segment of the chromosome when crossover the mutant line with BTx623. However, when the smoothing parameter is set as 0.01, a small peak can be detected right under the SNP.
 
 
      .. Note::
@@ -151,7 +151,7 @@ This step will filter the called SNPs and annotate them with SnpEff.
   
 *Step 5: Filtering candidate genes with SIFT*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-There are 7 candidate SNPs (falls on 6 candidate genes) identified in the last step. The SNP at 2:61271277 disrupts the splice site acceptor and is a deleterious mutation. For the other 6 non-synonymous SNPs, we can use SIFT to predict whether they will alter the encoded protein function.
+There are 7 candidate SNPs (falls on 6 candidate genes) identified in the last step. The SNP at 2:61271277 disrupts the splice site acceptor and is a deleterious mutation. For the other 6 nonsynonymous SNPs, we can use SIFT to predict whether they will alter the encoded protein function.
 
   1. Click **Variant analysis** category (left panel) to find or search for **SIFT4G**, then click to load **SIFT4G-0.0.1**. 
 
