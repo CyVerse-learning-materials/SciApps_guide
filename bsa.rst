@@ -6,7 +6,7 @@
 
 The Bulked Segregant Analysis Tutorial
 ---------------------------
-This tutorial is a step-by-step guide for using SciApps to perform Bulked segregant analysis. The example data used here is from studying the sorghum Ms9 gene, located in chromosome 2, which encodes a PHD-finger transcription factor critical for pollen development (`reference <https://dl.sciencesocieties.org/publications/tpg/articles/0/0/190020>`_). The ms9 mutant plants (Mu574, right in the image) are crossed by the WT BTx623 pollen (left) to generate the F1 seeds. The F1 plants produced F2 seeds through self-fertilization. Leaf tissues from 20 confirmed F2 mutants are pooled, quality-checked, and subjected to 150-bp paired-end sequencing on an Illumina X-10 instrument. 
+This tutorial is a step-by-step guide for using SciApps to perform bulked segregant analysis. The example data used here is from studying the sorghum Ms9 gene, located in chromosome 2, which encodes a PHD-finger transcription factor critical for pollen development (`reference <https://dl.sciencesocieties.org/publications/tpg/articles/0/0/190020>`_). The ms9 mutant plants (Mu574, right in the image) are crossed by the WT BTx623 pollen (left) to generate the F1 seeds. The F1 plants produced F2 seeds through self-fertilization. Leaf tissues from 20 confirmed F2 mutants are pooled, quality-checked, and subjected to 150-bp paired-end sequencing on an Illumina X-10 instrument. 
  
     |sorghum_ms9|
 
@@ -188,7 +188,7 @@ With three candidate genes left from the last filtering step, Sb02g026200(Sobic.
 *Summary*
 ~~~~~~~~~
 
-This tutorial covers how to use SciApps for Bulked segregant Analysis, including accessing data in CyVerse Data Store, launching jobs, visualizing results, and using Ensembl Plants/Gramene to find the mutant lines that carry different mutations in the same gene.
+This tutorial covers how to use SciApps for bulked segregant Analysis, including accessing data in CyVerse Data Store, launching jobs, visualizing results, and using Ensembl Plants/Gramene to find the mutant lines that carry different mutations in the same gene.
 
 
 More help and additional information
