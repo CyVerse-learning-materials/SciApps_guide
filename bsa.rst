@@ -300,7 +300,7 @@ More help and additional information
     :height: 450
 .. |ems_viewer2| image:: ./img/sci_apps/ems_viewer2.gif
     :width: 660
-    :height: 261
+    :height: 265
 .. |sorghum_ms9| image:: ./img/sci_apps/sorghum_ms9.gif
     :width: 75
     :height: 170
