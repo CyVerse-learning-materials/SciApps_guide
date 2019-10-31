@@ -231,10 +231,10 @@ Post your question to the user forum:
     :height: 355
 .. |de_data| image:: ./img/sci_apps/de_data.gif
     :width: 660
-    :height: 370
+    :height: 343
 .. |url_window| image:: ./img/sci_apps/url_window.gif
     :width: 660
-    :height: 431
+    :height: 356
 .. |data_window2| image:: ./img/sci_apps/data_window2.gif
     :width: 660
     :height: 329
@@ -246,7 +246,7 @@ Post your question to the user forum:
     :height: 322
 .. |cyverse_user| image:: ./img/sci_apps/cyverse_user.gif
     :width: 660
-    :height: 362
+    :height: 327
 .. |build_workflow2| image:: ./img/sci_apps/build_workflow2.gif
     :width: 661
     :height: 310
