@@ -6,7 +6,7 @@
 
 The Bulked Segregant Analysis Tutorial
 ---------------------------
-This tutorial is a step-by-step guide for using SciApps to perform Bulked segregant analysis. The example data used here is from studying the sorghum Ms9 gene, located in chromosome 2, which encodes a PHD-finger transcription factor critical for pollen development (`reference <https://dl.sciencesocieties.org/publications/tpg/articles/0/0/190020>`_). The ms9 mutant plants (Mu574, right in the image) are crossed by the WT BTx623 pollen (left) to generate the F1 seeds. The F1 plants produced F2 seeds through self-fertilization. Leaf tissues from 20 confirmed F2 mutants are pooled, quality-checked, and subjected to 150-bp paired-end sequencing on an Illumina X-10 instrument. 
+This tutorial is a step-by-step guide for using SciApps to perform bulked segregant analysis. The example data used here is from studying the sorghum Ms9 gene, located in chromosome 2, which encodes a PHD-finger transcription factor critical for pollen development (`reference <https://dl.sciencesocieties.org/publications/tpg/articles/0/0/190020>`_). The ms9 mutant plants (Mu574, right in the image) are crossed by the WT BTx623 pollen (left) to generate the F1 seeds. The F1 plants produced F2 seeds through self-fertilization. Leaf tissues from 20 confirmed F2 mutants are pooled, quality-checked, and subjected to 150-bp paired-end sequencing on an Illumina X-10 instrument. 
  
     |sorghum_ms9|
 
@@ -94,6 +94,9 @@ This step will demo how to upload data (using CyVerse Discovery Environment) to 
 
       .. Note::
         This may take a few minutes. You can check the status by clicking the 'Bell' on the top right corner of DE. Once importing completed, 'Refresh' the window to see the file. This is a variant file in gzipped VCF format from aligning the raw reads to Sorghum v3 assembly with Bowtie2 and calling variants with bcftools.
+        
+      .. Warning::
+         If you are using the Chrome web browser and have grammarly turned on, the 'Import from URL' button will not be activated after pasting the URL. You can turn off grammarly for the page and reload the import form or switch to a different web browser.
   
    3. Alternatively, use `Cyberduck <https://pods.iplantcollaborative.org/wiki/display/DS/Using+Cyberduck+for+Uploading+and+Downloading+to+the+Data+Store>`_ or `iCommands <https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands>`_ for bulk data transfer to the sci_data folder.
 
@@ -228,7 +231,7 @@ With two candidate genes left from the last step (red dots above the threshold),
 *Summary*
 ~~~~~~~~~
 
-This tutorial covers how to use SciApps for Bulked segregant Analysis, including accessing data in CyVerse Data Store, launching jobs, visualizing results, and using Ensembl Plants/Gramene to find the mutant lines that carry different mutations in the same gene.
+This tutorial covers how to use SciApps for bulked segregant Analysis, including accessing data in CyVerse Data Store, launching jobs, visualizing results, and using Ensembl Plants/Gramene to find the mutant lines that carry different mutations in the same gene.
 
 
 More help and additional information
