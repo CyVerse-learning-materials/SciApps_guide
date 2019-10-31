@@ -120,7 +120,12 @@ This step should take less than 2 minutes with the example data. Three output fi
 
      .. Note::
        Click the info (i) icon to check the analysis status. The 'eye' icon (for visualization) is grayed out before the job is completed.
- 
+
+       - **Specify the maximum read depth**: Filtered out SNPs that might be in the repeat region
+       - **Specify the minimum read depth**: Filtered out SNPs that might be due to sequencing or alignment error
+       - **Keep EMS snps only**: Whether or not to just keep EMS mutations (GC to AT)
+       - **Specify the minimum variant ...**: Only SNPs with allele frequency above the threshold will be kept
+
   5. Once COMPLETED, click '1: bcftools_filter-1.8' (from the History panel) to expand outputs. There are three output files. 
 
      |bcftools_res|
@@ -140,6 +145,10 @@ This step annotates the filtered SNPs with SnpEff and outputs an annotated VCF f
      |snpeff|
 
   3. Leave others as defaults, then click the "Submit Job" button.
+
+     .. Note::
+
+        The annotation file is optional. Any variant that intersects an interval defined in it will be annotated using the "name" field (fourth column) of the input annotation file (in bed format). 
 
   4. Once COMPLETED, click '2: SnpEff-4.3.1' to expand outputs.
 
@@ -162,6 +171,11 @@ For nonsynonymous SNPs, we use SIFT to predict whether they will alter the prote
      |sift|
 
   3. Leave other parameters as default, and click the "Submit Job" button. 
+
+     .. Note::
+
+       - **Check Multitranscripts**: If Yes, estimate the mutation effect on each isoform
+       - **Is the variant file sorted**: If No, the variant file will be sorted
 
   4. Once COMPLETED, click '3: SIFT4G-0.0.1' to expand its outputs. 
 
@@ -189,13 +203,13 @@ This step combines the results from Step 3, 4, and 5, and homologous genes grabb
      .. Warning::
         The interactive EMS viewer will be displayed in a new tab of your web browser window, so please check if pop-ups from SciApps are blocked by your browser and disable it if needed.
 
-  4. The EMS viewer displays the P-value (by default, or allele frequency) at each locus. Chromosome 2 is displayed with the top candidate genes pointed by arrows in both the plot and the table. 
+  4. The EMS viewer displays the P-value (by default, or allele frequency) at each locus. Chromosome 2 is displayed with the top candidate gene pointed by arrows in both the plot and the table. 
 
      |ems_viewer|
 
      .. Note::
         
-	P-values are calculated to estimate how significant a region of the chromosome is segregated in the population. A blue horizontal line is drawn to indicate the 10\ :sup:`-5` significance threshold.
+	T-test is used to test whether a region of the chromosome is segregated in the population (low P-values) or not (high P-values). A blue horizontal line is drawn to indicate the 10\ :sup:`-5` significance threshold.
 
         Nonsynonymous SNPs are marked as blue circles in the plot and filled with the red color if it is significant, such as stop-gain mutations, mutations at splice donor or acceptor sites, or missense mutations with a SIFT score <= 0.05 and median info <= 3.25. 
       
@@ -219,7 +233,7 @@ With two candidate genes left from the last step (red dots above the threshold),
 
   2. Select **Sorghum bicolor** under "All genomes".
 
-  3. Search for **SORBI_3002G221000** and click **SORBI_3002G221000** to open the gene page.
+  3. Search for **SORBI_3002G221000** and click **SORBI_3002G221000** (after 'Gene ID') to open the gene page.
  
   4. Click the **Variant table** under "Genetic Variation" from the left panel.
 
