@@ -10,9 +10,9 @@ This tutorial is a step-by-step guide for using SciApps to perform Bulked segreg
  
     |sorghum_ms9|
 
-To reduce the computation time, reads from chromosome 2 are extracted and downsampled to 50%. To further reduce the computation time, we start the tutorial with variant calling from the alignment file by skipping the alignment of raw reads with Bowtie2. We will call SNPs with bcftools, then filter the resulted SNPs by the EMS mutation type (G to A or C to T), read depth, background, and minimum allele frequency. SnpEff is used to annotate the filtered SNPs during the filtering step. 
+To reduce the total computation time, we start the tutorial with variant filtering, skipping the alignment of raw reads with Bowtie2 and calling SNPs with bcftools. SNPs are filtered by the EMS mutation type (G to A or C to T), read depth, background, and minimum allele frequency. SnpEff is then used to annotate the filtered SNPs. Annotated SNPs are passed to SIFT4G for predicting amino acid substitution effects. Finally, results from all three steps are combined for visualization using the app, ems_viewer. 
 
-An interactive visualization interface is available with the filtered results to confirm whether the candidate genes are true or false positives. We use SIFT to further filter out genes that contain just non-significant mutations. Then, at the last, we use Ensembl Plants/Gramene to locate EMS pools that contain different alleles on the candidate gene for further verification.
+Ems_viewer provides an interactive visualization interface for confirming whether the candidate genes are true or false positives. Then, at the last, we use Ensembl Plants/Gramene to identify mutant lines that contained independent mutation alleles in the candidate gene for further verification.
 
 ----
 
@@ -24,15 +24,8 @@ An interactive visualization interface is available with the filtered results to
     * - Input
       - Description
       - Example
-    * - Raw reads
-      - Downsampled reads for chromosome 2
-      - `ms9_chr2_1.fq.gz <http://datacommons.cyverse.org/browse/iplant/home/sciapps/ems/ms9_chr2_1.fq.gz>`_, `ms9_chr2_2.fq.gz <http://datacommons.cyverse.org/browse/iplant/home/sciapps/ems/ms9_chr2_2.fq.gz>`_
-    * - Alignments
-      - Alignment of raw reads to Sorghum V3 assembly
-      - `bw2_ms9_chr2_1.bam <https://data.cyverse.org/dav-anon/iplant/home/lwang/sci_data/results/Bowtie2-2.3.2_86263a4a-c7d2-4f56-a4d9-e44d8ac4bf9f/bw2_ms9_chr2_1.bam>`_
-    * - Variants
       - Variants called with bcftools
-      - `flt_bw2_ms9_chr2_1.vcf.gz <https://data.cyverse.org/dav-anon/iplant/home/lwang/sci_data/results/bcftools_call_cshl-1.2_7947bafe-e270-48ea-b081-489b3d07fc48/flt_bw2_ms9_chr2_1.vcf.gz>`_
+      - `snp_bw2_ms9_1.vcf.gz <https://data.cyverse.org/dav-anon/iplant/home/lwang/sci_data/results/bcftools_call-1.8_8ac63e0f-53da-427d-b58f-a379f1b10443/snp_bw2_ms9_1.vcf.gz>`_
 
 **Apps:**
 
@@ -47,18 +40,26 @@ An interactive visualization interface is available with the filtered results to
       - `Bowtie2-2.3.2 <https://www.sciapps.org/app_id/Bowtie2-2.3.2>`_
       - Fast and sensitive read alignment
       - `Bowtie2 documentation <http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml>`_
-    * - bcftools_call_cshl
-      - `bcftools_call_cshl-1.2 <https://www.sciapps.org/app_id/bcftools_call_cshl-1.2>`_
+    * - bcftools_call
+      - `bcftools_call-1.8 <https://www.sciapps.org/app_id/bcftools_call-1.8>`_
       - SNP/indel calling
-      - `bcftools documentation <http://www.htslib.org/doc/bcftools-1.2.html>`_
-    * - ems_filter-1.2
-      - `ems_filter-1.2 <https://www.sciapps.org/app_id/ems_filter-1.2>`_
-      - Filter EMS SNP in F2 from background and run SnpEff
+      - `bcftools documentation <http://www.htslib.org/doc/bcftools-1.8.html>`_
+    * - bcftools_filter
+      - `bcftools_filter-1.8 <https://www.sciapps.org/app_id/bcftools_filter-1.8>`_
+      - SNP/indel filtering
+      - `bcftools documentation <http://www.htslib.org/doc/bcftools-1.8.html>`_
+    * - SnpEff
+      - `SnpEff-4.3.1 <https://www.sciapps.org/app_id/SnpEff-4.3.1>`_
+      - Annotating variants
       - `SnpEff documentation <http://snpeff.sourceforge.net/SnpEff.html>`_
     * - SIFT4G
       - `SIFT4G-0.0.1 <https://www.sciapps.org/app_id/SIFT4G-0.0.1>`_
       - A faster version of SIFT that predicts whether an amino acid substitution affects protein function
       - `SIFT4G documentation <https://sift.bii.a-star.edu.sg/sift4g/>`_
+    * - ems_viewer
+      - `ems_viewer-0.0.1 <https://www.sciapps.org/app_id/ems_viewer-0.0.1>`_
+      - Interactive visualization of variants and segregation
+      - `Shiny documentation <https://shiny.rstudio.com/>`_
 
 *Step 1: Requiring access to SciApps*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,7 +73,7 @@ This is one-time operation. Please login to `SciApps <https://www.SciApps.org/>`
 
   3. Click on 'MY SERVICES', then click on 'LAUNCH' for Discovery Environment.
 
-  4. Once in Discovery Environment, click to open the 'Data' window. You should see the **sci_data** folder under your root folder:/iplant/home/YOUR_USER_NAME.
+  4. Once in Discovery Environment, click to open the 'Data' window. You should see the **sci_data** folder under your root folder:/iplant/home/YOUR_USER_NAME/sci_data.
 
      |de_data|
 
@@ -80,94 +81,136 @@ This is one-time operation. Please login to `SciApps <https://www.SciApps.org/>`
 
 *Step 2: Uploading data for SciApps*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will demo how to upload data to the sci_data folder for accessing from SciApps.
+This step will demo how to upload data (using CyVerse Discovery Environment) to the sci_data folder for accessing from SciApps.
 
    1. Click **sci_data** folder to open it.
 
-   2. Click 'Upload', then 'Import from URL' to import this URL: https://data.cyverse.org/dav-anon/iplant/home/lwang/sci_data/results/Bowtie2-2.3.2_86263a4a-c7d2-4f56-a4d9-e44d8ac4bf9f/bw2_ms9_chr2_1.bam
+   2. Click 'Upload', then 'Import from URL' to import this URL: https://data.cyverse.org/dav-anon/iplant/home/lwang/sci_data/results/bcftools_call-1.8_8ac63e0f-53da-427d-b58f-a379f1b10443/snp_bw2_ms9_1.vcf.gz
 
       |url_window|
 
       .. Note::
-        This may take a few minutes. You can check the status by clicking the 'Bell' on the top right corner of DE. Once importing completed, 'Refresh' the window to see the file. This is an alignment file in bam format from aligning the raw reads to Sorghum v3 assembly.
+        Alternatively, you can click the above URL to download the file to your computer, then use 'Simple Upload from Desktop' to upload the file.
+
+      .. Note::
+        This may take a few minutes. You can check the status by clicking the 'Bell' on the top right corner of DE. Once importing completed, 'Refresh' the window to see the file. This is a variant file in gzipped VCF format from aligning the raw reads to Sorghum v3 assembly with Bowtie2 and calling variants with bcftools.
   
    3. Alternatively, use `Cyberduck <https://pods.iplantcollaborative.org/wiki/display/DS/Using+Cyberduck+for+Uploading+and+Downloading+to+the+Data+Store>`_ or `iCommands <https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands>`_ for bulk data transfer to the sci_data folder.
 
 
-*Step 3: Variant calling with bcftools*
+*Step 3: Variant filtering with bcftools_filter*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will take less than 15 minutes with the example data. A compressed vcf file will be generated once done.
+This step should take less than 2 minutes with the example data. Three output files will be generated.
 
-  1. Login to SciApps at https://www.SciApps.org.
+  1. 'LAUNCH' SciApps from your CyVerse user portal, or log into SciApps with your CyVerse user credentials at https://www.SciApps.org.
 
-  2. Click **Variant analysis** category (left panel) to find or search for **bcftools**, then click to load **bcftools_call_cshl-1.2**.
+  2. Click the **Variant analysis** category (left panel) to find or search for **bcftools_filter**, then click to load **bcftools_filter-1.8**.
 
-  3. Under “Select bam file”, click **Browse DataStore**, then navigate to the **sci_data** folder (home) or where you imported the bam file; select the bam file and click 'Select and Close'.
+  3. Under “Specify the variant file”, click **Browse DataStore**, then navigate to the **sci_data** folder (under 'home'); select the variant file and click 'Select and Close'.
 
      |bcftools_window|
 
      .. Tip::
-       Click 'Refresh' if you can not see any newly uploaded files. 
+       Click 'Refresh' if you can not see a newly uploaded file. 
 
-  4. Under "Or select the genome hosted by SciApps:", choose **Sorghum bicolor (Sorbi3)**.
+  4. Leave other parameters as default, and click **Submit Job**. You will be asked to confirm; click "Submit". You will be prompted to check the job status in the right panel.
 
-  5. Leave other parameters as default, and click **Submit Job**. You will be asked to confirm; click "Submit". You will be prompted to check the job status in the right panel. Once COMPLETED, move on to the next step.
-       
+     .. Note::
+       Click the info (i) icon to check the analysis status. The 'eye' icon (for visualization) is grayed out before the job is completed.
+ 
+  5. Once COMPLETED, click '1: bcftools_filter-1.8' (from the History panel) to expand outputs. There are three output files. 
 
-*Step 4: Filtering SNPs with ems_filter*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step will filter the called SNPs and annotate them with SnpEff.
+     |bcftools_res|
 
-  1. Click **Variant analysis** category (left panel) to find or search for **ems_filter**, then click to load **ems_filter-1.2**.
+     .. Note::
+       **ems_plot.txt.gz** is the file containing allele frequencies for feeding into the 'ems_viewer' app. **flt_snp_bw2_ms9_1.vcf.gz** and **flt_snp_bw2_ms9_1.vcf.gz.tbi** are filtered variant file and its index file.
+ 
+*Step 4: Annotating variant with SnpEff*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This step annotates the filtered SNPs with SnpEff and outputs an annotated VCF file.
 
-  2. Click **bcftools_call_cshl-1.2** in the History panel to expand its outputs, then
-     drag and drop **flt_bw2_ms9_chr2_1.vcf.gz** into the **Select the gzipped VCF file to be filtered** field.
+  1. Click the **Variant analysis** category (left panel) to find or search for **SnpEff**, then click to load **SnpEff-4.3.1**.
 
-     |ems_filter|
+  2. Click **1: bcftools_filter-1.8** in the History panel to expand its outputs, then
+     drag and drop **flt_snp_bw2_ms9_1.vcf.gz** into the **Specify the variant file** field.
+
+     |snpeff|
 
   3. Leave others as defaults, then click the "Submit Job" button.
 
-  4. Once COMPLETED, click the **Visualization** 'eye' icon for **ems_filter-1.2** in the History panel to bring up its outputs. Select **vaf_plot.view.tgz** from the list of outputs, then click **Visualize**, you will be directed to a visualization interface built with `Shiny <https://shiny.rstudio.com/>`_. The vaf plot displays the allele frequency at each locus. The non_synonymous SNPs are marked as red circles in the plot and displayed in the table with the associated gene ids and other information.
+  4. Once COMPLETED, click '2: SnpEff-4.3.1' to expand outputs.
+
+     .. Note::
+
+       There are three output files:
+   
+       - **genes.txt.gz**: a text file summarizing the number of variant types per gene
+       - **snpEff_flt_snp_bw2_ms9_1.vcf.gz**: an annotated VCF file
+       - **summary.html**: an HTML file containing summary statistics about the variants and their annotations
+  
+*Step 5: Predicting variant effects with SIFT*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For nonsynonymous SNPs, we use SIFT to predict whether they will alter the protein function.
+
+  1. Click the **Variant analysis** category (left panel) to find or search for **SIFT4G**, then click to load **SIFT4G-0.0.1**. 
+
+  2. Click **2: SnpEff-4.3.1** in the History panel to expand its outputs, then drag and drop **snpEff_flt_bw2_ms9_1.vcf.gz** into the **Specify the variant file** field.
+
+     |sift|
+
+  3. Leave other parameters as default, and click the "Submit Job" button. 
+
+  4. Once COMPLETED, click '3: SIFT4G-0.0.1' to expand its outputs. 
+
+     .. Note:: 
+
+       There are two output files:
+
+       - **annotations_flt_snp_bw2_ms9_1.xls.fz**: an XLS file with variant annotation
+       - **predictions_flt_snp_bw2_ms9_1.vcf.gz**: a VCF file with variant effect prediction
+
+*Step 6: Visualizing EMS outputs*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This step combines the results from Step 3, 4, and 5, and homologous genes grabbed from Gramene/ensemblPlants. The output file, **vaf_plot.view.tgz**, can be interactively visualized through a Shiny app.
+
+  1. Click the **Variant analysis** category (left panel) to find or search for **ems_viewer**, then click to load **ems_viewer-0.0.1**.
+
+  2. Click to expand outputs of the three jobs in the History panel, then drag and drop outputs to the input fields as shown below:
 
      |ems_view|
 
+  3. Click the "Submit Job" button. Once COMPLETED, click the 'eye' icon for the ems_viewer-0.0.1 job in the History panel to open the following dialog window. Select the output file **vaf_plot.view.tgz**, then click 'Visualize' to open the Shiny app. 
+
+     |ems_view_diag|
+
      .. Warning::
-        The Variant Allele Frequency (vaf) plot will be displayed in a new window, so please check if pop-ups from SciApps are blocked by your web browser.
+        The interactive EMS viewer will be displayed in a new tab of your web browser window, so please check if pop-ups from SciApps are blocked by your browser and disable it if needed.
+
+  4. The EMS viewer displays the P-value (by default, or allele frequency) at each locus. Chromosome 2 is displayed with the top candidate genes pointed by arrows in both the plot and the table. 
+
+     |ems_viewer|
 
      .. Note::
-        The example here is using chromosome 2 only. And the vaf plot is pre-configured to display chromosome 2 of sorghum bicolor (BTx623). For your data, check the list of genes below the plot and use the options on the left side to select a specific chromosome if there are SNPs detected on them.
+        
+	P-values are calculated to estimate how significant a region of the chromosome is segregated in the population. A blue horizontal line is drawn to indicate the 10\ :sup:`-5` significance threshold.
+
+        Nonsynonymous SNPs are marked as blue circles in the plot and filled with the red color if it is significant, such as stop-gain mutations, mutations at splice donor or acceptor sites, or missense mutations with a SIFT score <= 0.05 and median info <= 3.25. 
+      
+        Nonsynonymous SNPs are also displayed in the table with the associated gene ids, paralogous genes from Arabidopsis thaliana and Oryza sativa ssp. japonica, SnpEff annotation, and SIFT score. 
 
      .. Tip::
-        You can use the slider bar to change the smoothness of the fitted curve. Click near the non_synonymous SNP will filter the table with nearby genes only. To reload all genes, simply refresh the page.
-     
-  5. The candidate SNP at 2:41903129 is detected because we set the minimum allele frequency (maf) as no smaller than 0.9 in Step 4 (2). The SNP won't be detected if maf is set as 1, which increases the chance of missing the true candidate genes if there is sequencing, alignment, or phenotyping error in the data. 
 
-     .. Note::
-        The vaf plot shows that the candidate SNP at 2:41903129 might be a false positive since it is not located on a 'peak', which represents a mutant segment of the chromosome when crossover the mutant line with BTx623. However, when the smoothing parameter is set as 0.1, a small peak can be detected right under the SNP.
+	Clicking near the nonsynonymous SNP on the plot will select the SNP in the table (setting the **selected_** column as true).
 
+        You can choose a larger window size to estimate P-value if there are not enough mutations across the chromosome. There are also multiple methods provided for multiple testing adjustment of P-values. For the allele frequency plot, use the slider bar to change the smoothness of the fitted curve.
 
-     .. Note::
-        Check the `vcf plot <https://data.sciapps.org/shiny/vaf-plot/?inp_file=vi/ems_filter-1.2_b5998c1d-66d6-4c4d-9b78-064220d639b6/vaf_plot>`_ of the full dataset, with all chromosomes and no downsampling.
-  
-*Step 5: Filtering candidate genes with SIFT*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-There are 7 candidate SNPs (falls on 6 candidate genes) identified in the last step. The SNP at 2:61271277 disrupts the splice site acceptor and is a deleterious mutation. For the other 6 non-synonymous SNPs, we can use SIFT to predict whether they will alter the encoded protein function.
+  5. Choose 'All chromosomes' in the EMS viewer to display P-value plots for all 10 chromosomes. As shown below, we can use the significance threshold to rule out two candidate genes in chromosome 5 and one candidate gene in chromosome 8.
 
-  1. Click **Variant analysis** category (left panel) to find or search for **SIFT4G**, then click to load **SIFT4G-0.0.1**. 
+     |ems_viewer2|
 
-  2. Click **ems_filter-1.2** in the History panel to expand its outputs, then drag and drop **ems_flt_bw2_ms9_chr2_1.vcf.gz** into the **Specify the variant file** field.
-
-  3. Under "Specify the species (-d)", choose **Sorghum bicolor (Sorbi3)**.
-
-  4. Leave other parameters as default, and click **Submit Job**. Once done, click the SIFT4G-0.0.1 job in the History panel to expand the outputs, then click to open **sift_out.txt**. As shown below, only two out of the six SNPs are predicted to be deleterious. 
-
-     |sift_out|
-
-     .. Note:: SIFT score ranges from 0 to 1. The amino acid substitution is predicted damaging if the score is <= 0.05, and tolerated if the score is > 0.05.
-      
-*Step 6: Finding mutant lines with the same candidate gene using Ensembl Plants/Gramene*
+*Step 7: Finding mutant lines with the same candidate gene using Ensembl Plants/Gramene*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-With three candidate genes left from the last filtering step, Sb02g026200(Sobic.002G221000, or SORBI_3002G221000) looks promising since it encodes a PHD-finger transcription factor that is critical for pollen development in Arabidopsis (`reference <https://onlinelibrary.wiley.com/doi/full/10.1046/j.1365-313X.2001.01125.x>`_). There is an EMS SNP database available at Ensembl Plants/Gramene. With the database, we can find the mutant lines that carry the different mutations in the same gene, acquire the seeds, plant and check the phenotype.
+With two candidate genes left from the last step (red dots above the threshold), Sb02g026200(Sobic.002G221000, or SORBI_3002G221000) looks promising since it encodes a PHD-finger transcription factor that is critical for pollen development in Arabidopsis (`reference <https://onlinelibrary.wiley.com/doi/full/10.1046/j.1365-313X.2001.01125.x>`_). There is an EMS SNP database available at Ensembl Plants/Gramene. With the database, we can find the mutant lines that carry the independent mutations in the same gene, acquire the seeds, plant and verify both genotype and phenotype.
 
   1. Go to `Ensembl Plants <http://plants.ensembl.org/index.html>`_.
 
@@ -175,7 +218,7 @@ With three candidate genes left from the last filtering step, Sb02g026200(Sobic.
 
   3. Search for **SORBI_3002G221000** and click **SORBI_3002G221000** to open the gene page.
  
-  4. Click **Variant table** under "Genetic Variation" from the left panel.
+  4. Click the **Variant table** under "Genetic Variation" from the left panel.
 
   5. Filter SNPs by SIFT score <= 0.05 to find that SNP **tmp_2_61310404_C_T** is the only one left. Click **tmp_2_61310404_C_T** to open the Variant page.
 
@@ -216,18 +259,21 @@ More help and additional information
     :width: 25
     :height: 25
 .. _Home_Icon: http://learning.cyverse.org/
-.. |sift_out| image:: ./img/sci_apps/sift_out.gif
-    :width: 500
-    :height: 110
+.. |sift| image:: ./img/sci_apps/sift.gif
+    :width: 660
+    :height: 272
 .. |de_data| image:: ./img/sci_apps/de_data.gif
     :width: 660
-    :height: 370
+    :height: 343
 .. |url_window| image:: ./img/sci_apps/url_window.gif
     :width: 660
-    :height: 431
+    :height: 356
 .. |bcftools_window| image:: ./img/sci_apps/bcftools_window.gif
     :width: 660
-    :height: 456
+    :height: 357
+.. |bcftools_res| image:: ./img/sci_apps/bcftools_res.gif
+    :width: 234
+    :height: 103
 .. |status| image:: ./img/sci_apps/status.gif
     :width: 250
     :height: 60
@@ -236,13 +282,22 @@ More help and additional information
     :height: 322
 .. |cyverse_user| image:: ./img/sci_apps/cyverse_user.gif
     :width: 660
-    :height: 362
-.. |ems_filter| image:: ./img/sci_apps/ems_filter.gif
+    :height: 327
+.. |snpeff| image:: ./img/sci_apps/snpeff.gif
     :width: 660
-    :height: 300
+    :height: 274
 .. |ems_view| image:: ./img/sci_apps/ems_view.gif
     :width: 660
-    :height: 415
+    :height: 349
+.. |ems_view_diag| image:: ./img/sci_apps/ems_view_diag.gif
+    :width: 576
+    :height: 125
+.. |ems_viewer| image:: ./img/sci_apps/ems_viewer.gif
+    :width: 660
+    :height: 450
+.. |ems_viewer2| image:: ./img/sci_apps/ems_viewer2.gif
+    :width: 660
+    :height: 261
 .. |sorghum_ms9| image:: ./img/sci_apps/sorghum_ms9.gif
     :width: 75
     :height: 170
