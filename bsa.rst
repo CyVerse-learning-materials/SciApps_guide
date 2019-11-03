@@ -203,27 +203,27 @@ This step combines the results from Step 3, 4, and 5, and homologous genes grabb
      .. Warning::
         The interactive EMS viewer will be displayed in a new tab of your web browser window, so please check if pop-ups from SciApps are blocked by your browser and disable it if needed.
 
-  4. The EMS viewer displays the P-value (by default, or allele frequency) at each locus. Chromosome 2 is displayed with the top candidate gene pointed by arrows in both the plot and the table. 
+  4. By default, the EMS viewer displays the P-value plots along the chromosome for 'All chromosomes', with a blue horizontal line to indicate the 10\ :sup:`-5` significance threshold. As shown below, we can use the significance threshold to rule out two candidate genes in chromosome 5 and one candidate gene in chromosome 8.
 
-     |ems_viewer|
+     |ems_viewer2|
 
      .. Note::
-        
-	T-test is used to test whether a region of the chromosome is segregated in the population (low P-values) or not (high P-values). A blue horizontal line is drawn to indicate the 10\ :sup:`-5` significance threshold.
 
-        Nonsynonymous SNPs are marked as blue circles in the plot and filled with the red color if it is significant, such as stop-gain mutations, mutations at splice donor or acceptor sites, or missense mutations with a SIFT score <= 0.05 and median info <= 3.25. 
-      
-        Nonsynonymous SNPs are also displayed in the table with the associated gene ids, paralogous genes from Arabidopsis thaliana and Oryza sativa ssp. japonica, SnpEff annotation, and SIFT score. 
+        T-test is used to test whether a region of the chromosome is segregated in the population (low P-values) or not (high P-values). A blue horizontal line is drawn to indicate the 10\ :sup:`-5` significance threshold.
+
+        Nonsynonymous SNPs are marked as blue circles in the plot and filled with the red color if it is significant. Stop-gain mutations, mutations at splice donor or acceptor sites, or missense mutations with a SIFT score <= 0.05 and median info <= 3.25 are considered as having significant effects.
+
+        Nonsynonymous SNPs are also displayed in the table with the associated gene ids, paralogous genes from Arabidopsis thaliana and Oryza sativa ssp. japonica, SnpEff annotation, and SIFT score.
+
+  5. As shown above, two candidate genes (red dots) are located on chromosome 2. Choose "Chromosome 2" in the left panel to focus on Chromosome 2 for both the plot and the table below the plot. 
+
+     |ems_viewer|
 
      .. Tip::
 
 	Clicking near the nonsynonymous SNP on the plot will select the SNP in the table (setting the **selected_** column as true).
 
-        You can choose a larger window size to estimate P-value if there are not enough mutations across the chromosome. There are also multiple methods provided for multiple testing adjustment of P-values. For the allele frequency plot, use the slider bar to change the smoothness of the fitted curve.
-
-  5. Choose 'All chromosomes' in the EMS viewer to display P-value plots for all 10 chromosomes. As shown below, we can use the significance threshold to rule out two candidate genes in chromosome 5 and one candidate gene in chromosome 8.
-
-     |ems_viewer2|
+        You can choose a larger window size to estimate P-value if there are not enough mutations across the chromosome. For the allele frequency plot, use the slider bar to change the smoothness of the fitted curve.
 
 *Step 7: Finding mutant lines with the same candidate gene using Ensembl Plants/Gramene*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -305,13 +305,13 @@ More help and additional information
     :height: 274
 .. |ems_view| image:: ./img/sci_apps/ems_view.gif
     :width: 660
-    :height: 349
+    :height: 348
 .. |ems_view_diag| image:: ./img/sci_apps/ems_view_diag.gif
     :width: 576
     :height: 125
 .. |ems_viewer| image:: ./img/sci_apps/ems_viewer.gif
     :width: 660
-    :height: 450
+    :height: 373
 .. |ems_viewer2| image:: ./img/sci_apps/ems_viewer2.gif
     :width: 660
     :height: 265
