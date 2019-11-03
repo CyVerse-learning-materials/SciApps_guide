@@ -223,7 +223,7 @@ This step combines the results from Step 3, 4, and 5, and homologous genes grabb
 
 	Clicking near the nonsynonymous SNP on the plot will select the SNP in the table (setting the **selected_** column as true).
 
-        You can choose a larger window size to estimate P-value if there are not enough mutations across the chromosome. For the allele frequency plot, use the slider bar to change the smoothness of the fitted curve.
+        You can choose a larger window size to estimate P-value if there are not enough mutations across the chromosome. Use the left panel to switch from the P-value plot to the allele frequency plot, and use the slider bar to change the smoothness of the fitted curve.
 
 *Step 7: Finding mutant lines with the same candidate gene using Ensembl Plants/Gramene*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
