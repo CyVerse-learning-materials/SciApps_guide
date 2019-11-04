@@ -10,7 +10,7 @@ This tutorial is a step-by-step guide for using SciApps to perform bulked segreg
  
     |sorghum_ms9|
 
-To reduce the total computation time, we start the tutorial with variant filtering, skipping the alignment of raw reads with Bowtie2 and calling SNPs with bcftools. SNPs are filtered by the EMS mutation type (G to A or C to T), read depth, background, and minimum allele frequency. SnpEff is then used to annotate the filtered SNPs. Annotated SNPs are passed to SIFT4G for predicting amino acid substitution effects. Finally, results from all three steps are combined for visualization using the app, ems_viewer. 
+To reduce the total computation time, we start the tutorial with variant filtering, skipping the alignment of raw reads with Bowtie2 and calling SNPs with bcftools. SNPs are filtered by the EMS mutation type (G to A or C to T), read depth, background, and minimum allele frequency. SnpEff is then used to annotate the filtered SNPs. Annotated SNPs are passed to SIFT4G for predicting amino acid substitution effects. Finally, results from all three steps are combined for visualization using the app, bsa_viewer. 
 
 Ems_viewer provides an interactive visualization interface for confirming whether the candidate genes are true or false positives. Then, at the last, we use Ensembl Plants/Gramene to identify mutant lines that contained independent mutation alleles in the candidate gene for further verification.
 
@@ -56,8 +56,8 @@ Ems_viewer provides an interactive visualization interface for confirming whethe
       - `SIFT4G-0.0.1 <https://www.sciapps.org/app_id/SIFT4G-0.0.1>`_
       - A faster version of SIFT that predicts whether an amino acid substitution affects protein function
       - `SIFT4G documentation <https://sift.bii.a-star.edu.sg/sift4g/>`_
-    * - ems_viewer
-      - `ems_viewer-0.0.1 <https://www.sciapps.org/app_id/ems_viewer-0.0.1>`_
+    * - bsa_viewer
+      - `bsa_viewer-0.0.1 <https://www.sciapps.org/app_id/bsa_viewer-0.0.1>`_
       - Interactive visualization of variants and segregation
       - `Shiny documentation <https://shiny.rstudio.com/>`_
 
@@ -131,7 +131,7 @@ This step should take less than 2 minutes with the example data. Three output fi
      |bcftools_res|
 
      .. Note::
-       **ems_plot.txt.gz** is the file containing allele frequencies for feeding into the 'ems_viewer' app. **flt_snp_bw2_ms9_1.vcf.gz** and **flt_snp_bw2_ms9_1.vcf.gz.tbi** are filtered variant file and its index file.
+       **bsa_plot.txt.gz** is the file containing allele frequencies and P-values for feeding into the 'bsa_viewer' app. **flt_snp_bw2_ms9_1.vcf.gz** and **flt_snp_bw2_ms9_1.vcf.gz.tbi** are filtered variant file and its index file.
  
 *Step 4: Annotating variant with SnpEff*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -188,22 +188,22 @@ For nonsynonymous SNPs, we use SIFT to predict whether they will alter the prote
 
 *Step 6: Visualizing EMS outputs*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This step combines the results from Step 3, 4, and 5, and homologous genes grabbed from Gramene/ensemblPlants. The output file, **vaf_plot.view.tgz**, can be interactively visualized through a Shiny app.
+This step combines the results from Step 3, 4, and 5, and homologous genes grabbed from Gramene/ensemblPlants. The output file, **bsa_plot.view.tgz**, can be interactively visualized through a Shiny app.
 
-  1. Click the **Variant analysis** category (left panel) to find or search for **ems_viewer**, then click to load **ems_viewer-0.0.1**.
+  1. Click the **Variant analysis** category (left panel) to find or search for **bsa_viewer**, then click to load **bsa_viewer-0.0.1**.
 
   2. Click to expand outputs of the three jobs in the History panel, then drag and drop outputs to the input fields as shown below:
 
      |ems_view|
 
-  3. Click the "Submit Job" button. Once COMPLETED, click the 'eye' icon for the ems_viewer-0.0.1 job in the History panel to open the following dialog window. Select the output file **vaf_plot.view.tgz**, then click 'Visualize' to open the Shiny app. 
+  3. Click the "Submit Job" button. Once COMPLETED, click the 'eye' icon for the bsa_viewer-0.0.1 job in the History panel to open the following dialog window. Select the output file **bsa_plot.view.tgz**, then click 'Visualize' to open the Shiny app. 
 
      |ems_view_diag|
 
      .. Warning::
-        The interactive EMS viewer will be displayed in a new tab of your web browser window, so please check if pop-ups from SciApps are blocked by your browser and disable it if needed.
+        The interactive BSA viewer will be displayed in a new tab of your web browser window, so please check if pop-ups from SciApps are blocked by your browser and disable it if needed.
 
-  4. By default, the EMS viewer displays the P-value plots along the chromosome for 'All chromosomes', with a blue horizontal line to indicate the 10\ :sup:`-5` significance threshold. As shown below, we can use the significance threshold to rule out two candidate genes in chromosome 5 and one candidate gene in chromosome 8.
+  4. By default, the BSA viewer displays the P-value plots along the chromosome for 'All chromosomes', with a blue horizontal line indicating the 10\ :sup:`-5` significance threshold. As shown below, we can use the significance threshold to rule out two candidate genes in chromosome 5 and one candidate gene in chromosome 8.
 
      |ems_viewer2|
 
@@ -278,7 +278,7 @@ More help and additional information
 .. _Home_Icon: http://learning.cyverse.org/
 .. |sift| image:: ./img/sci_apps/sift.gif
     :width: 660
-    :height: 272
+    :height: 276
 .. |de_data| image:: ./img/sci_apps/de_data.gif
     :width: 660
     :height: 343
@@ -289,8 +289,8 @@ More help and additional information
     :width: 660
     :height: 357
 .. |bcftools_res| image:: ./img/sci_apps/bcftools_res.gif
-    :width: 234
-    :height: 103
+    :width: 232
+    :height: 100
 .. |status| image:: ./img/sci_apps/status.gif
     :width: 250
     :height: 60
@@ -302,19 +302,19 @@ More help and additional information
     :height: 327
 .. |snpeff| image:: ./img/sci_apps/snpeff.gif
     :width: 660
-    :height: 274
+    :height: 276
 .. |ems_view| image:: ./img/sci_apps/ems_view.gif
     :width: 660
-    :height: 348
+    :height: 363
 .. |ems_view_diag| image:: ./img/sci_apps/ems_view_diag.gif
     :width: 576
-    :height: 125
+    :height: 123
 .. |ems_viewer| image:: ./img/sci_apps/ems_viewer.gif
     :width: 660
-    :height: 373
+    :height: 416
 .. |ems_viewer2| image:: ./img/sci_apps/ems_viewer2.gif
     :width: 660
-    :height: 265
+    :height: 275
 .. |sorghum_ms9| image:: ./img/sci_apps/sorghum_ms9.gif
     :width: 75
     :height: 170
