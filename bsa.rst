@@ -203,7 +203,7 @@ This step combines the results from Step 3, 4, and 5, and homologous genes grabb
      .. Warning::
         The interactive BSA viewer will be displayed in a new tab of your web browser window, so please check if pop-ups from SciApps are blocked by your browser and disable it if needed.
 
-  4. By default, the BSA viewer displays the P-value plots along the chromosome for 'All chromosomes', with a blue horizontal line indicating the 10\ :sup:`-5` significance threshold. As shown below, we can use the significance threshold to rule out two candidate genes in chromosome 5 and one candidate gene in chromosome 8.
+  4. By default, the BSA viewer displays the segragation probability plots along the chromosome for 'All chromosomes', with a blue horizontal line indicating the 10\ :sup:`-5` significance threshold. As shown below, we can use the significance threshold to rule out two candidate genes in chromosome 5 and one candidate gene in chromosome 8.
 
      |ems_viewer2|
 
@@ -221,9 +221,9 @@ This step combines the results from Step 3, 4, and 5, and homologous genes grabb
 
      .. Tip::
 
-	Clicking near the nonsynonymous SNP on the plot will select the SNP in the table (setting the **selected_** column as true).
+	Clicking near the nonsynonymous SNP on the plot will highlight the SNP in the table.
 
-        You can choose a larger window size to estimate P-value if there are not enough mutations across the chromosome. Use the left panel to switch from the P-value plot to the allele frequency plot, and use the slider bar to change the smoothness of the fitted curve.
+        You can choose a larger window size to estimate P-value if there are not enough mutations across the chromosome. Use the left panel to switch from the segragation probability plot to the allele frequency plot, and use the slider bar to change the smoothness of the fitted curve.
 
 *Step 7: Finding mutant lines with the same candidate gene using Ensembl Plants/Gramene*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -311,10 +311,10 @@ More help and additional information
     :height: 123
 .. |ems_viewer| image:: ./img/sci_apps/ems_viewer.gif
     :width: 660
-    :height: 416
+    :height: 362
 .. |ems_viewer2| image:: ./img/sci_apps/ems_viewer2.gif
     :width: 660
-    :height: 275
+    :height: 256
 .. |sorghum_ms9| image:: ./img/sci_apps/sorghum_ms9.gif
     :width: 75
     :height: 170
