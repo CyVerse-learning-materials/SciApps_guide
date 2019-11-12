@@ -203,7 +203,7 @@ This step combines the results from Step 3, 4, and 5, and homologous genes grabb
      .. Warning::
         The interactive BSA viewer will be displayed in a new tab of your web browser window, so please check if pop-ups from SciApps are blocked by your browser and disable it if needed.
 
-  4. By default, the BSA viewer displays the segragation probability plots along the chromosome for 'All chromosomes', with a blue horizontal line indicating the 10\ :sup:`-5` significance threshold. As shown below, we can use the significance threshold to rule out two candidate genes in chromosome 5 and one candidate gene in chromosome 8.
+  4. By default, the BSA viewer displays the segregation probability plots along the chromosome for 'All chromosomes', with a blue horizontal line indicating the 10\ :sup:`-5` significance threshold. As shown below, we can use the significance threshold to rule out two candidate genes in chromosome 5 and one candidate gene in chromosome 8.
 
      |ems_viewer2|
 
@@ -221,9 +221,11 @@ This step combines the results from Step 3, 4, and 5, and homologous genes grabb
 
      .. Tip::
 
-	Clicking near the nonsynonymous SNP on the plot will highlight the SNP in the table.
+	Clicking the nonsynonymous SNP on the plot will highlight the SNP in the table, and vice versa.
 
-        You can choose a larger window size to estimate P-value if there are not enough mutations across the chromosome. Use the left panel to switch from the segragation probability plot to the allele frequency plot, and use the slider bar to change the smoothness of the fitted curve.
+        Choose a different window size (in the left panel) to estimate the segregation probability. 
+
+	Use the left panel to switch to the SNP ratio plot, then, if needed, use the slider bar to change the smoothness of the fitted curve for the plot.
 
 *Step 7: Finding mutant lines with the same candidate gene using Ensembl Plants/Gramene*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
