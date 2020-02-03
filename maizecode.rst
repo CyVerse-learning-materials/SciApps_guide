@@ -7,7 +7,7 @@
 Accessing MaizeCODE Data
 ----------------------------
 
-Customized apps (e.g. `MCrna-0.0.1 <https://www.sciapps.org/app_id/MCrna-0.0.1/>`_) are built to perform QC and preliminary quantifications on the MaizeCODE raw RNAseq and RAMPAGE data. For each MaizeCODE experiment, the analysis of all replicates are saved as a SciApps workflow (with a unique ID), which records the relationship between raw reads and their derived results. Following sections illustrate the details about the MCRNAseq app, how users can check the QC results of any MaizeCODE experiments, as well as using the preliminary results for performing downstream differential expression analysis between any two tissues.
+Customized apps (e.g. `MCrna-0.0.1 <https://www.sciapps.org/app_id/MCrna-0.0.1/>`_) are built to perform QC and preliminary quantifications on the MaizeCODE raw RNAseq and RAMPAGE data. For each MaizeCODE experiment, the analyses of all replicates are saved as a SciApps workflow (with a unique ID), which records the relationship between raw reads and their derived results. The following sections illustrate the details about the MCRNAseq app, how users can check the QC results of any MaizeCODE experiments, as well as using the preliminary results for performing downstream differential expression analysis between any two tissues.
 
 ----
 
@@ -18,16 +18,16 @@ The MCrna app wraps six tools, `FastQC <http://www.bioinformatics.babraham.ac.uk
 
  |MCRNAseq|
 
-For each replicate, raw read files are preprocessed by **bbduk** to remove low quality portion of the read and adapter contaminations. **FastQC** is then used to check the quality of both raw and processed reads, and FastQC results are summarized by **MultiQC** into a HTML formatted report. The trimmed reads are aligned to the reference genome with **STAR**, then the alignment file is used to quantify the gene expression level with **RSEM** and to assemble transcripts with **StringTie**.
+For each replicate, raw read files are preprocessed by **bbduk** to remove the low-quality portion of the read and adapter contaminations. **FastQC** is then used to check the quality of both raw and processed reads, and FastQC results are summarized by **MultiQC** into an HTML formatted report. The trimmed reads are aligned to the reference genome with **STAR**, then the alignment file is used to quantify the gene expression level with **RSEM** and to assemble transcripts with **StringTie**.
 
-The results of the MCrna app include the MultiQC report, the gene quantification file, the browser track signals, the alignments, and the assembled transcripts, all stored in the CyVerse cloud; therefore, they are ready for being visualized or used in downstream analysis (see more details below).
+The results of the MCrna app include the MultiQC report, the gene quantification file, the browser track signals, the alignments, and the assembled transcripts, all stored in the CyVerse cloud; therefore, they are ready for being visualized or used in the downstream analysis (see more details below).
 
 ----
 
 *Load a MaizeCODE RNAseq Experiment*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In above section, we described the MCrna app/module used in processing RNAseq/RAMPAGE data. Here we will show how to locate a specific experiment/workflow (e.g. 'RNAseq for B73 root') and load it on SciApps.org to examine outputs, parameters used, inputs, and associated metadata.
+In the above section, we described the MCrna app/module used in processing RNAseq/RAMPAGE data. Here we will show how to locate a specific experiment/workflow (e.g. 'RNAseq for B73 root') and load it on SciApps.org to examine outputs, parameters used, inputs, and associated metadata.
  
   1. Open https://www.SciApps.org, click **Data** (top menu) then **MaizeCODE**. Alternatively, you can access MaizeCODE experiments directly at the `MaizeCODE data page <https://www.SciApps.org/data/MaizeCODE>`_ to browse the list of MaizeCODE experiments/workflows, as shown below:
 
@@ -68,9 +68,9 @@ In above section, we described the MCrna app/module used in processing RNAseq/RA
      |MCrna_URL|
 
      .. Warning::
-        If clicking on **Visualize** (e.g., when the multiqc_report.html file is selected), the file  will be displayed in a new tab of your web browser window, so please check if pop-ups from SciApps are blocked by your browser and disable it if needed.
+        If clicking on **Visualize** (e.g., when the multiqc_report.html file is selected), the file will be displayed in a new tab of your web browser window, so please check if pop-ups from SciApps are blocked by your browser and disable it if needed.
 
-  5. To add the URL you got from the last step to the SciApps JBrowse, click **Tools** (from SciApps top menu), then **JBrowse** to load JBrowse. As shown below, select 'Maize B73v4', click **File**/**Open track file or URL**, then paste the URLs under **Remote URLs - one per line** (not shown). For displaying alignments, you need add URLs for both the bam and index (.bai) files. 
+  5. To add the URL you got from the last step to the SciApps JBrowse, click **Tools** (from SciApps top menu), then **JBrowse** to load JBrowse. As shown below, select 'Maize B73v4', click **File**/**Open track file or URL**, then paste the URLs under **Remote URLs - one per line** (not shown). For displaying alignments, you need to add URLs for both the bam and index (.bai) files. 
 
      |jbrowse_add|
 
@@ -79,12 +79,12 @@ In above section, we described the MCrna app/module used in processing RNAseq/RA
 *Find differentially expressed genes*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As an example, to find genes that are differentially expressed between root and ear tissues of B73, please follow these steps.
+As an example, to find genes that are differentially expressed between the root and ear tissues of B73, please follow these steps.
 
   1. Log into SciApps at https://www.SciApps.org/ before submitting any analysis jobs.
 
      .. Warning::
-        Make sure you have followed `this instruction <https://cyverse-sciapps-guide.readthedocs-hosted.com/en/latest/step2.html>`_ to enable 'SciApps service' from the CyVerse user portal. Otherwise your job will fail at the archiving step.
+        Make sure you have followed `this instruction <https://cyverse-sciapps-guide.readthedocs-hosted.com/en/latest/step2.html>`_ to enable 'SciApps service' from the CyVerse user portal. Otherwise, your job will fail at the archiving step.
 
   2. From the `MaizeCODE data page <https://www.SciApps.org/data/MaizeCODE>`_, search 'B73 ear' and 'B73 root' to find then load each experiment into the History panel, as shown in the last section.
 
@@ -92,7 +92,7 @@ As an example, to find genes that are differentially expressed between root and 
 
      |de_analysis|
 
-  4. As shown above, for each replicate, drag and drop the gene quantification result (filenames starting with “rsem”) into the input field, then click the “Submit job” button to run the differential expression analysis. A new job will appear in the History panel and it only take a few minutes to get the list of differentially expressed genes back since alignments and gene quantifications are already done and archived in the cloud.
+  4. As shown above, for each replicate, drag and drop the gene quantification result (filenames starting with “rsem”) into the input field, then click the “Submit job” button to run the differential expression analysis. A new job will appear in the History panel and it only takes a few minutes to get the list of differentially expressed genes back since alignments and gene quantifications are already done and archived in the cloud.
 
      .. Note::
         Use the '+ Insert' and '- Remove' button to add/remove the number of input fields, based on the number of replicates available.  
@@ -109,9 +109,9 @@ As an example, to find genes that are differentially expressed between root and 
 *Find differentially expressed transcripts*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As an example, in this section we will use transcript-level differential expression analysis to demonstrate how to leverage SciApps workflows and apps to perform downstream analysis with the MaizeCODE data. We will start with examining a public isoform-level expression analysis workflow (step 1), construct a new workflow from the public workflow (since we don't want to repeat the alignment with STAR and transcript assembly with StringTie, which have already been completed with running the MCrna app), then run the newly constructed workflow with archived MaizeCODE results.
+As an example, in this section, we will use transcript-level differential expression analysis to demonstrate how to leverage SciApps workflows and apps to perform downstream analysis with the MaizeCODE data. We will start with examining a public isoform-level expression analysis workflow (step 1), construct a new workflow from the public workflow (since we don't want to repeat the alignment with STAR and transcript assembly with StringTie, which have already been completed with running the MCrna app), then run the newly constructed workflow with archived MaizeCODE results.
 
-  1. Click **Workflow**/**Public workflows**, then select **RNA-seq2** to 'Visualize' the workflow, which will also load job histories into the History panel, as shown below. The workflow uses the `STAR_align-2.5.3 <https://www.sciapps.org/?app_id=STAR_align-2.5.3>`_ app which is similar with the `MCrna-0.0.1 <https://www.sciapps.org/?app_id=MCrna-0.0.1>`_ app except that it does not trim the read or generate the QC report. The assembled transcripts are merged with the `StringTie_merge-1.3.3 <https://www.sciapps.org/?app_id=StringTie_merge-1.3.3>`_ app, then passed along with the STAR alignment file to the `StringTie-1.3.3 <https://www.sciapps.org/?app_id=StringTie-1.3.3>`_ app for a second round transcript assebmly, before calling the `Ballgown-2.10.0 <https://www.sciapps.org/?app_id=Ballgown-2.10.0>`_ app for finding differentially expressed transcripts.   
+  1. Click **Workflow**/**Public workflows**, then select **RNA-seq2** to 'Visualize' the workflow, which will also load job histories into the History panel, as shown below. The workflow uses the `STAR_align-2.5.3 <https://www.sciapps.org/?app_id=STAR_align-2.5.3>`_ app which is similar to the `MCrna-0.0.1 <https://www.sciapps.org/?app_id=MCrna-0.0.1>`_ app except that it does not trim the read or generate the QC report. The assembled transcripts are merged with the `StringTie_merge-1.3.3 <https://www.sciapps.org/?app_id=StringTie_merge-1.3.3>`_ app, then passed along with the STAR alignment file to the `StringTie-1.3.3 <https://www.sciapps.org/?app_id=StringTie-1.3.3>`_ app for a second-round transcript assembly, before calling the `Ballgown-2.10.0 <https://www.sciapps.org/?app_id=Ballgown-2.10.0>`_ app for finding differentially expressed transcripts.   
 
      |iso_workflow|
 
@@ -130,27 +130,27 @@ As an example, in this section we will use transcript-level differential express
   4. Go to **Workflow**/**My workflows** to load the newly saved workflow.
 
      .. Note::
-        You might need to check twice to see the new workflow (check 'Home' then back to 'My workflows'), which should be the fisrt one in the list.
+        You might need to check twice to see the new workflow (check 'Home' then back to 'My workflows'), which should be the first one in the list.
 
-  5. As shown below, clear the input fields for step 1 of the workflow, then drag and drop transcript outputs (filenames starting with 'str') into the input fields. Also need to set the 'Select the staged annotation file' as 'Zea mays (AGPv4)' for step 1-5. 
+  5. As shown below, clear the input fields for step 1 of the workflow, then drag and drop transcript outputs (filenames starting with 'str') into the input fields. Also, we need to set the 'Select the staged annotation file' as 'Zea mays (AGPv4)' for steps 1-5. 
  
      |iso_analysis|
 
      .. Note::
 
-        Scroll down the app forms, then drag and drop the alignment file (*.bam) into step 3, 4, 2, 5 as shown above. The order is determined by the input fields of step 6, as shown below (Sample 1 has outputs of step 3 and 4, and Sample 2 has outputs of step 2 and 5).
+        Scroll down the app forms, then drag and drop the alignment file (*.bam) into steps 3, 4, 2, 5 as shown above. The order is determined by the input fields of step 6, as shown below (Sample 1 has outputs of steps 3 and 4, and Sample 2 has outputs of steps 2 and 5).
 
         |iso_analysis2|
 
      .. Warning::
-        Make sure to clear the input field before dragging and dropping new input. Make sure you have set the 'Select the staged annotation file' as 'Zea mays (AGPv4)' for step 1-5.
+        Make sure to clear the input field before dragging and dropping new input. Make sure you have set the 'Select the staged annotation file' as 'Zea mays (AGPv4)' for steps 1-5.
 
   6. Submit the workflow and the workflow diagram with live status will be shown as below.
 
      |iso_run|
 
      .. Note::
-        Different colors of the app button represent different status: blue (running), yellow (pending), green (completed), and red (failed). Depending on the size of input files to be staged and queue status of computing cluster, it might take a while for the status to get updated. You can save the workflow and check the status later by visualizing the diagram.
+        Different colors of the app button represent different status: blue (running), yellow (pending), green (completed), and red (failed). Depending on the size of input files to be staged and queue status of the computing cluster, it might take a while for the status to get updated. You can save the workflow and check the status later by visualizing the diagram.
 
   7. When the workflow is completed (when all app buttons are green), click Ballgown's output file (de_iso.tsv) to preview the result, as shown below. 
 
@@ -162,7 +162,7 @@ As an example, in this section we will use transcript-level differential express
 
 *Summary*
 ~~~~~~~~~~
-This tutorial covers how to use SciApps to access MaizeCODE data and how to perform downstream analysis with MaizeCODE results, including describing the details of the MCrna app, loading an RNAseq experiment to access its outputs, running differential expression analysis at both the gene and transcript (isoform) level. By storing MaizeCODE data and analysis results in the cloud, all downstream analysis can be completely in a timely fashion by any community users. 
+This tutorial covers how to use SciApps to access MaizeCODE data and how to perform downstream analysis with MaizeCODE results, including describing the details of the MCrna app, loading an RNAseq experiment to access its outputs, running differential expression analysis at both the gene and transcript (isoform) level. By storing MaizeCODE data and analysis results in the cloud, all downstream analyses can be completed in a timely fashion by any community users. 
         
 
 ----
