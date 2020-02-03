@@ -7,7 +7,7 @@
 Accessing MaizeCODE Data
 ----------------------------
 
-Customized apps (e.g. `MCRNAseq-0.0.1 <https://www.sciapps.org/app_id/MCRNAseq-0.0.1/>`_) are built to perform QC and preliminary quantifications on the MaizeCODE raw RNAseq and RAMPAGE data. For each MaizeCODE experiment, the analysis of all replicates are saved as a SciApps workflow (with a unique ID), which records the relationship between raw reads and their derived results. Following sections illustrate the details about the MCRNAseq app, how users can check the QC results of any MaizeCODE experiments, as well as using the preliminary results for performing downstream differential expression analysis between any two tissues.
+Customized apps (e.g. `MCrna-0.0.1 <https://www.sciapps.org/app_id/MCrna-0.0.1/>`_) are built to perform QC and preliminary quantifications on the MaizeCODE raw RNAseq and RAMPAGE data. For each MaizeCODE experiment, the analysis of all replicates are saved as a SciApps workflow (with a unique ID), which records the relationship between raw reads and their derived results. Following sections illustrate the details about the MCRNAseq app, how users can check the QC results of any MaizeCODE experiments, as well as using the preliminary results for performing downstream differential expression analysis between any two tissues.
 
 ----
 
