@@ -24,7 +24,7 @@ Introduce SciApps, a cloud-based platform for building and sharing reproducible 
         The Annotation Tutorial <annotation.rst>
 	The Association Tutorial <association.rst>
 	The BSA Tutorial <bsa.rst>
-	
+	The MaizeCODE Tutorial <maizecode.rst>
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
 	you have an additional page called 'First Step' with content located in 'step1.rst'.

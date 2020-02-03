@@ -72,11 +72,11 @@ annotation App.
        
        From left to right, there are four icons next to each job name:
 
-       - **Checkbox**: If checked, the analysis will be added to the workflow building page.
-       - **Information**: More information about the status of the analysis job and link to the output folder (for an example, check the screenshot below).
+       - **Checkbox**: If checked, the job will be added to the workflow building page (if loaded).
+       - **Information**: More about the status of the analysis job and link to the output folder (for an example, check the screenshot below).
          |agave_status|
-       - **Relaunch**: Relaunch the analysis job with the same inputs and parameters.
-       - **Visualization**: Generate links for visualizing in a Genome Browser or Web Browser.
+       - **Relaunch**: Load the app form filled with the inputs and parameters used before.
+       - **Visualization**: Generate URLs for visualizing in a Genome Browser or Web Browser (e.g. .bw, .bam, .gtf).
 
      .. Tip::
        If a job is failed, you can try to debug it with the .err file and .out file in the output folder.

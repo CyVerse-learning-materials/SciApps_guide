@@ -229,7 +229,7 @@ This step combines the results from Step 3, 4, and 5, and homologous genes grabb
 
 *Step 7: Finding mutant lines with the same candidate gene using Ensembl Plants/Gramene*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-With two candidate genes left from the last step (red dots above the threshold), Sb02g026200(Sobic.002G221000, or SORBI_3002G221000) looks promising since it encodes a PHD-finger transcription factor that is critical for pollen development in Arabidopsis (`reference <https://onlinelibrary.wiley.com/doi/full/10.1046/j.1365-313X.2001.01125.x>`_). There is an EMS SNP database available at Ensembl Plants/Gramene. With the database, we can find the mutant lines that carry the independent mutations in the same gene, acquire the seeds, plant and verify both genotype and phenotype.
+With two candidate genes left from the last step (red dots above the threshold), Sb02g026200(Sobic.002G221000, or SORBI_3002G221000) looks promising since it encodes a PHD-finger transcription factor that is critical for pollen development in Arabidopsis (`reference <https://onlinelibrary.wiley.com/doi/full/10.1046/j.1365-313X.2001.01125.x>`_). There is an EMS SNP database available at Ensembl Plants/Gramene. With the database, we can find the mutant lines that carry the independent mutations in the same gene, acquire the seeds, plant, and cross both lines for a complementation test.
 
   1. Go to `Ensembl Plants <http://plants.ensembl.org/index.html>`_.
 
