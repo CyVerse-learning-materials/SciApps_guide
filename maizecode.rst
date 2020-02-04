@@ -156,7 +156,7 @@ As an example, in this section, we will use transcript-level differential expres
 
      |ballgown_out|
 
-     .. Note:: Each line describes a transcript and contains 7 fields: the gene name, the gene ID, feature, row id, fold change, the p-value, and the q-value for differential expression. For more details, please check `this tutorial <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5032908/>`_.
+     .. Note:: Each line describes a transcript and contains 4 fields: the fold change, the p-value, the q-value, and the transcript ID. Novel transcripts (not annotated) are named as "MSTRG.*.*" and the coordinates of each transcript can be found in the **t_data.ctab** file for each StringTie output. For more details, please check `this tutorial <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5032908/>`_.
 
 ----
 
@@ -234,5 +234,5 @@ This tutorial covers how to use SciApps to access MaizeCODE data and how to perf
     :width: 660
     :height: 596
 .. |ballgown_out| image:: ./img/sci_apps/ballgown_out.gif
-    :width: 660
-    :height: 167
+    :width: 532
+    :height: 228
