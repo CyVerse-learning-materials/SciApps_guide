@@ -61,8 +61,8 @@ Downloads, access, and services
 
 **Fix or improve this documentation**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/sciapps_guide>`_
-- Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide/blob/master/index.rst>`_
+- Send feedback: `support@SciApps.org <support@SciApps.org>`_
 
 ----
 

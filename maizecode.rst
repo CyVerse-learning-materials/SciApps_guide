@@ -169,8 +169,8 @@ This tutorial covers how to use SciApps to access MaizeCODE data and how to perf
 
 **Fix or improve this documentation:**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide/blob/master/step2.rst>`_
-- Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide/blob/master/maizecode.rst>`_
+- Send feedback: `Support@SciApps.org <support@SciApps.org>`_
 
 ----
 

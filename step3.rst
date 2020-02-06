@@ -108,7 +108,7 @@ annotation App.
 **Fix or improve this documentation:**
 
 - On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide/blob/master/step3.rst>`_
-- Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+- Send feedback: `support@SciApps.org <support@SciApps.org>`_
 
 ----
 
