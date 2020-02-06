@@ -164,6 +164,7 @@ As an example, in this section, we will use transcript-level differential expres
 ~~~~~~~~~~
 This tutorial covers how to use SciApps to access MaizeCODE data and how to perform downstream analysis with MaizeCODE results, including describing the details of the MCrna app, loading an RNAseq experiment to access its outputs, running differential expression analysis at both the gene and transcript (isoform) level. By storing MaizeCODE data and analysis results in the cloud, all downstream analyses can be completed in a timely fashion by any community users. 
         
+For users who want to share the analyses of their data with the MaizeCODE project, please contact support@SciApps.org with the workflow IDs. Then your analysis will be added to the list of MaizeCODE experiments.
 
 ----
 
