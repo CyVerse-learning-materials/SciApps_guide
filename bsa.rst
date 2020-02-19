@@ -203,7 +203,7 @@ This step combines the results from Step 3, 4, and 5, and homologous genes grabb
      .. Warning::
         The interactive BSA viewer will be displayed in a new tab of your web browser window, so please check if pop-ups from SciApps are blocked by your browser and disable it if needed.
 
-  4. By default, the BSA viewer displays the segregation probability plots along the chromosome for 'All chromosomes', with a blue horizontal line indicating the 10\ :sup:`-5` significance threshold. As shown below, we can use the significance threshold to rule out two candidate genes in chromosome 5 and one candidate gene in chromosome 8.
+  4. By default, the BSA viewer displays the segregation probability plots along the chromosome for 'All chromosomes', with a blue horizontal line indicating the 10\ :sup:`-5` significance threshold. As shown below, we can use the significance threshold to rule out two candidate genes in chromosome 5.
 
      |ems_viewer2|
 
@@ -316,7 +316,7 @@ More help and additional information
     :height: 362
 .. |ems_viewer2| image:: ./img/sci_apps/ems_viewer2.gif
     :width: 660
-    :height: 256
+    :height: 268
 .. |sorghum_ms9| image:: ./img/sci_apps/sorghum_ms9.gif
     :width: 75
     :height: 170
