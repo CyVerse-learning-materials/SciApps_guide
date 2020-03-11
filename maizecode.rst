@@ -102,7 +102,7 @@ As an example, to find genes that are differentially expressed between the root 
      |de_result|
 
      .. Note::
-        Each line describes a gene and contains 7 fields: the gene name, posterior probability of being equally expressed (PPEE), posterior probability of being differentially expressed (PPDE), posterior fold change of Sample 1 over Sample 2 (PostFC), real fold change of Sample 1 over Sample 2 (RealFC), mean count of Sample 1 (C1Mean) and mean count of Sample 2 (C2Mean). For fold changes, PostFC is recommended over the RealFC. For more details, please check `this tutorial <https://github.com/bli25broad/RSEM_tutorial>`_. 
+        Each line describes a gene and contains 7 fields: the gene name, posterior probability of being equally expressed (PPEE), posterior probability of being differentially expressed (PPDE), posterior fold change of Sample 1 over Sample 2 (PostFC), real fold change of Sample 1 over Sample 2 (RealFC), mean count of Sample 1 (C1Mean) and mean count of Sample 2 (C2Mean). For fold changes, PostFC is recommended over the RealFC. For more details, please check `the tutorial <https://github.com/bli25broad/RSEM_tutorial>`_. 
 
 ----
 
@@ -138,7 +138,7 @@ As an example, in this section, we will use transcript-level differential expres
 
      .. Note::
 
-        Scroll down the app forms, then drag and drop the alignment file (*.bam) into steps 3, 4, 2, 5 as shown above. The order is determined by the input fields of step 6, as shown below (Sample 1 has outputs of steps 3 and 4, and Sample 2 has outputs of steps 2 and 5).
+        Scroll down the app forms, then drag and drop the alignment file (.bam) into steps 3, 4, 2, 5 as shown above. The order is determined by the input fields of step 6, as shown below (Sample 1 has outputs of steps 3 and 4, and Sample 2 has outputs of steps 2 and 5).
 
         |iso_analysis2|
 

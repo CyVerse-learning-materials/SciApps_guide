@@ -227,9 +227,13 @@ This step combines the results from Step 3, 4, and 5, and homologous genes grabb
 
 	Use the left panel to switch to the SNP ratio plot, then, if needed, use the slider bar to change the smoothness of the fitted curve for the plot.
 
-*Step 7: Finding mutant lines with the same candidate gene using Ensembl Plants/Gramene*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-With two candidate genes left from the last step (red dots above the threshold), Sb02g026200(Sobic.002G221000, or SORBI_3002G221000) looks promising since it encodes a PHD-finger transcription factor that is critical for pollen development in Arabidopsis (`reference <https://onlinelibrary.wiley.com/doi/full/10.1046/j.1365-313X.2001.01125.x>`_). There is an EMS SNP database available at Ensembl Plants/Gramene. With the database, we can find the mutant lines that carry the independent mutations in the same gene, acquire the seeds, plant, and cross both lines for a complementation test.
+*Step 7: Finding mutant lines with significant mutation on the same candidate gene* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+With two candidate genes left from the last step (red dots above the threshold), **Sobic.002G221000(Sb02g026200)** looks promising since it encodes a PHD-finger transcription factor that is critical for pollen development in Arabidopsis (`ref <https://onlinelibrary.wiley.com/doi/full/10.1046/j.1365-313X.2001.01125.x>`_). Click on the gene id **Sobic.002G221000(Sb02g026200)** to query the EMS SNP database. It returns that **ARS178** has a significant mutation on the same gene. You can acquire the seeds, plant, and cross both lines for a complementation test.
+
+*Step 8: Finding mutant lines with significant mutation on the same candidate gene using Ensembl Plants/Gramene (Optional)*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Alternatively, there is an EMS SNP database available at Ensembl Plants/Gramene. With the database, we can find the mutant lines that carry the independent mutations in the same gene.
 
   1. Go to `Ensembl Plants <http://plants.ensembl.org/index.html>`_.
 
@@ -247,7 +251,9 @@ With two candidate genes left from the last step (red dots above the threshold),
 *Summary*
 ~~~~~~~~~
 
-This tutorial covers how to use SciApps for bulked segregant Analysis, including accessing data in CyVerse Data Store, launching jobs, visualizing results, and using Ensembl Plants/Gramene to find the mutant lines that carry different mutations in the same gene.
+This tutorial covers how to use SciApps for bulked segregant Analysis, including accessing data in CyVerse Data Store, launching jobs, visualizing results, and using the EMS SNP database or Ensembl Plants/Gramene to find the mutant lines that carry different mutations in the same gene. The analysis can also be done as an automatic workflow, available as BSA-Seq under **Workflow/Public workflows**. The diagram of the workflow is shown below.
+
+  |BSA_workflow|  
 
 
 More help and additional information
@@ -323,3 +329,6 @@ More help and additional information
 .. |workflow_URL| image:: ./img/sci_apps/workflow_URL.gif
     :width: 582
     :height: 182
+.. |BSA_workflow| image:: ./img/sci_apps/bsa.gif
+    :width: 400
+    :height: 796
