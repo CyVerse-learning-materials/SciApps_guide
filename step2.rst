@@ -1,4 +1,5 @@
-|CyVerse logo|_
+.. include:: cyverse_rst_defined_substitutions.txt
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -64,10 +65,17 @@ There are several ways to organize your data, including CyVerse DE, CyberDuck, a
 ----
 
 
-**Fix or improve this documentation:**
+**Fix or improve this documentation**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide/blob/master/step2.rst>`_
-- Send feedback: `support@SciApps.org <support@SciApps.org>`_
+- Search for an answer:
+  |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
+- Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
+
 
 ----
 
