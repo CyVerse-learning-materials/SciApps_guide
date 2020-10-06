@@ -1,4 +1,5 @@
-|CyVerse logo|_
+.. include:: cyverse_rst_defined_substitutions.txt
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -168,10 +169,17 @@ For users who want to share the analyses of their data with the MaizeCODE projec
 
 ----
 
-**Fix or improve this documentation:**
+**Fix or improve this documentation**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide/blob/master/maizecode.rst>`_
-- Send feedback: `Support@SciApps.org <support@SciApps.org>`_
+- Search for an answer:
+  |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
+- Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
+
 
 ----
 

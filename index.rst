@@ -1,4 +1,5 @@
-|CyVerse logo|_
+.. include:: cyverse_rst_defined_substitutions.txt
+|CyVerse_logo|_
 
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -54,15 +55,22 @@ Downloads, access, and services
       - You will need a CyVerse account to complete this exercise
       - `Register <https://user.cyverse.org/>`_
     * - SciApps access
-      - You will need to request access to SciApps from the user portal. Check the 'My Services' tab; if SciApps is not listed, click the 'Available' tab, locate SciApps and click the link to request access.  
+      - You will need to request access to SciApps from the user portal. Check the 'My Services' tab; if SciApps is not listed, click the 'Available' tab, locate SciApps and click the link to request access.
       - `CyVerse User Portal <https://user.cyverse.org/>`__
 
 ----
 
 **Fix or improve this documentation**
 
-- On Github: `Repo link <https://github.com/CyVerse-learning-materials/SciApps_guide/blob/master/index.rst>`_
-- Send feedback: `support@SciApps.org <support@SciApps.org>`_
+- Search for an answer:
+  |CyVerse Learning Center|
+- Ask us for help:
+  click |Intercom| on the lower right-hand side of the page
+- Report an issue or submit a change:
+  |Github Repo Link|
+- Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
+
 
 ----
 
